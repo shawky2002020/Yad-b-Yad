@@ -1,0 +1,201 @@
+.RamdanProjectSwiper{
+  max-width: 1190px;
+}
+.custom-card {
+  border-radius: 18px;
+  width: 380px;
+  height: fit-content;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  border: solid 1px #707070;
+}
+.custom-card-header-bg {
+  width: 100%;
+  background: #10353C;
+  border-radius: 18px 18px 0 0;
+  padding: 18px 24px 8px 24px;
+}
+.custom-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+i{
+  font-size: 1rem;
+}
+.custom-card-title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.custom-card-icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.custom-card-img-bg {
+  background: #fff;
+}
+.custom-card-img-el {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  cursor: pointer;
+}
+.custom-card-body-bg {
+  border-radius: 0 0 18px 18px;
+  padding: 18px;
+}
+.custom-card-body{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 0 0 18px 18px;
+  padding: 0 18px;
+  width: 100%;
+  height: 100%;
+}
+.custom-card-amount-row {
+  background: #efefef;
+  border-radius: 12px;
+  padding: 8px 14px;
+  display: flex;
+  font-size: 12px;
+  gap: 1rem;
+}
+.money-collected{
+  background: #efefef;
+  border-radius: 1rem;
+  margin: 10px 0;
+
+}
+.custom-card-progress {
+  height: 18;
+  background: #ffff;
+  border-radius: 12px;
+  width: 90%;
+  margin: auto;
+}
+.custom-card-progress-bar {
+  width: 50%;
+  background: #219a8a;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px;
+}
+.amount-btn {
+  padding: 2px 4px;
+  flex: 1;
+  margin: 0 2px;
+}
+.custom-card
+.amount-btn-500 {
+  max-width: 100px;
+  margin: auto;
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+.amount-btn-500:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.amount-btn-100 {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+.amount-btn-100:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.amount-btn-50 {
+  background: var(--dark-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+.amount-btn-50:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+.amount-btn{
+  span{
+    font-size: 10px;
+  }
+}
+
+.custom-card-donate-btn {
+  flex: 1;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.custom-card-donate-btn:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+.custom-card-input {
+  flex: 2;
+  font-size: 1.1rem;
+  max-width: 50%;
+  border-radius: 12px;
+  text-align: center;
+}
+.input-open-container{
+  width: 100%;
+}
+.open{
+  width: 100%;
+  margin: 8px 0;
+}
+.amount-btn.active-amount {
+  box-shadow: 0 0 0 2px var(--main-color);
+  border: 2px solid var(--main-color);
+  background: #fff;
+  color: var(--main-color);
+}
+
+.custom-card-action-row{
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-card{
+  width: 290px;
+ }
+ .custom-card-input{
+  flex: 1;
+ }
+ .amount-btn{
+  font-size: 14px !important;
+  span{
+   font-size: 9px ;
+  }
+ }
+ .custom-card-progress-bar{
+  font-size: 10px;
+ }
+ button{
+  font-size: 14px !important;
+ }
+ i{
+  font-size: 10px;
+ }
+
+}

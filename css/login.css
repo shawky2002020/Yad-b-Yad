@@ -1,0 +1,257 @@
+:root {
+    --primary-color: #5baa8f;
+    --primary-dark: #4a9a7f;
+    --secondary-color: #336776;
+    --light-bg: #f8f9fa;
+    --border-color: #e0e0e0;
+    --text-color: #333;
+    --error-color: #dc3545;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Tajawal', sans-serif;
+}
+.sub{
+    flex-flow: row-reverse;
+}
+
+
+.login-container {
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.login-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    position: relative;
+}
+
+.login-logo {
+    max-width: 120px;
+    height: auto;
+}
+
+.login-header h2 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.login-header i{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+/* Toggle buttons */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-buttons {
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+}
+
+.toggle-btn {
+    flex: 1;
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Form styles */
+.form-label {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-control, .form-select {
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(91, 170, 143, 0.25);
+}
+
+.input-group-text {
+    background-color: var(--light-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+/* File upload */
+.file-upload {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.file-label {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+}
+
+.file-text {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #6c757d;
+    text-align: right;
+}
+
+.file-button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    font-weight: 600;
+    border-right: 1px solid var(--border-color);
+}
+
+/* Submit button */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(91, 170, 143, 0.3);
+}
+
+/* WhatsApp link */
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    color: #25D366;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-link i {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.volunteer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.volunteer-icon i {
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-link:hover {
+    transform: translateY(-2px);
+    color: #128C7E;
+}
+
+/* Login image */
+.login-image-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .login-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .login-card {
+        padding: 1.5rem;
+    }
+    
+    .login-logo {
+        max-width: 100px;
+    }
+    
+    .toggle-buttons {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .login-container {
+        padding: 1rem 0;
+    }
+    
+    .login-card {
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+    
+    .form-control, .form-select, .file-text, .file-button {
+        padding: 0.3rem 2rem;
+    }
+    
+    .btn-primary {
+        padding: 0.6rem 1.2rem;
+    }
+}
