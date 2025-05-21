@@ -30,10 +30,10 @@
   <body>
     <header>
       <div class="topBar">
-          <img class="back" src="../img2/nav-banner.png" alt="">
+          <img class="back" src="img/nav-banner.png" alt="">
           <div class="UserBox ">
             <div onclick="window.location.href='index.html'" class="logoBox p-4 d-none d-lg-block">
-              <img src="img2/logo.png" class="img-fluid logo-img" alt="" />
+              <img src="img/logo.png" class="img-fluid logo-img" alt="" />
             </div>
 
             <div class="Name d-none d-lg-block">
@@ -44,7 +44,7 @@
 
             <div class="useraction mx-auto mx-lg-0">
               <div onclick="window.location.href='index.html'" class="logoBoxModile  d-lg-none text-center">
-                <img src="img2/logo-small.png" class="img-fluid" alt="" />
+                <img src="img/logo-small.png" class="img-fluid" alt="" />
               </div>
 
               <div class="loginbox ">
@@ -75,10 +75,19 @@
                     <a class="me-4"> تبرع الان </a>
                   </div> -->
                 </div>
-                <div class="nav-icon">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                  </button>
+                <div class="nav-left">
+                  <div class="search-icon d-md-none">
+
+                    <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                  </div>
+
+                  <div class="nav-icon">
+                    <button class="navbar-toggler custom-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -95,7 +104,7 @@
               class="navbar-nav text-center align-content-between mb-2 mb-lg-0 pe-0"
             >
               <li class="nav-item">
-                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link active" href="index.html">الرئيسية</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">من نحن</a>
@@ -233,27 +242,9 @@
     </header>
 
     <div class="container  project-page">
-      <!-- <div class="project-header">
-        <div class="project-header-content">
-         
-          <h1 class="project-title-main">مشروع سقيا الماء</h1>
-          <p class="project-description">ساهم في توفير المياه النظيفة للمحتاجين وكن سبباً في إحياء النفوس</p>
-        
-          <div class="project-stats-summary">
-            <div class="stat-summary-item">
-              <i class="fa-solid fa-droplet"></i>
-              <span>تم توفير 5000+ بئر</span>
-            </div>
-            <div class="stat-summary-item">
-              <i class="fa-solid fa-users"></i>
-              <span>استفاد أكثر من 25,000 شخص</span>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div class="project-header">
         <figure class="head-img-container">
-          <img src="img2/leave.png" alt="">
+          <img src="img/leave.png" alt="">
         </figure>
         <div class="project-header-content">
           قال رسول الله ﷺ : ( من فطر صائمًا كان له مثل أجره ) 
@@ -270,9 +261,9 @@
           </div>
 
           <div class="donation-amounts">
-            <button class="amount-btn blue">500 <span >رس</span></button>
+            <button class="amount-btn secondary">500 <span >رس</span></button>
             <button class="amount-btn green">100 <span>رس</span></button>
-            <button class="amount-btn orange">50 <span>رس</span></button>
+            <button class="amount-btn blue">50 <span>رس</span></button>
           </div>
 
           <div class="custom-amount">
@@ -337,11 +328,11 @@
               <div class="donation-amount-buttons">
                 <button class="donation-amount-btn blue">50             <span >رس</span>
 </button>
-                <button class="donation-amount-btn gray">100             <span >رس</span>
+                <button class="donation-amount-btn secondary">100             <span >رس</span>
 </button>
                 <button class="donation-amount-btn green">200             <span >رس</span>
 </button>
-                <button class="donation-amount-btn orange">500             <span >رس</span>
+                <button class="donation-amount-btn accent">500             <span >رس</span>
 </button>
 <div class="other-amount-input">
   <input type="text" placeholder="مبلغ آخر" class="form-control">
@@ -442,8 +433,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
               <div class="stat-content">
-                <div class="stat-title">عدد الزيارات</div>
-                <div class="stat-value">2,700 زيارة</div>
+                <div class="stat-title">عدد الزيارات 2,700 زيارة</div>
               </div>
             </div>
 
@@ -452,8 +442,7 @@
                 <i class="fa-solid fa-hand-holding-dollar"></i>
               </div>
               <div class="stat-content">
-                <div class="stat-title">عمليات التبرع</div>
-                <div class="stat-value">5000 عملية</div>
+                <div class="stat-title">عمليات التبرع 5000 عملية</div>
               </div>
             </div>
 
@@ -462,8 +451,7 @@
                 <i class="fa-solid fa-hourglass"></i>
               </div>
               <div class="stat-content">
-                <div class="stat-title">آخر عملية تبرع</div>
-                <div class="stat-value">قبل 20 ثانية</div>
+                <div class="stat-title">اخر عملية تبرع قبل 20 ثانية</div>
               </div>
             </div>
           </div>
@@ -481,6 +469,9 @@
           </div>
           <div class="project-image">
             <img src="img/project1.png" alt="سقيا الحرم المكي" />
+          </div>
+          <div class="project-details">
+            نقدم وجبات جافة بعد تجهيزها و توصيلها و توزيعها نيابة عن المتبرع في ساحات الحرم ساهم الأن و كن من الفائزين بالأجر العظيم
           </div>
           <div class="money-collected ">
 
@@ -507,8 +498,8 @@
           <div class="first p-3">
             <div class="footer-text">
 
-              <h2>عــن الجمعية</h2>
-              <p>هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
+              <h2 class="first-title">عــن الجمعية</h2>
+              <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
             </div>
             <div
               class="socialIncons d-flex justify-content-center align-items-center mt-4"
@@ -579,9 +570,9 @@
           <div
             class="fourth d-flex flex-column justify-content-center align-items-center h-100"
           >
-            <h2>معلومات الاتصال</h2>
+            <h2 class="fourth-title">معلومات الاتصال</h2>
             <div
-              class="fristrow d-flex justify-content-center align-items-center flex-wrap"
+              class="fristrow  d-flex justify-content-center align-items-center "
             >
               <a class="contact">
                 <span>0500000</span>
@@ -592,7 +583,7 @@
                 <i class="fa-solid fa-blender-phone"></i>
               </a>
             </div>
-            <div class="Secandrow my-3">
+            <div class="Secandrow  my-3">
               <a class="contact">
                 <span>
                   email@gmail.com

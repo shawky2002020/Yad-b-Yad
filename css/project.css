@@ -1,7 +1,6 @@
 /* General Styles */
 body {
-  font-family: "Tajawal", Arial, sans-serif;
-  background-color: #f8f8f8;
+  font-family: Almarai;
   color: #41555b;
   margin: 0;
   padding: 0;
@@ -11,27 +10,39 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
-  margin-bottom: 10rem;
 }
 
 
 /* Project Header */
 .project-header {
-  max-width: 1000px;
+  max-width: 1400px;
   height: 300px;
-  font-family: brando;
+  width: 100%;
   display: flex;
   flex-flow: row-reverse;
   justify-content: start;
-  margin: 80px auto 20px auto;
+  margin: 2rem auto 60px auto;
   border-radius: 12px;
   padding: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  .project-header-content{
+    flex: 3 1;
+    color: #009174;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .head-img-container{
-  height: 100%;
+  flex: 1 0;
   display: flex;
-  background: #000;
+  align-items: center;
+  padding: 1rem;
+  img{
+    width: 100%;
+    height: fit-content;
+  }
 }
 
 
@@ -41,7 +52,6 @@ body {
 }
 
 .project-title-main {
-  color: var(--dark-color);
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -62,7 +72,7 @@ body {
 }
 
 .water-btn {
-  background-color: #00a78e;
+  background-color: #527D89;
   color: white;
   border: none;
   border-radius: 5px;
@@ -103,8 +113,8 @@ body {
 
 /* Donation Card */
 .donation-card {
-  font-family: brando;
   flex: 1;
+  
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -114,7 +124,6 @@ body {
 }
 
 .hadith-text {
-  font-family: brando;
   font-size: 24px;
   text-align: center;
   margin-bottom: 10px;
@@ -167,17 +176,7 @@ body {
   border-radius: 3px 3px 0 0;
 }
 
-.amount-btn.blue {
-  background-color: #0078d7;
-}
 
-.amount-btn.green {
-  background-color: #22b573;
-}
-
-.amount-btn.yellow {
-  background-color: #f9b233;
-}
 
 /* Custom Amount Input */
 .custom-amount {
@@ -434,6 +433,7 @@ input:checked + .toggle-slider:before {
 .project-card {
   position: relative;
   padding-top: 30px;
+  margin: auto;
 }
 
 .project-title {
@@ -442,7 +442,10 @@ input:checked + .toggle-slider:before {
   border-radius: 8px 8px 0 0;
   font-size: 16px;
   font-weight: bold;
-  font-family: brando;
+}
+.project-details{
+  width: 100%;
+  padding: 1rem;
 }
 
 .share-btn {
@@ -456,7 +459,7 @@ input:checked + .toggle-slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #22b573;
+  color: var(--secondary-color);
   cursor: pointer;
   z-index: 1;
   i {
@@ -486,6 +489,15 @@ input:checked + .toggle-slider:before {
 
 /* Responsive Design */
 @media (max-width: 992px) {
+  .project-header {
+    margin: 0 auto 0 auto;
+
+    height: fit-content;
+    .project-header-content{
+      font-size: 16px;
+  }
+ 
+}
   .project-content {
     flex-direction: column-reverse;
     align-items: center;
@@ -499,6 +511,21 @@ input:checked + .toggle-slider:before {
 }
 
 @media (max-width: 576px) {
+  .project-header {
+    height: fit-content;
+    .project-header-content{
+    font-size: 12px;
+
+  }
+  .head-img-container{
+    display: flex;
+    padding: 1rem;
+    img{
+      width: 100%;
+    }
+  }
+ 
+}
   .inputs-container{
     flex-flow: column;
   }
@@ -566,20 +593,20 @@ input:checked + .toggle-slider:before {
   cursor: pointer;
 }
 
-.blue {
+.accent {
   background: var(--accent-color);
 }
 
-.green {
+.blue {
   background: var(--main-color);
 }
 
-.orange {
-  background: var(--dark-color);
+.green {
+  background: var(--green-color);
 }
 
-.gray {
-  background: var(--neutral-gray);
+.secondary {
+  background: var(--secondary-color);
 }
 
 .custom-amount {
@@ -616,7 +643,7 @@ input:checked + .toggle-slider:before {
 
 .gift-icon {
   margin-left: 10px;
-  color: #00a78e;
+  color: #527D89;
 }
 
 
@@ -683,6 +710,7 @@ input:checked + .toggle-slider:before {
   padding: 8px 20px;
   color: white;
   font-weight: 500;
+  white-space: nowrap;
   transition: all 0.3s ease;
 }
 
@@ -691,7 +719,7 @@ input:checked + .toggle-slider:before {
 }
 
 .complete-order-btn {
-  background-color: #00a78e;
+  background-color: #527D89;
   color: white;
   border: none;
   border-radius: 5px;
@@ -723,7 +751,7 @@ input:checked + .toggle-slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00a78e;
+  background-color: var(--secondary-color);
   color: white;
   height: 5rem;
 }
@@ -753,24 +781,29 @@ input:checked + .toggle-slider:before {
 /* Statistics Section */
 .statistics-section {
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   gap: 20px;
   width: 100%;
   margin: 24px auto;
-  font-family: brando;
 }
 
 .stat-item {
   flex: 1;
   display: flex;
+  flex-flow: row-reverse;
   align-items: center;
-  color: #00a78e;
+  justify-content: space-between;
+  color: #527D89;
+  background: transparent;
+  border: solid 1px;
+  border-radius: 1rem;
 }
 
 .stat-icon {
   width: 50px;
   height: 50px;
-  background-color: #e6f7f4;
+  background-color: var(--accent-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -780,22 +813,23 @@ input:checked + .toggle-slider:before {
 
 .stat-icon i {
   font-size: 20px;
+  color: white;
 }
 
 .stat-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 33px;
+  font-weight: 400;
 }
 
 .stat-title {
-  font-size: 14px;
-  color: #00a78e;
+  color: #388C8C;
   margin-bottom: 5px;
 }
 
 .stat-value {
-  font-size: 16px;
-  font-weight: bold;
   color: #333;
 }
 
@@ -814,6 +848,16 @@ input:checked + .toggle-slider:before {
     flex-direction: column;
     gap: 15px;
   }
+  .stat-item {
+    width: 100%;
+    .stat-title{
+      font-size: 16px;
+    }
+    .stat-icon{
+      width: 35px;
+      height: 35px;
+    }
+  }
 }
 
 /* Checkout container and buttons */
@@ -828,8 +872,8 @@ input:checked + .toggle-slider:before {
 
 .cart-icon-btn {
   background-color: #fff;
-  border: 1px solid #00a78e;
-  color: #00a78e;
+  border: 1px solid #527D89;
+  color: #527D89;
   border-radius: 5px;
   padding: 5px 10px;
   display: flex;
@@ -840,7 +884,7 @@ input:checked + .toggle-slider:before {
 }
 
 .cart-icon-btn:hover {
-  background-color: #00a78e;
+  background-color: #527D89;
   color: #fff;
 }
 
@@ -881,7 +925,6 @@ input:checked + .toggle-slider:before {
   text-align: center;
   transition: all 0.2s ease;
 }
-.i
 
 .donation-amount-btn:not(.active):hover {
   background-color: #e9f7f5;
@@ -944,7 +987,6 @@ input:checked + .toggle-slider:before {
   .gift-text{
     font-size: 14px;
     margin-left: 10px;
-    white-space: nowrap;
   }
   .statistics-section{
     width: 100%;
