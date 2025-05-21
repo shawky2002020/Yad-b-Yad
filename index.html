@@ -33,10 +33,10 @@
   <body>
     <header>
       <div class="topBar">
-          <img class="back" src="../img2/nav-banner.png" alt="">
+          <img class="back" src="img/nav-banner.png" alt="">
           <div class="UserBox ">
             <div onclick="window.location.href='index.html'" class="logoBox p-4 d-none d-lg-block">
-              <img src="img2/logo.png" class="img-fluid logo-img" alt="" />
+              <img src="img/logo.png" class="img-fluid logo-img" alt="" />
             </div>
 
             <div class="Name d-none d-lg-block">
@@ -47,7 +47,7 @@
 
             <div class="useraction mx-auto mx-lg-0">
               <div onclick="window.location.href='index.html'" class="logoBoxModile  d-lg-none text-center">
-                <img src="img2/logo-small.png" class="img-fluid" alt="" />
+                <img src="img/logo-small.png" class="img-fluid" alt="" />
               </div>
 
               <div class="loginbox ">
@@ -78,10 +78,19 @@
                     <a class="me-4"> تبرع الان </a>
                   </div> -->
                 </div>
-                <div class="nav-icon">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                  </button>
+                <div class="nav-left">
+                  <div class="search-icon d-md-none">
+
+                    <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                  </div>
+
+                  <div class="nav-icon">
+                    <button class="navbar-toggler custom-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,7 +107,7 @@
               class="navbar-nav text-center align-content-between mb-2 mb-lg-0 pe-0"
             >
               <li class="nav-item">
-                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link active" href="index.html">الرئيسية</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">من نحن</a>
@@ -469,7 +478,11 @@
     <!-- ... existing code ... -->
 
     <main>
-      <div class="banner p-4">
+      <div class="banner">
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/+966XXXXXXXXX" class="whatsapp-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
         <div class="swiper bannerSwiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -482,11 +495,15 @@
               <div class="text_Layer">
                 <div class="container">
                   <h1>
-                    <span class="green">عطائكم يصل</span>
-                    <span class="yellow"> بكل سهولة</span>
+                    نعطي بلا حد لخير يمتد
                   </h1>
                 </div>
               </div>
+              
+              
+              
+              <!-- Slider Pagination -->
+              <div class="swiper-pagination"></div>
             </div>
 
             <div class="swiper-slide">
@@ -497,8 +514,7 @@
               <div class="text_Layer">
                 <div class="container">
                   <h1>
-                    <span class="green">عطائكم يصل</span>
-                    <span class="yellow"> بكل سهولة</span>
+                    نعطي بلا حد لخير يمتد
                   </h1>
                 </div>
               </div>
@@ -511,8 +527,7 @@
               <div class="text_Layer">
                 <div class="container">
                   <h1>
-                    <span class="green">عطائكم يصل</span>
-                    <span class="yellow"> بكل سهولة</span>
+                    نعطي بلا حد لخير يمتد
                   </h1>
                 </div>
               </div>
@@ -524,112 +539,145 @@
         </div>
       </div>
 
-      <section class="sections mt-5 home">
+      <section class="sections  home">
         <div class="category-container">
           <p class="title text-center">الأقســـــــام</p>
-          <div class="SectionSwiper mt-5">
-            <div class="swiper ProjectSections">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="category-content Card">
-                    <img class="category-img" src="/img2/category-1.png" alt="">
-                      <img class="sub-category-img" src="img2/sub-category1.png" alt="">
-                    <div class="category-desc">
-                      مشاريـــــــــع رمضـــــــــــان
-                  </div>
-                  </div>
+          <div class="SectionSwiper mt-5 desktop-only">
+  <div class="swiper ProjectSections">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="category-content Card">
+          <img class="category-img" src="img/category-1.png" alt="">
+            <img class="sub-category-img" src="img/sub-category1.png" alt="">
+          <div class="category-desc">
+            مشاريـــــــــع رمضـــــــــــان
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-content Card">
+          <img class="category-img" src="img/category-2.png" alt="">
+            <img class="sub-category-img" src="img/sub-category1.png" alt="">
+          <div class="category-desc">
+            مشاريـــــــــع رمضـــــــــــان
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-content Card">
+          <img class="category-img" src="img/category-1.png" alt="">
+            <img class="sub-category-img" src="img/sub-category1.png" alt="">
+          <div class="category-desc">
+            زكاتك المال
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-content Card">
+          <img class="category-img" src="img/category-2.png" alt="">
+            <img class="sub-category-img" src="img/sub-category1.png" alt="">
+          <div class="category-desc">
+            زكاتك المال
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-content Card">
+          <img class="category-img" src="img/category-1.png" alt="">
+            <img class="sub-category-img" src="img/sub-category1.png" alt="">
+          <div class="category-desc">
+            زكاتك المال
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-content Card">
+          <img class="category-img" src="img/category-2.png" alt="">
+            <img class="sub-category-img" src="img/sub-category1.png" alt="">
+          <div class="category-desc">
+            مشاريـــــــــع رمضـــــــــــان
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-content Card">
+          <img class="category-img" src="img/category-1.png" alt="">
+            <img class="sub-category-img" src="img/sub-category1.png" alt="">
+          <div class="category-desc">
+            مشاريـــــــــع رمضـــــــــــان
+        </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-content Card">
+          <img class="category-img" src="img/category-2.png" alt="">
+            <img class="sub-category-img" src="img/sub-category1.png" alt="">
+          <div class="category-desc">
+            مشاريـــــــــع رمضـــــــــــان
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add navigation buttons inside the swiper container -->
+    <div class="swiper-button-prev ProjectSection-button-prev"></div>
+    <div class="swiper-button-next ProjectSection-button-next"></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+          <div class="categories-grid mobile-only">
+            <div class="row">
+              <!-- Category 1 -->
+              <div class="col-6 ">
+                <div class="category-content Card">
+                  <img class="category-img" src="img/category-1.png" alt="">
+                  <img class="sub-category-img" src="img/sub-category1.png" alt="">
+                  <div class="category-desc">الأوقاف</div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="category-content Card">
-                    <img class="category-img" src="/img2/category-2.png" alt="">
-                      <img class="sub-category-img" src="img2/sub-category1.png" alt="">
-                    <div class="category-desc">
-                      مشاريـــــــــع رمضـــــــــــان
-                  </div>
-                  </div>
+              </div>
+              
+              <!-- Category 2 -->
+              <div class="col-6 ">
+                <div class="category-content Card">
+                  <img class="category-img" src="img/category-2.png" alt="">
+                  <img class="sub-category-img" src="img/sub-category1.png" alt="">
+                  <div class="category-desc">المشاريع</div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="category-content Card">
-                    <img class="category-img" src="/img2/category-1.png" alt="">
-                      <img class="sub-category-img" src="img2/sub-category1.png" alt="">
-                    <div class="category-desc">
-                      زكاتك المال
-                  </div>
-                  </div>
+              </div>
+              
+              <!-- Category 3 -->
+              <div class="col-6 ">
+                <div class="category-content Card">
+                  <img class="category-img" src="img/category-1.png" alt="">
+                  <img class="sub-category-img" src="img/sub-category1.png" alt="">
+                  <div class="category-desc">البطاقات الخيرية</div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="category-content Card">
-                    <img class="category-img" src="/img2/category-2.png" alt="">
-                      <img class="sub-category-img" src="img2/sub-category1.png" alt="">
-                    <div class="category-desc">
-                      زكاتك المال
-                  </div>
-                  </div>
+              </div>
+              
+              <!-- Category 4 -->
+              <div class="col-6 ">
+                <div class="category-content Card">
+                  <img class="category-img" src="img/category-2.png" alt="">
+                  <img class="sub-category-img" src="img/sub-category1.png" alt="">
+                  <div class="category-desc">زكاتك المال</div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="category-content Card">
-                    <img class="category-img" src="/img2/category-1.png" alt="">
-                      <img class="sub-category-img" src="img2/sub-category1.png" alt="">
-                    <div class="category-desc">
-                      زكاتك المال
-                  </div>
-                  </div>
+              </div>
+              
+              <!-- Category 5 -->
+              <div class="col-6 ">
+                <div class="category-content Card">
+                  <img class="category-img" src="img/category-1.png" alt="">
+                  <img class="sub-category-img" src="img/sub-category1.png" alt="">
+                  <div class="category-desc">مشاريع رمضان</div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="category-content Card">
-                    <img class="category-img" src="/img2/category-2.png" alt="">
-                      <img class="sub-category-img" src="img2/sub-category1.png" alt="">
-                    <div class="category-desc">
-                      مشاريـــــــــع رمضـــــــــــان
-                  </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="category-content Card">
-                    <img class="category-img" src="/img2/category-1.png" alt="">
-                      <img class="sub-category-img" src="img2/sub-category1.png" alt="">
-                    <div class="category-desc">
-                      مشاريـــــــــع رمضـــــــــــان
-                  </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="category-content Card">
-                    <img class="category-img" src="/img2/category-2.png" alt="">
-                      <img class="sub-category-img" src="img2/sub-category1.png" alt="">
-                    <div class="category-desc">
-                      مشاريـــــــــع رمضـــــــــــان
-                  </div>
-                  </div>
-                </div>
-
-
-       
               </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <!-- <div class="swiper-button-prev ProjectSection-button-prev"></div>
-            <div class="swiper-button-next ProjectSection-button-next"></div> -->
           </div>
         </div>
       </section>
 
-      <section class="RamdanProjects mt-5">
+      <section class="RamdanProjects mt-5 desktop-only">
         <div class="container pb-2 text-center">
           <h2>برامج متنوعة تستحق عطائكم و دعمكم</h2>
-          <div
-            class="Projects d-flex justify-content-center align-items-center my-4"
-          >
-            <div class="project active px-3 py-1">
-              <h4>إفطار صائم</h4>
-            </div>
-            <div class="project mx-3 px-3 py-1">
-              <h4>سقيا الماء</h4>
-            </div>
-            <div class="project px-3 py-1">
-              <h4>الاضاحي</h4>
-            </div>
-          </div>
           <div class="Ramdan position-relative">
             <div class="swiper RamdanProjectSwiper">
               <!-- Additional required wrapper -->
@@ -676,7 +724,11 @@
 
                     </div>
                   </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
+                  </div>
                 </div>
+
 
                 <div class="swiper-slide">
                   <!-- Card with input and fixed amounts -->
@@ -721,6 +773,9 @@
 
                     </div>
                   </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
+                  </div>
                 </div>
 
                 <div class="swiper-slide">
@@ -745,7 +800,8 @@
                             %50
                           </div>
                         </div>
-                      </div>                  <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
+                      </div>  
+                                      <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
                         <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
                         <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
                         <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
@@ -762,6 +818,9 @@
                         </button>
                       </div>
                     </div>
+                  </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
                   </div>
                 </div>
 
@@ -804,6 +863,9 @@
                       </div>
                     </div>
                   </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
+                  </div>
                 </div>
 
                </div>
@@ -811,12 +873,10 @@
             <div class="swiper-button-next RamdanProject-button-next"></div>
             <div class="swiper-button-prev RamdanProject-button-prev"></div>
           </div>
-          <div class="infoBox text-center mt-1">
-            <a class="button-more d-inline-block"> المزيـــــــــد </a>
-          </div>
+         
         </div>
       </section>
-      <section class="RamdanProjects high-sales-projects mt-5">
+      <section class="RamdanProjects high-sales-projects mt-5 desktop-only">
         <div class="container pb-2 text-center">
           <p class="title">المشاريع الأكثر طلبا</p>
           
@@ -1013,22 +1073,433 @@
             <div class="swiper-button-next RamdanProject-button-next"></div>
             <div class="swiper-button-prev RamdanProject-button-prev"></div>
           </div>
+          
+        </div>
+      </section>
+      <section class="RamdanProjects mobile-only ">
+        <div class="container  text-center">
+          <h2>برامج متنوعة تستحق عطائكم و دعمكم</h2>
+          <div class="Ramdan position-relative">
+            <div class="swiper RamdanProjectSwiper">
+              <!-- Additional required wrapper -->
+               <div class="wrapper">
+
+                <div  class="slide">
+                  <!-- Card with one fixed amount only -->
+                  <div  class="custom-card">
+                    <div class="card-content">
+
+                    
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                        <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                      </div>
+  
+                      <div class="money-collected">
+
+                        <div class="progress my-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span >تم جمع: <br >
+                            <span class="value">500,000</span>  <span class="currency">ر.س</span> </br></span>
+                          <span>المبلغ المتبقي: <br > <span class="value">500,000 </span><span class="currency">ر.س</span> </br></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
+                    <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
+                    <!-- <span class="custom-card-donation-label">مبلغ التبرع</span> -->
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between  custom-card-action-row">
+                      <input  class="form-control custom-card-input" type="text" placeholder="مبلغ التبرع">
+
+                      <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                        تبرع الآن
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                      </button>
+                   
+                   
+                    </div>
+                  </div>
+                </div>
+                <div  class="slide">
+                  <!-- Card with one fixed amount only -->
+                  <div  class="custom-card">
+                    <div class="card-content">
+
+                    
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                        <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                      </div>
+  
+                      <div class="money-collected">
+
+                        <div class="progress my-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span >تم جمع: <br >
+                            <span class="value">500,000</span>  <span class="currency">ر.س</span> </br></span>
+                          <span>المبلغ المتبقي: <br > <span class="value">500,000 </span><span class="currency">ر.س</span> </br></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-open-container">
+
+                    <input class="form-control open" type="text" placeholder="مبلغ التبرع">
+                  </div>
+
+                    <div class="d-flex align-items-center justify-content-between  custom-card-action-row">
+                      <input  class="form-control custom-card-input" type="text" placeholder="مبلغ التبرع">
+
+                      <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                        تبرع الآن
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                      </button>
+                   
+                   
+                    </div>
+                  </div>
+                </div>
+                <div  class="slide">
+                  <!-- Card with one fixed amount only -->
+                  <div  class="custom-card">
+                    <div class="card-content">
+
+                    
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                        <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                      </div>
+  
+                      <div class="money-collected">
+
+                        <div class="progress my-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span >تم جمع: <br >
+                            <span class="value">500,000</span>  <span class="currency">ر.س</span> </br></span>
+                          <span>المبلغ المتبقي: <br > <span class="value">500,000 </span><span class="currency">ر.س</span> </br></span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
+                    <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
+                    <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
+                    <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
+                    <input class="form-control custom-card-input" type="text" placeholder="مبلغ ">
+
+                  </div>
+                    <div class="d-flex align-items-center justify-content-between  custom-card-action-row">
+                      <input  class="form-control custom-card-input" type="text" placeholder="مبلغ التبرع">
+
+                      <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                        تبرع الآن
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                      </button>
+                   
+                   
+                    </div>
+                  </div>
+                </div>
+                <div  class="slide">
+                  <!-- Card with one fixed amount only -->
+                  <div  class="custom-card">
+                    <div class="card-content">
+
+                    
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                        <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                      </div>
+  
+                      <div class="money-collected">
+
+                        <div class="progress my-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span >تم جمع: <br >
+                            <span class="value">500,000</span>  <span class="currency">ر.س</span> </br></span>
+                          <span>المبلغ المتبقي: <br > <span class="value">500,000 </span><span class="currency">ر.س</span> </br></span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
+                    <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
+                    <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
+                    <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
+                    <!-- <span class="custom-card-donation-label">مبلغ التبرع</span> -->
+                  </div>
+                    <div class="d-flex align-items-center justify-content-between  custom-card-action-row">
+                      <input  class="form-control custom-card-input" type="text" placeholder="مبلغ التبرع">
+
+                      <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                        تبرع الآن
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                      </button>
+                   
+                   
+                    </div>
+                  </div>
+                </div>
+
+               </div>
+            </div>
+            <div class="swiper-button-next RamdanProject-button-next"></div>
+            <div class="swiper-button-prev RamdanProject-button-prev"></div>
+          </div>
           <div class="infoBox text-center mt-1">
-            <a class="button-more d-inline-block"> المزيـــــــــد </a>
+            <button class="button-more d-inline-block"> المزيـــــــــد </button>
+          </div>
+        </div>
+      </section>
+      <section class="RamdanProjects high-sales-projects  mobile-only">
+        <div class="container text-center">
+          <p class="title">المشاريع الأكثر طلبا</p>
+          
+          <div class="Ramdan position-relative">
+            <div class="swiper RamdanProjectSwiper">
+              <!-- Additional required wrapper -->
+               <div class="wrapper">
+
+                <div  class="slide">
+                  <!-- Card with one fixed amount only -->
+                  <div  class="custom-card">
+                    <div class="card-content">
+
+                    
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                        <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                      </div>
+  
+                      <div class="money-collected">
+
+                        <div class="progress my-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span >تم جمع: <br >
+                            <span class="value">500,000</span>  <span class="currency">ر.س</span> </br></span>
+                          <span>المبلغ المتبقي: <br > <span class="value">500,000 </span><span class="currency">ر.س</span> </br></span>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
+                    <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
+                    <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
+                    <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
+                    <input class="form-control custom-card-input" type="text" placeholder="مبلغ ">
+
+                  </div>
+                    <div class="d-flex align-items-center justify-content-between  custom-card-action-row">
+                      <input  class="form-control custom-card-input" type="text" placeholder="مبلغ التبرع">
+
+                      <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                        تبرع الآن
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                      </button>
+                   
+                   
+                    </div>
+                  </div>
+                </div>
+                <div  class="slide">
+                  <!-- Card with one fixed amount only -->
+                  <div  class="custom-card">
+                    <div class="card-content">
+
+                    
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                        <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                      </div>
+  
+                      <div class="money-collected">
+
+                        <div class="progress my-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span >تم جمع: <br >
+                            <span class="value">500,000</span>  <span class="currency">ر.س</span> </br></span>
+                          <span>المبلغ المتبقي: <br > <span class="value">500,000 </span><span class="currency">ر.س</span> </br></span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                    <div class="d-flex align-items-center justify-content-between  custom-card-action-row">
+                      <input  class="form-control custom-card-input" type="text" placeholder="مبلغ التبرع">
+
+                      <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                        تبرع الآن
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                      </button>
+                   
+                   
+                    </div>
+                  </div>
+                </div>
+                <div  class="slide">
+                  <!-- Card with one fixed amount only -->
+                  <div  class="custom-card">
+                    <div class="card-content">
+
+                    
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                        <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                      </div>
+  
+                      <div class="money-collected">
+
+                        <div class="progress my-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span >تم جمع: <br >
+                            <span class="value">500,000</span>  <span class="currency">ر.س</span> </br></span>
+                          <span>المبلغ المتبقي: <br > <span class="value">500,000 </span><span class="currency">ر.س</span> </br></span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                    <div class="d-flex align-items-center justify-content-between  custom-card-action-row">
+                      <input  class="form-control custom-card-input" type="text" placeholder="مبلغ التبرع">
+
+                      <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                        تبرع الآن
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                      </button>
+                   
+                   
+                    </div>
+                  </div>
+                </div>
+                <div  class="slide">
+                  <!-- Card with one fixed amount only -->
+                  <div  class="custom-card">
+                    <div class="card-content">
+
+                    
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                        <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                      </div>
+  
+                      <div class="money-collected">
+
+                        <div class="progress my-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span >تم جمع: <br >
+                            <span class="value">500,000</span>  <span class="currency">ر.س</span> </br></span>
+                          <span>المبلغ المتبقي: <br > <span class="value">500,000 </span><span class="currency">ر.س</span> </br></span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                    <div class="d-flex align-items-center justify-content-between  custom-card-action-row">
+                      <input  class="form-control custom-card-input" type="text" placeholder="مبلغ التبرع">
+
+                      <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                        تبرع الآن
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                      </button>
+                   
+                   
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-button-next RamdanProject-button-next"></div>
+            <div class="swiper-button-prev RamdanProject-button-prev"></div>
+          </div>
+          <div class="infoBox text-center mt-1">
+            <button class="button-more d-inline-block"> المزيـــــــــد </button>
           </div>
         </div>
       </section>
 
       <div class="statistics">
         <div class="stat-container">
-          <img class="back1" src="img2/leaves.png" alt="">
-          <img class="back2" src="img2/leaves.png" alt="">
+          <img class="back1" src="img/leaves.png" alt="">
+          <img class="back2" src="img/leaves.png" alt="">
           <div class="statistics-content">
             <div class="statistics-header">
               <h2 class="statistics-title">احصائيات الجمعية</h2>
               <p class="statistics-subtitle">إجمالي تبرعات للجمعية يدا بيد</p>
             </div>
-            <div class="statistics-grid">
+            
+            <!-- Desktop Statistics Grid (will be hidden on mobile) -->
+            <div class="statistics-grid desktop-only">
               <!-- First row -->
               <div class="statistics-row">
                 <div class="stat-item">
@@ -1107,57 +1578,158 @@
                 </div>
               </div>
             </div>
+            
+            <!-- Mobile Statistics Swiper (will only show on mobile) -->
+            <div class="statistics-swiper-container mobile-only">
+              <div class="swiper statisticsSwiper">
+                <div class="swiper-wrapper">
+                  <!-- Swiper Slides -->
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">عدد المتطوعين</div>
+                      <div class="stat-value">+942</div>
+                      <div class="stat-unit">متطوع</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">زكاة الأيتام</div>
+                      <div class="stat-value">+3.59</div>
+                      <div class="stat-unit">ألف - رأس</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">كفالات الأيتام</div>
+                      <div class="stat-value">+593</div>
+                      <div class="stat-unit">يتيم</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">غسيل الكلى</div>
+                      <div class="stat-value">+767</div>
+                      <div class="stat-unit">مشروع</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">سقيا ماء</div>
+                      <div class="stat-value">+3.5</div>
+                      <div class="stat-unit">مليون لتر</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">سقيا ماء</div>
+                      <div class="stat-value">+4.59</div>
+                      <div class="stat-unit">مليون لتر</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">أضعاف للمصابين</div>
+                      <div class="stat-value">+438</div>
+                      <div class="stat-unit">مصاب</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">كفالات الأيتام</div>
+                      <div class="stat-value">+463</div>
+                      <div class="stat-unit">يتيم</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">سقيا ماء</div>
+                      <div class="stat-value">+323</div>
+                      <div class="stat-unit">مليون لتر</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">زكاة الأيتام</div>
+                      <div class="stat-value">+5.59</div>
+                      <div class="stat-unit">ألف - رأس</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">سقيا ماء</div>
+                      <div class="stat-value">+1.59</div>
+                      <div class="stat-unit">مليون لتر</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="stat-item">
+                      <div class="stat-label">عدد المتطوعين</div>
+                      <div class="stat-value">+486</div>
+                      <div class="stat-unit">متطوع</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="statistics-image">
-          <img src="img2/hand.png" alt="يد تحمل نبتة">
+          <img src="img/hand.png" alt="يد تحمل نبتة">
         </div>
       </div>
       
       <section class="AdsBanner mt-4">
-        <div class="container">
+        <div class="banner-container">
           <div class="banner-wrapper">
-            <div class="banner-row">
-              <div class="banner-card arafah-banner">
-                <img src="img/banner3.png" alt="يوم عرفة" />
-                <div class="banner-content arafah-content">
-                  <div class="banner-text">
-                    <h3 class="banner-title">يوم عرفة</h3>
-                    <p class="banner-description">خير يوم طلعت عليه الشمس</p>
-                    <div class="banner-cta">
-                      <span>تبرع الآن</span>
-                      <i class="fa-solid fa-caret-left"></i>
-                    </div>
+            <div class="kaba-banner banner-container">
+              <img src="img/kaba.jpg" alt="">
+            </div>
+            <div class="banner-row ">
+              <div class="banner-card duaa-banner  ">
+                <img src="img/duaa.jpg" alt="يوم عرفة" />
+                <div class="banner-content duaa-content">
+                  <div class="banner-text duaa-text">
+                    مشاريع
+                    <br> 
+                    دعم الأسر
+<br>
+المتعففة
+               </div>
+            </div>
+          </div>
+          <div class="right-banners banner-container">
+            <div class="banner-card salam-banner">
+              <img src="img/salam.png" alt="أحسناكم مستمر" class="banner-image" />
+              <div class="banner-content">
+                <div class="banner-text">
+                  <h3 class="banner-title">سفـــــراء الخــــيــــــر</h3>
+                  <div class="banner-desc">
+                    شارك فرص التبرع في منصات التواصل الاجتماعي و كن احد سفراء غراس
                   </div>
-                </div>
-              </div>
-              <div class="right-banners">
-                <div class="banner-card charity-banner">
-                  <img src="img/banner2.png" alt="أحسناكم مستمر" class="banner-image" />
-                  <div class="banner-content">
-                    <div class="banner-text">
-                      <h3 class="banner-title">أحسناكم مستمر</h3>
-                      <div class="banner-cta">
-                        <span>أبرز المحسنين</span>
-                        <i class="fa-solid fa-caret-left"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="banner-card water-banner">
-                  <img src="img/water.png" alt="سقي الماء" class="banner-image" />
-                  <div class="banner-content">
-                    <div class="banner-text">
-                      <h3 class="banner-title">سقي الماء</h3>
-                      <div class="banner-cta">
-                        <span>تبرع الآن</span>
-                        <i class="fa-solid fa-caret-left"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <div class="banner-cta">
+                    <span>أبرز سفراء الخير</span>
+                    <i class="fa-solid fa-caret-left"></i>
+            </div>
               </div>
             </div>
+              </div>
+            <div class="banner-card water-banner">
+              <img src="img/water.png" alt="سقي الماء" class="banner-image" />
+              <div class="banner-content">
+                <div class="banner-text">
+                  <h3 class="banner-title">أحسانكم مستمر</h3>
+                  <div class="banner-cta">
+                    <span>تبرع الآن</span>
+                    <i class="fa-solid fa-caret-left"></i>
+                  </div>
+            </div>
+            </div>
+          </div>
+        </div>
+                </div>
+           </div>
           </div>
         </div>
       </section>
@@ -1169,8 +1741,8 @@
           <div class="first p-3">
             <div class="footer-text">
 
-              <h2>عــن الجمعية</h2>
-              <p>هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
+              <h2 class="first-title">عــن الجمعية</h2>
+              <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
             </div>
             <div
               class="socialIncons d-flex justify-content-center align-items-center mt-4"
@@ -1241,9 +1813,9 @@
           <div
             class="fourth d-flex flex-column justify-content-center align-items-center h-100"
           >
-            <h2>معلومات الاتصال</h2>
+            <h2 class="fourth-title">معلومات الاتصال</h2>
             <div
-              class="fristrow d-flex justify-content-center align-items-center flex-wrap"
+              class="fristrow  d-flex justify-content-center align-items-center "
             >
               <a class="contact">
                 <span>0500000</span>
@@ -1254,7 +1826,7 @@
                 <i class="fa-solid fa-blender-phone"></i>
               </a>
             </div>
-            <div class="Secandrow my-3">
+            <div class="Secandrow  my-3">
               <a class="contact">
                 <span>
                   email@gmail.com

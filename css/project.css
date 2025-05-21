@@ -18,19 +18,23 @@ body {
 /* Project Header */
 .project-header {
   max-width: 1000px;
+  height: 300px;
   font-family: brando;
   display: flex;
+  flex-flow: row-reverse;
   justify-content: start;
   margin: 80px auto 20px auto;
-  background-color: var(--light-bg);
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-
-.project-header-content {
-  text-align: center;
+.head-img-container{
+  height: 100%;
+  display: flex;
+  background: #000;
 }
+
+
 
 .project-category {
   margin-bottom: 15px;
@@ -43,20 +47,6 @@ body {
   margin-bottom: 15px;
 }
 
-.project-description {
-  color: #555;
-  font-size: 16px;
-  max-width: 700px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
-}
-
-.project-stats-summary {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-}
 
 .stat-summary-item {
   display: flex;

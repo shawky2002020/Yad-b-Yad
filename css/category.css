@@ -7,7 +7,6 @@
 }
 .title{
   text-align: center;
-  padding-top: 4rem;
 }
 .category .ProjectSections {
   .swiper-wrapper {
@@ -89,7 +88,6 @@ h2{
     }
   }
   .Ramdan {
-    margin-bottom: 5rem;
 
     .CardBox {
       .imgbox {
@@ -123,15 +121,7 @@ h2{
       font-size: 60px;
     }
   }
-  .infoBox {
-    .button-more {
-      background-color: #35a697 !important;
-      color: #fff;
-      padding: 8px;
-      text-align: center;
-      border-radius: 10px !important;
-    }
-  }
+  
 }
 .back-btn{
   position: absolute;

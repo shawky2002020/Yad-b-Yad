@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
 @layer base;
 
 @layer base {
@@ -38,20 +39,14 @@
  
 
   :root {
-    --main-color: #35a697;
-    --scandeny-color: #fff;
+    --main-color: #10353C;
+    --secondary-color: #C1AD7B;
+    --accent-color: #009174;
+    --green-color: #9AC94C;
+    --white-color: #fff;
     --font-color: #929292;
-    --gradient-start: 55%;
-    --gradient-end: 50%;
   }
-  :root {
-    --main-color: #00d28c; /* Bright green (leaf) */
-    --secondary-color: #00767a; /* Teal-blue (hand) */
-    --accent-color: #f29c1f; /* Orange (small leaf) */
-    --light-bg: #f3fdfb; /* Light background */
-    --dark-color: #004f4f; /* Darker teal for text */
-    --neutral-gray: #6c757d; /* Medium gray for subtle elements */
-  }
+
   input {
     text-align: right;
   }
@@ -106,6 +101,7 @@ body {
   color: #86795A;
   font-size: 3rem;
   font-weight: 800;
+  margin: 1rem 0;
 
 }
 
@@ -113,10 +109,12 @@ button {
   border: none;
 }
 
-/* .whatsapp-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+/* WhatsApp Icon Styles */
+.whatsapp-icon {
+  z-index: 2;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
   background-color: #25d366;
   color: white;
   border-radius: 50%;
@@ -129,20 +127,40 @@ button {
   z-index: 1000;
   transition: transform 0.3s ease;
   text-decoration: none;
-  &:hover {
-    color: #fff;
-  }
 }
 
 .whatsapp-icon:hover {
   transform: scale(1.1);
-  cursor: pointer;
+  color: #fff;
 }
 
 .whatsapp-icon i {
-  font-size: 24px;
-} */
+  font-size: 30px;
+}
 
+/* Slider Pagination Styles */
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
 /*/////////////////////////////////////////////////////////Index Page ////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .topBar {
@@ -154,6 +172,73 @@ button {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  .custom-hamburger {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hamburger-bar {
+  display: block;
+  border-radius: 3px;
+  transition: 0.3s;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 1rem;
+}
+
+.hamburger-bar:nth-child(1) {
+  width: 20px;
+  transform: translateX(4px);
+}
+.hamburger-bar:nth-child(2) {
+  width: 32px;
+}
+.hamburger-bar:nth-child(3) {
+  width: 18px;
+}
+
+/* Animation for hamburger menu */
+.custom-hamburger.active .hamburger-bar:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+  width: 32px;
+}
+.custom-hamburger.active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+.custom-hamburger.active .hamburger-bar:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+  width: 32px;
+}
+  .nav-left{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    .search-icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #fff;
+      margin: 12px;
+
+      i{
+        font-size: 1.2rem;
+      }
+    }
+  }
   .back{
     z-index: 0;
     position: absolute;
@@ -166,7 +251,7 @@ button {
   .Name {
     position: absolute;
     right: 40%;
-    top: 2rem;
+    top: 4.5rem;
     font-family: brando;
     white-space: nowrap;
     font-size: 2rem;
@@ -204,9 +289,10 @@ button {
     .user{
       display: flex;
       justify-content: center;
+      margin-left: 2rem;
     }
     .logoBoxModile {
-      width: 315px;
+      width: 215px;
       cursor: pointer;
       img{
         width: 100%;
@@ -234,7 +320,7 @@ button {
         padding: 10px 12px !important;
       }
       .Badge {
-        background-color: #f7931e;
+        background-color: var(--secondary-color);
       }
       .usertext {
         border-top-left-radius: 7px;
@@ -301,7 +387,7 @@ button {
     align-items: end;
     
     .search-form {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: #0D0D0D1A;
       border-radius: 20px;
       display: flex;
       align-items: end;
@@ -311,9 +397,11 @@ button {
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
 
-      
+      ::placeholder{
+        color: #00000066;
+      }
       i {
-        color: var(--secondary-color);
+        color: #00000066;
         font-size: 1.2rem;
         height: 100%;
         width: 40px;
@@ -322,7 +410,6 @@ button {
         align-items: center;
         cursor: pointer;
         transition: all 0.3s ease;
-        background: #00000014;
         &:hover {
           transform: scale(1.1);
         }
@@ -369,6 +456,10 @@ button {
     gap: 1.2rem;
   }
 .nav-item {
+  .active {
+    color: #FFFFFF;
+    transform: translateY(-2px);
+  }
   a {
     color: #10353c;
     font-size: 1.4rem;
@@ -380,10 +471,8 @@ button {
       transform: translateY(-2px);
     }
 
-    &:active {
-      color: #FFFFFF;
-      transform: translateY(0);
-    }
+    
+
   }
 }
 
@@ -405,8 +494,14 @@ main {
   width: 100%;
   .banner {
     position: relative;
+    width: 100%;
+    .swiper-slide{
+      width: 100% ;
+    }
     .img_Layer {
       z-index: 2;
+      width: 100%;
+      
     }
     .text_Layer {
       position: absolute;
@@ -414,18 +509,12 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 3;
-      color: #fff;
+      color: var(--secondary-color);
       width: fit-content;
       h1 {
         font-size: 60px;
-        .green {
-          font-weight: bolder;
-          color: #00838b;
-        }
-        .yellow {
-          font-weight: 100;
-          color: #d78800;
-        }
+        font-weight: 800;
+        font-family: brando;
       }
     }
 
@@ -459,6 +548,7 @@ main {
         position: absolute;
         width: 100%;
         height: 100%;
+        padding: 0 4px;
       }
       .sub-category-img {
         position: absolute;
@@ -509,91 +599,179 @@ main {
       font-size: 20px;
     }
   }
+  /* Categories Grid Layout */
+.categories-grid {
+  display: none; /* Hidden by default */
+}
 
-  .AdsBanner {
-    .FirstBanner {
-      .banner {
-        .contant {
-          position: absolute;
-          top: 36%;
-          left: 9%;
-          h4 {
-            font-size: 30px;
-          }
-          h5 {
-            font-size: 25px;
-          }
-          * {
-            color: #736357;
-          }
+.categories-grid .Card {
+  width: 100% !important;
+  height: 200px !important;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.categories-grid .category-img {
+  position: absolute;
+  width: 100% !important;
+  object-fit: contain;
+}
+
+.categories-grid .sub-category-img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.categories-grid .category-desc {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: #86795A;
+  font-family: droid;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .mobile-only {
+    display: block !important;
+    
+    
+  }
+  
+  .categories-grid .row {
+    padding: 1rem;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  
+  .categories-grid .col-6 {
+  
+    height: 205px;
+  }
+
+ .categories-grid .Card {
+   .category-desc {
+    font-size: 1.2rem !important;
+    width: 80%;
+  }
+ }
+ .AdsBanner {
+  margin: 0 !important;
+ }
+}
+
+.AdsBanner {
+  .FirstBanner {
+    .banner {
+      .contant {
+        position: absolute;
+        top: 36%;
+        left: 9%;
+        h4 {
+          font-size: 30px;
         }
-      }
-    }
-    .secandBanner {
-      .content {
-        .FristRow {
-          height: 200px;
-          .bg {
-            background-image: url("../img/banner4.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
-            width: 100%;
-          }
-          .text {
-            color: #fff;
-            position: absolute;
-            top: 45%;
-            right: 20%;
-          }
+        h5 {
+          font-size: 25px;
         }
-        .SeacandRow {
-          height: 200px;
-          .bg {
-            background-image: url("../img/banner2.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 100%;
-            width: 100%;
-          }
-          .text {
-            color: #28564d;
-            position: absolute;
-            top: 31%;
-            right: 20%;
-          }
-        }
-      }
-      .thridBanner {
-        .text_layer {
-          position: absolute;
-          top: 25%;
-          right: 50%;
-          transform: translate(50%, -50%);
-          color: #fff;
-          font-size: 20px;
+        * {
+          color: #736357;
         }
       }
     }
   }
+  .secandBanner {
+    .content {
+      .FristRow {
+        height: 200px;
+        .bg {
+          background-image: url("../img/banner4.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+        }
+        .text {
+          color: #fff;
+          position: absolute;
+          top: 45%;
+          right: 20%;
+        }
+      }
+      .SeacandRow {
+        height: 200px;
+        .bg {
+          background-image: url("../img/banner2.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 100%;
+          width: 100%;
+        }
+        .text {
+          color: #28564d;
+          position: absolute;
+          top: 31%;
+          right: 20%;
+        }
+      }
+    }
+    .thridBanner {
+      .text_layer {
+        position: absolute;
+        top: 25%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
 }
 .RamdanProjects {
   h2 {
     color: #004656;
   }
-  .Ramdan {
-    margin-bottom: 5rem;
-  }
+  
 
   .infoBox {
     .button-more {
-      background-color: #35a697 !important;
-      color: #fff;
-      padding: 8px;
+      background:transparent;
+      color: #666666;
+      border: 2px solid #666666 ;
+      border-radius: 999px !important;
+      padding: 0rem 2.5rem;
+      font-size: 1.3rem;
+      font-family: inherit;
+      font-weight: 700;
       text-align: center;
-      border-radius: 10px !important;
+      transition: all 0.2s;
+      box-shadow: none;
+      outline: none;
+      display: inline-block;
+    }
+    
+    .button-more:hover,
+    .button-more:focus {
+      background: #f5f5f5 !important;
+      color: #333 !important;
+      border-color: #666 !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      text-decoration: none;
+      transform: translateY(-2px);
     }
   }
 }
@@ -618,13 +796,14 @@ main {
   }
 }
 .high-sales-projects{
+
   position: relative;
   .CardBox{
     padding-bottom: 4rem;
 
   }
   .title{
-    margin: 4rem 0 ;
+    margin: 4rem 0 2rem 0 ;
   }
 .view-details {
   position: absolute;
@@ -652,7 +831,7 @@ main {
 }
 
 footer {
-  font-family: brando;
+  font-family:almarai;
   border-radius: 1rem 1rem 0 0;
   position: relative;
   z-index: 500;
@@ -697,8 +876,16 @@ footer {
       z-index: 50; /* Higher than .headfooter */
       width: 90%;
       margin: auto;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
       pointer-events: none; /* So clicks go through to image if needed */
+      .first-title{
+        font-weight: 700;
+        font-size: 29px;
+      }
+      .first-text{
+        font-size: 19px;
+        color: #015263;
+        font-weight: 700;
+      }
     }
   }
   .secand {
@@ -711,13 +898,17 @@ footer {
     padding: 20px 0;
     h5 {
       color: #015263;
+      font-weight: 700;
       font-weight: bolder;
-      font-size: 20px;
+      font-size: 29px;
     }
     ul {
       list-style:disc;
       li {
+        gap: 4px;
         color: #015263;
+        font-weight: 700 !important;
+        font-size: 20px;
         margin-top: 10px;
         font-weight: bolder;
       }
@@ -749,17 +940,18 @@ footer {
     background: #E9E5DA;
     padding-bottom: 2rem;
 
-    h2 {
+    .fourth-title {
       color: #015263;
       font-weight: bolder;
-      font-size: 20px;
+      font-size: 29px;
+      font-weight: 700;
+      padding: 2rem;
     }
     .contact{
       display: flex;
       flex-flow: row nowrap;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
-      gap: 10px;
     }
     i{
       color: #fff;
@@ -782,34 +974,46 @@ footer {
     .fristrow {
       gap: 10px;
       a {
-        width: 100%;
-        text-align: center;
+        width: 140px;
+        text-align: left;
         border-radius: 10px;
         padding: 4px 10px;
-        background-color: #015263;
-        color: #fff !important ;
+        color: #015263;
+        background-color: #D6D0C2;
         font-size: 17px;
         text-decoration: none;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 4px 10px;
+
       }
     }
     .Secandrow {
-      text-decoration: none;
+      width: 290px;
+      text-align: left;
 
 
       a {
         width: 100%;
-        text-align: center;
+        text-align: left;
         border-radius: 10px;
-        padding: 5px 72px;
-        background-color: #015263;
-        color: #fff !important ;
+        color: #015263;
+        background-color: #D6D0C2;
         font-size: 17px;
+        text-decoration: none ;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 4px 10px;
+        ;
+
       }
     }
     .ThridRow {
       gap: 10px;
       img {
-        width: 100px;
+        width: 140px;
       }
     }
     p {
@@ -881,6 +1085,10 @@ footer {
 }
 
 @media screen and (max-width: 991.9px) {
+  .whatsapp-icon{
+    bottom: 30px;
+    left: 30px;
+  }
   .back{
     display: none;
   }
@@ -920,6 +1128,21 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+  .whatsapp-icon{
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    left: 20px;
+  }
+ .topBar .hamburger-bar{
+    height: 4px !important;
+    padding: 0!important;
+    margin: 3px;
+  }
+  .search-icon {
+    margin: 0 2px!important;
+   
+}
   .sections .category-container {
     .Card{
       width: 180px;
@@ -1036,6 +1259,244 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
 }
 
+/* Ramadan Projects Mobile Cards */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .mobile-only {
+    display: block !important;
+  }
+  .view-details{
+    display: none;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    display: none;
+  }
+
+  .statistics{
+    padding: 1rem 0 !important;
+    min-height: 300px !important;
+  }
+  
+  /* Statistics Swiper Fixes */
+  .statistics-swiper-container {
+    position: absolute;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+  }
+  
+  .statisticsSwiper {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  
+  .statisticsSwiper .swiper-slide {
+    background-color: #f5e9d3;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  .statisticsSwiper .stat-item {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .statisticsSwiper .stat-label {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .statisticsSwiper .stat-value {
+    color: #22B573;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .statisticsSwiper .stat-unit {
+    color: #999;
+    font-size: 12px;
+  }
+  
+  .statisticsSwiper .swiper-pagination {
+    position: relative;
+    bottom: 0;
+    margin-top: 15px;
+  }
+  
+  .statisticsSwiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #ddd;
+    opacity: 1;
+    margin: 0 4px;
+  }
+  
+  .statisticsSwiper .swiper-pagination-bullet-active {
+    background: #22B573;
+    width: 20px;
+    border-radius: 4px;
+  }
+  
+  .ramadan-cards-mobile {
+    padding: 0 15px;
+  }
+  
+  .ramadan-card {
+    background-color: #f9f6f1;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ramadan-card-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    position: relative;
+  }
+  
+  .ramadan-card-header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    background-color: transparent;
+    text-align: right;
+  }
+  
+  .ramadan-card-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .ramadan-card-image {
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .ramadan-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 12px 12px 0;
+  }
+  
+  .ramadan-card-details {
+    width: 60%;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ramadan-card-progress {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .ramadan-card-progress .progress {
+    height: 15px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .ramadan-card-progress .progress-bar {
+    background-color: #22B573;
+    color: white;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .ramadan-card-amounts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+  
+  .amount-collected, .amount-remaining {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .amount-remaining {
+    align-items: flex-end;
+  }
+  
+  .amount-collected span, .amount-remaining span {
+    color: #666;
+    margin-bottom: 3px;
+  }
+  
+  .amount-collected strong, .amount-remaining strong {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .ramadan-card-actions {
+    display: flex;
+    gap: 5px;
+    margin-top: auto;
+  }
+  
+  .donation-amount-btn {
+    flex: 1;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 8px 5px;
+    color: #666;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  
+  .donate-now-btn {
+    flex: 1;
+    background-color: #22B573;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .donate-now-btn i {
+    margin-left: 5px;
+  }
+}
+
 /* Make buttons more visible on hover of the slider area */
 .Ramdan:hover .swiper-button-next,
 .Ramdan:hover .swiper-button-prev {
@@ -1053,7 +1514,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   background-color: #DDECE9;
   min-height: 500px;
   padding: 100px 0;
-  margin: 40px 0;
+  margin: 40px 0 0 0;
   position: relative;
   overflow: hidden;
   .back1,.back2{
@@ -1078,7 +1539,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   position: relative;
   width: 95%;
   margin: auto;
-  margin:0 1rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -1089,11 +1549,10 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 .statistics-content {
   flex: 1;
   text-align: right;
-  padding-right: 20px;
 }
 
 .statistics-header {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .statistics-title {
@@ -1183,13 +1642,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
  .stat-unit{
     font-size: 16px;
   }
-  footer{
-    .fristrow,.Secandrow{
-      width: 200px !important;
-    }
-    
-    
-  }
+  
 }
 /* Responsive styles */
 @media (max-width: 992px) {
@@ -1209,9 +1662,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     gap: 20px;
   }
 
-.stat-item {
-    padding: 0;
-  }
+
 
 .stat-divider {
     display: none;
@@ -1219,7 +1670,8 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 }
 
-@media (max-width: 768px) {
+/* STATS */
+@media (max-width: 868px) {
   .back1,.back2{
     display: none;
   }
@@ -1236,6 +1688,51 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .stat-divider {
     display: none;
   }
+  .statistics-swiper-container {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .statisticsSwiper {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+  }
+  
+  .statisticsSwiper .swiper-slide {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(250, 247, 242, 0.66);
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .statisticsSwiper .stat-item {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .statisticsSwiper .swiper-pagination {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .statisticsSwiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #ddd;
+    opacity: 1;
+    margin: 0 4px;
+  }
+  
+  .statisticsSwiper .swiper-pagination-bullet-active {
+    background: #22B573;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1250,8 +1747,24 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .statistics-subtitle {
     font-size: 16px;
   }
+  .AdsBanner .banner-row {
+    gap: 0 !important;
+    width: 100%;
+  }
 }
 .AdsBanner {
+  *{
+    border-radius: 1rem;
+  }
+  
+  .banner-container {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
   margin-bottom: 3rem;
 
   .banner-wrapper {
@@ -1262,13 +1775,12 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
   .banner-row {
     display: flex;
+    flex-flow: row-reverse;
     gap: 1rem;
     width: 100%;
   }
 
   .banner-card {
-    border-radius: 10px;
-    overflow: hidden;
     position: relative;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
@@ -1278,21 +1790,29 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
+  .kaba-banner{
+    width: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-  .arafah-banner {
+  .duaa-banner {
     flex: 1;
     height: 260px;
-    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
 
-  .arafah-banner img {
-    max-height: 100%;
+  .duaa-banner img {
+    height: 100%;
     width: 100%;
   }
-  .arafah-content {
+
+  .duaa-content {
     position: absolute;
     top: 0;
     right: 0;
@@ -1304,54 +1824,51 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     justify-content: center;
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 0.4);
   }
 
-  .arafah-content .banner-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
+  .duaa-text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: Almarai;
+    color: #726355;
+    }
 
-  .arafah-content .banner-description {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    opacity: 0.9;
-  }
-
-  .arafah-content .banner-cta {
+  .duaa-content .banner-cta {
     display: inline-flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 0.5rem;
+
   }
 
-  .arafah-content .banner-cta:hover {
+  .duaa-content .banner-cta:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
   }
 
-  .arafah-content .banner-cta i {
+  .duaa-content .banner-cta i {
     margin-right: 8px;
   }
 
   .right-banners {
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
   }
 
-  .charity-banner,
+  .salam-banner,
   .water-banner {
     position: relative;
     height: 125px;
-    border-radius: 10px;
     overflow: hidden;
   }
 
@@ -1372,24 +1889,36 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     align-items: center;
   }
 
-  .charity-banner .banner-content {
+  .salam-banner .banner-content {
+
     text-align: right;
-    color: white;
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    );
+    color: #28564C;
+    font-family: Almarai;
+
+    .banner-title{
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .banner-cta span{
+      font-weight: 600;
+      font-size: 1.2rem;    }
+  
+  }
+  .water-banner{
+    font-family: Almarai;
+    img{
+      filter: brightness(0.6);
+    }
+    .banner-title{
+      font-weight: 400;
+    }
   }
 
   .water-banner .banner-content {
     text-align: right;
     color: white;
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    );
+   
+  
   }
 
   .banner-title {
@@ -1409,19 +1938,45 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     font-size: 0.8rem;
   }
 
-  @media (max-width: 768px) {
-    .banner-row {
-      flex-direction: column;
+}
+@media (max-width: 768px) {
+  .AdsBanner {
+    *{
+      border-radius: 0 !important;
     }
+    .banner-container {
+    width: 100% !important ;
+    border-radius: 0;
+    margin: 0;
+    
+  }}
+  .kaba-banner img{
+    border-radius: 0;
+  }
+  .banner-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .banner-wrapper{
+    gap: 0 !important;
+  }
+  .right-banners{
+    gap: 0 !important;
+    *{
+      border-radius: 0;
 
-    .arafah-banner {
-      height: 200px;
     }
+  }
 
-    .charity-banner,
-    .water-banner {
-      height: 150px;
-    }
+  .duaa-banner {
+    height: 400px ;
+    border-radius: 0;
+    
+  }
+
+  .salam-banner,
+  .water-banner {
+    height: 350px !important;
   }
 }
 
@@ -1429,19 +1984,9 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   h2 {
     color: #004656;
   }
-  .Ramdan {
-    margin-bottom: 5rem;
-  }
+ 
 
-  .infoBox {
-    .button-more {
-      background-color: #35a697 !important;
-      color: #fff;
-      padding: 8px;
-      text-align: center;
-      border-radius: 10px !important;
-    }
-  }
+  
 }
 .RamdanProject-button-next {
   position: absolute;
@@ -1583,6 +2128,8 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 .nav-icon {
   display: none;
+  color: #fff ;
+
 }
 
 
@@ -1591,13 +2138,11 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 @media (max-width: 991.98px) {
   .nav-icon {
     display: block;
-    margin-right: 15px;
   }
   
   .navbar-toggler {
-    background-color: #d1f2e0;
     border: none;
-    padding: 10px 12px;
+    padding: 10px 6px;
     border-radius: 50%;
     transition: all 0.3s ease;
   }
@@ -1608,7 +2153,8 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
   
   .navbar-toggler i {
-    color: #28564d;
+    color: #fff;
+
     font-size: 1.2rem;
     transition: transform 0.3s ease;
   }
@@ -1727,7 +2273,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 @media screen and (max-width: 991.9px) {
   footer {
-    margin-top: 3rem;
+    margin: 0 !important;
     .first {
       margin-right: 0;
       font-size: 1.2rem;
