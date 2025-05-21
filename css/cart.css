@@ -180,7 +180,7 @@ label,.text{
 }
 .form-group{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   margin-bottom: 8px;
 }
