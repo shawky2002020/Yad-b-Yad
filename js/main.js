@@ -1,167 +1,178 @@
-const bannerSwiper = new Swiper(".bannerSwiper", {
-  loop: true,
-  // Default parameters
-  slidesPerView: 1,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  autoplay: {
-    delay: 3000, // 3 seconds
-    disableOnInteraction: false,
-  }
-});
-
-// Check if we're on a mobile device
-const isMobile = window.innerWidth < 640;
-
-const statisticsSwiper = new Swiper('.statisticsSwiper', {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 15
-    },
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    },
-    720: {
-      slidesPerView: 4,
-      spaceBetween: 20
-    },
-  },
-});
-
-const Cardswiper = new Swiper(".ProjectSections", {
-  loop: !isMobile, // Disable loop on mobile
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 1,
-  allowTouchMove: !isMobile, // Disable touch movement on mobile
-  autoplay: isMobile ? false : {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  // Responsive breakpoints
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    1008: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-    },
-    1400:{
-      slidesPerView: 5,
-      spaceBetween: 10,
-    }
-  },
-  navigation: {
-    nextEl: ".ProjectSection-button-next",
-    prevEl: ".ProjectSection-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
-var swiper = new Swiper('.RamdanProjectSwiper', {
-  // loop: true,
-  navigation: {
-    nextEl: '.RamdanProject-button-next',
-    prevEl: '.RamdanProject-button-prev',
-  },
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-
-    // when window width is >= 640px
-    
-    1404: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-  },
-  autoplay: isMobile? false :  {
-    delay: 5000, // 3 seconds
-    disableOnInteraction: false,
-  },
-  slidesPerView: 3,
-  spaceBetween: 30,
-});
-
-// Get the modal element
-const modal = document.getElementById("exampleModal");
-
-
-// MY WORK  
-
 document.addEventListener("DOMContentLoaded", function() {
-  // document.querySelector('.custom-hamburger').addEventListener('click', function() {
-  //   this.classList.toggle('active');
-  //   console.log('ssssssssss');
+  // Banner Swiper
+  const bannerSwiperElement = document.querySelector(".bannerSwiper");
+  if (bannerSwiperElement) {
+    const bannerSwiper = new Swiper(".bannerSwiper", {
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      }
+    });
+  }
 
-  // });
+  // Check if we're on a mobile device
+  const isMobile = window.innerWidth < 640;
 
-  // document.querySelector('.custom-hamburger').addEventListener('click', function() {
-  //   this.classList.toggle('active');
-  //   console.log('ssssssssss');
-    
-  // });
+  // Statistics Swiper
+  const statisticsSwiperElement = document.querySelector('.statisticsSwiper');
+  if (statisticsSwiperElement) {
+    const statisticsSwiper = new Swiper('.statisticsSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 15
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        720: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        },
+      },
+    });
+  }
 
-  // Select all elements with the class 'Card'
-  const cards = document.querySelectorAll('.home .Card');
+  // Project Sections Swiper
+  const projectSectionsElement = document.querySelector(".ProjectSections");
+  if (projectSectionsElement) {
+    const Cardswiper = new Swiper(".ProjectSections", {
+      loop: !isMobile,
+      slidesPerView: 1,
+      spaceBetween: 1,
+      allowTouchMove: !isMobile,
+      autoplay: isMobile ? false : {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1008: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        1400:{
+          slidesPerView: 5,
+          spaceBetween: 10,
+        }
+      },
+      navigation: {
+        nextEl: ".ProjectSection-button-next",
+        prevEl: ".ProjectSection-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  }
 
-  // Add a click event listener to each card
-  cards.forEach((card, idx) => {
-    card.addEventListener('click', function() {
-      // Store the clicked card index in localStorage
-      localStorage.setItem('selectedCardIndex', idx);
+  // Ramdan Project Swiper
+  const ramdanProjectElement = document.querySelector('.RamdanProjectSwiper');
+  if (ramdanProjectElement) {
+    const ramdanSwiper = new Swiper('.RamdanProjectSwiper', {
+      navigation: {
+        nextEl: '.RamdanProject-button-next',
+        prevEl: '.RamdanProject-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        1404: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+      autoplay: isMobile ? false : {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+  }
 
-      // Redirect to category.html
-      window.location.href = 'category.html';
+  // Get the modal element
+  const modal = document.getElementById("exampleModal");
+
+
+  // MY WORK  
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // document.querySelector('.custom-hamburger').addEventListener('click', function() {
+    //   this.classList.toggle('active');
+    //   console.log('ssssssssss');
+  
+    // });
+  
+    // document.querySelector('.custom-hamburger').addEventListener('click', function() {
+    //   this.classList.toggle('active');
+    //   console.log('ssssssssss');
+      
+    // });
+  
+    // Select all elements with the class 'Card'
+    const cards = document.querySelectorAll('.home .Card');
+  
+    // Add a click event listener to each card
+    cards.forEach((card, idx) => {
+      card.addEventListener('click', function() {
+        // Store the clicked card index in localStorage
+        localStorage.setItem('selectedCardIndex', idx);
+  
+        // Redirect to category.html
+        window.location.href = 'category.html';
+      });
     });
   });
-});
-
-document.querySelectorAll('.swiper-slide').forEach(function(slide) {
-  var amountBtns = slide.querySelectorAll('.amount-btn');
-  amountBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      amountBtns.forEach(function(b) { b.classList.remove('active-amount'); });
-      btn.classList.add('active-amount');
-      // Optionally, set the input value if present
-      var input = slide.querySelector('.custom-card-input');
-      if(input) input.value = btn.textContent.replace(/[^\d]/g, '');
+  
+  document.querySelectorAll('.swiper-slide').forEach(function(slide) {
+    var amountBtns = slide.querySelectorAll('.amount-btn');
+    amountBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        amountBtns.forEach(function(b) { b.classList.remove('active-amount'); });
+        btn.classList.add('active-amount');
+        // Optionally, set the input value if present
+        var input = slide.querySelector('.custom-card-input');
+        if(input) input.value = btn.textContent.replace(/[^\d]/g, '');
+      });
     });
+  
+  
+  
+  
   });
-
-
-
-
+  
+  
 });
-
 // Fast Pay Animation Implementation
 document.addEventListener("DOMContentLoaded", function() {
   // Fast Pay functionality
+  
   const fastPay = document.querySelector('.fast-pay');
   const fastPayContainer = document.querySelector('.fast-pay .container');
   const donationForm = document.querySelector('.fast-pay .donation-form');
@@ -174,6 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if (fastPayContainer) {
     // Toggle expanded state when clicking the container
     fastPayContainer.addEventListener('click', function(e) {
+      
       if (!fastPay.classList.contains('expanded')) {
         fastPay.classList.add('expanded');
       }
@@ -291,8 +303,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
-
- 
 
  
  
