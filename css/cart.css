@@ -15,6 +15,20 @@ input{
   
 }
 
+.cart{
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 5rem;
+
+}
+.cart-title {
+  font-family: droid;
+  font-weight: 700;
+  font-size: 37px;
+  margin:0 4rem;
+  color: #336776;
+}
+
 .cart button{
   font-size: 1.5rem;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
@@ -28,7 +42,7 @@ input{
 
 .cart-checkout-btn:hover,
 .cart-checkout-btn:focus {
-  background: #b06d00;
+  background: var(--green-color);
   color: #fff;
 }
 
@@ -78,7 +92,6 @@ label,.text{
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
-  padding: 24px 0;
   margin: auto;
   width: 90vw;
   margin: auto;
@@ -91,7 +104,6 @@ label,.text{
   width: 500px;
   min-width: 340px;
   margin-bottom: 5rem;
-  margin-top: 63px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -111,17 +123,18 @@ label,.text{
 }
 
 .cart-total-label {
-  color: #888;
+  color: var(--accent-color);
   font-size: 1.2rem;
   margin-bottom: 8px;
 }
 
 .cart-total-value .currency {
+  color: var(--accent-color);
   font-weight: normal;
   margin-right: 4px;
 }
 .cart-checkout-btn {
-  background: #D78800;
+  background: var(--accent-color);
   color: #fff;
   border: none;
   border-radius: 0 0 1rem 1rem;
@@ -322,7 +335,6 @@ label,.text{
 }
 
 .cart-items-list {
-  margin-top: 4rem;
   background: #fff;
   border-radius: 14px;
   padding: 24px 16px;
@@ -479,7 +491,7 @@ label,.text{
 }
 
 .cart-total-value {
-  color: #555;
+  color: var(--accent-color);
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -512,12 +524,14 @@ label,.text{
 
 
 
-.cart-total-value {
-  color: #59706C;
-  font-size: 5rem;
-  font-weight: 700;
-}
+
 @media screen and (max-width: 1300px) {
+  .cart{
+    width: 100%;
+  }
+  .cart-title{
+    margin: 0 1rem;
+  }
   .payment-row {
     display: flex;
     flex-flow: column nowrap;
@@ -552,7 +566,6 @@ label,.text{
     padding: 16px 8px 8px 8px;
   }
   .cart-items-list {
-    margin-top: 2rem;
     padding: 16px 8px;
   }
   .payment-row {
@@ -662,6 +675,9 @@ label,.text{
 @media (max-width: 480px) {
   .head{
     margin: 3rem 2rem;
+  }
+  .cart-title{
+    font-size: 20px;
   }
   
   .cart-container {
