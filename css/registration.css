@@ -1,4 +1,5 @@
 /* Beneficiary Registration Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 .registration-container {
   max-width: 1500px;
   margin: 3rem auto;
@@ -68,9 +69,7 @@ main input , main select , textarea{
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
   font-weight: 500;
-  color: var(--main-color);
   text-align: right;
 }
 
@@ -103,9 +102,11 @@ main input , main select , textarea{
   display: flex;
   align-items: center;
   min-height: 44px; /* Better touch target */
+  font-family: "IBM Plex Sans Arabic";
 }
 
 .form-check-input {
+  cursor: pointer;
   margin-right: 0.5rem;
   min-width: 20px; /* Better touch target */
   min-height: 20px; /* Better touch target */
@@ -114,7 +115,9 @@ main input , main select , textarea{
 .form-check-label {
   margin-bottom: 0;
   margin-right: 2rem;
-  color: #666666;
+  font-size: 16px;
+  font-weight: 700;
+  color: #888888 ;
   
 }
 
@@ -125,6 +128,7 @@ textarea.form-control {
 
 .submit-btn {
   background-color: var(--accent-color);
+  color: whitesmoke;
   border: none;
   font-size: 1.1rem;
   font-weight: 600;
@@ -155,14 +159,14 @@ textarea.form-control {
 }
 
 .labeled-input:focus-within {
-  border-color: #00a3b9;
+  border-color: var(--accent-color);
   box-shadow: 0 0 0 3px rgba(0, 163, 192, 0.2);
 }
 
 .labeled-input .field-label {
   position: absolute;
   right: 15px;
-  color: #00a3b9; /* Cyan color for labels */
+  color: var(--accent-color); /* Cyan color for labels */
   font-weight: 600;
   z-index: 1;
   direction: ltr;
@@ -173,12 +177,15 @@ textarea.form-control {
 .labeled-input .form-select {
   border: none;
   text-align: left;
-  padding-left: 35px;
-  padding-right: 120px; /* Space for label */
+  padding-left: 15px;
+  padding-right: 140px; /* Space for label */
   height: 100%;
   background-color: transparent;
   width: 100%;
   direction: rtl;
+}
+.labeled-input .form-select {
+  padding-left: 35px;
 }
 
 .labeled-input .form-control:focus,
@@ -280,7 +287,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   
   .labeled-input .form-control,
   .labeled-input .form-select {
-    padding-right: 100px; /* Adjusted for smaller screens */
+    padding-right: 130px; /* Adjusted for smaller screens */
   }
 }
 
@@ -321,7 +328,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .labeled-input .form-control,
   .labeled-input .form-select {
     font-size: 0.9rem;
-    padding-right: 90px; /* Further adjusted for mobile */
+    padding-right: 120px; /* Further adjusted for mobile */
   }
   
   .form-check-input {
@@ -348,7 +355,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* Add focus styles for keyboard navigation */
 .form-check-input:focus-visible {
-  outline: 2px solid #00a3b9;
+  outline: 2px solid #ccc;
   outline-offset: 2px;
 }
 
@@ -420,5 +427,49 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   
   .form-control, .form-select {
     border: 1px solid #ddd;
+  }
+}
+
+
+
+/* VOLUNTEER */
+
+.personal-info{
+  background: #E6F2F0;
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.preferences{
+  h5{
+    color: var(--accent-color);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .form-group{
+    font-family: "IBM Plex Sans Arabic";
+    border:#999999 solid 1px;
+    border-radius: 25px;
+    padding: 1rem;
+    height: 100%;
+  
+  }
+  textarea{
+    height: 90%;
+
+  }
+  textarea::placeholder{
+    padding: 12px 8px;
+  }
+  .form-check-input {
+    &:checked {
+      background-color: black;
+      
+    }
+  }
+  .form-check-input:checked + .form-check-label {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
   }
 }

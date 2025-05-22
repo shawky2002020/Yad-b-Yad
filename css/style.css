@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @layer base;
 
 @layer base {
@@ -16,7 +16,8 @@
   }
   @font-face {
     font-family: "droid";
-    src: url("../fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf") format("truetype");
+    src: url("../fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf")
+      format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -36,13 +37,12 @@
   ul {
     list-style: none;
   }
- 
 
   :root {
-    --main-color: #10353C;
-    --secondary-color: #C1AD7B;
+    --main-color: #10353c;
+    --secondary-color: #c1ad7b;
     --accent-color: #009174;
-    --green-color: #9AC94C;
+    --green-color: #9ac94c;
     --white-color: #fff;
     --font-color: #929292;
   }
@@ -93,16 +93,15 @@ body {
   overflow-x: hidden;
 }
 
-.title{
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #86795A;
+  color: #86795a;
   font-size: 3rem;
   font-weight: 800;
   margin: 1rem 0;
-
 }
 
 button {
@@ -173,57 +172,57 @@ button {
   flex-flow: row;
   justify-content: space-between;
   .custom-hamburger {
-  background: none;
-  border: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
-.hamburger-bar {
-  display: block;
-  border-radius: 3px;
-  transition: 0.3s;
-  height: 4px;
-  background-color: #fff;
-  margin: 4px 1rem;
-}
+  .hamburger-bar {
+    display: block;
+    border-radius: 3px;
+    transition: 0.3s;
+    height: 4px;
+    background-color: #fff;
+    margin: 4px 1rem;
+  }
 
-.hamburger-bar:nth-child(1) {
-  width: 20px;
-  transform: translateX(4px);
-}
-.hamburger-bar:nth-child(2) {
-  width: 32px;
-}
-.hamburger-bar:nth-child(3) {
-  width: 18px;
-}
+  .hamburger-bar:nth-child(1) {
+    width: 20px;
+    transform: translateX(4px);
+  }
+  .hamburger-bar:nth-child(2) {
+    width: 32px;
+  }
+  .hamburger-bar:nth-child(3) {
+    width: 18px;
+  }
 
-/* Animation for hamburger menu */
-.custom-hamburger.active .hamburger-bar:nth-child(1) {
-  transform: translateY(11px) rotate(45deg);
-  width: 32px;
-}
-.custom-hamburger.active .hamburger-bar:nth-child(2) {
-  opacity: 0;
-}
-.custom-hamburger.active .hamburger-bar:nth-child(3) {
-  transform: translateY(-11px) rotate(-45deg);
-  width: 32px;
-}
-  .nav-left{
+  /* Animation for hamburger menu */
+  .custom-hamburger.active .hamburger-bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+    width: 32px;
+  }
+  .custom-hamburger.active .hamburger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .custom-hamburger.active .hamburger-bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+    width: 32px;
+  }
+  .nav-left {
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    .search-icon{
+    .search-icon {
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -234,12 +233,12 @@ button {
       color: #fff;
       margin: 12px;
 
-      i{
+      i {
         font-size: 1.2rem;
       }
     }
   }
-  .back{
+  .back {
     z-index: 0;
     position: absolute;
     top: 0;
@@ -276,7 +275,7 @@ button {
     height: 330px;
     z-index: 333;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
@@ -286,7 +285,7 @@ button {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    .user{
+    .user {
       display: flex;
       justify-content: center;
       margin-left: 2rem;
@@ -294,7 +293,7 @@ button {
     .logoBoxModile {
       width: 215px;
       cursor: pointer;
-      img{
+      img {
         width: 100%;
       }
     }
@@ -308,9 +307,9 @@ button {
       .basket,
       .usericon {
         margin: 0 5px 0 0;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         border-radius: 50%;
-        color: #28564C ;
+        color: #28564c;
         height: fit-content;
         width: fit-content;
         cursor: pointer;
@@ -327,7 +326,7 @@ button {
         border-bottom-left-radius: 7px;
         border-top-right-radius: 7px;
         border-bottom-right-radius: 7px;
-        background-color: #03292C99;
+        background-color: #03292c99;
         color: #fff;
         height: 40px;
         padding: 2px 0;
@@ -365,15 +364,14 @@ button {
 
   .blue-bar {
     background: #10353c;
-    width: calc( 310px);
+    width: calc(310px);
     height: 20px;
     position: absolute;
     bottom: 0;
   }
-  .nav-content{
+  .nav-content {
     width: 90%;
     display: flex;
-
   }
   .navbar-toggler {
     height: 100px;
@@ -385,9 +383,9 @@ button {
     display: flex;
     flex-flow: column;
     align-items: end;
-    
+
     .search-form {
-      background-color: #0D0D0D1A;
+      background-color: #0d0d0d1a;
       border-radius: 20px;
       display: flex;
       align-items: end;
@@ -397,7 +395,7 @@ button {
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
 
-      ::placeholder{
+      ::placeholder {
         color: #00000066;
       }
       i {
@@ -414,8 +412,9 @@ button {
           transform: scale(1.1);
         }
       }
-      
-      &:hover, &:focus-within {
+
+      &:hover,
+      &:focus-within {
         background-color: rgba(255, 255, 255, 0.25);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -431,50 +430,47 @@ button {
       margin-right: 2rem;
       font-family: brando;
       transition: all 0.3s ease;
-      
+
       &::placeholder {
         color: rgba(255, 255, 255, 0.8);
         font-weight: 300;
         text-align: center;
       }
-      
+
       &:focus {
         outline: none;
       }
-      
+
       &:focus,
       &:not(:placeholder-shown) {
         background: none;
       }
     }
   }
-  .navbar-nav{
+  .navbar-nav {
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
     gap: 1.2rem;
   }
-.nav-item {
-  .active {
-    color: #FFFFFF;
-    transform: translateY(-2px);
-  }
-  a {
-    color: #10353c;
-    font-size: 1.4rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-
-    &:hover {
-      color: #FFFFFF;
+  .nav-item {
+    .active {
+      color: #ffffff;
       transform: translateY(-2px);
     }
+    a {
+      color: #10353c;
+      font-size: 1.4rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
 
-    
-
+      &:hover {
+        color: #ffffff;
+        transform: translateY(-2px);
+      }
+    }
   }
-}
 
   .dropdown-menu .dropdown-menu {
     left: 100%;
@@ -495,13 +491,12 @@ main {
   .banner {
     position: relative;
     width: 100%;
-    .swiper-slide{
-      width: 100% ;
+    .swiper-slide {
+      width: 100%;
     }
     .img_Layer {
       z-index: 2;
       width: 100%;
-      
     }
     .text_Layer {
       position: absolute;
@@ -526,13 +521,10 @@ main {
   }
 
   .sections {
-    
     .category-container {
       padding-bottom: 2rem;
       max-width: 1350px;
       margin: auto;
-      
-     
     }
     .Card {
       position: relative;
@@ -567,10 +559,10 @@ main {
         align-items: center;
         justify-content: center;
         justify-content: center;
-        font-size:2.2rem;
+        font-size: 2.2rem;
         width: 90%;
         margin: auto;
-        color: #86795A;
+        color: #86795a;
         text-align: center;
       }
     }
@@ -600,158 +592,153 @@ main {
     }
   }
   /* Categories Grid Layout */
-.categories-grid {
-  display: none; /* Hidden by default */
-}
-
-.categories-grid .Card {
-  width: 100% !important;
-  height: 200px !important;
-  overflow: hidden;
-  position: relative;
-
-}
-
-.categories-grid .category-img {
-  position: absolute;
-  width: 100% !important;
-  object-fit: contain;
-}
-
-.categories-grid .sub-category-img {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.categories-grid .category-desc {
-  position: absolute;
-  bottom: 15px;
-  width: 100%;
-  text-align: center;
-  color: #86795A;
-  font-family: droid;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  .desktop-only {
-    display: none !important;
-  }
-  
-  .mobile-only {
-    display: block !important;
-    
-    
-  }
-  
-  .categories-grid .row {
-    padding: 1rem;
-    margin-right: -10px;
-    margin-left: -10px;
-  }
-  
-  .categories-grid .col-6 {
-  
-    height: 205px;
+  .categories-grid {
+    display: none; /* Hidden by default */
   }
 
- .categories-grid .Card {
-   .category-desc {
-    font-size: 1.2rem !important;
-    width: 80%;
+  .categories-grid .Card {
+    width: 100% !important;
+    height: 200px !important;
+    overflow: hidden;
+    position: relative;
   }
- }
- .AdsBanner {
-  margin: 0 !important;
- }
-}
 
-.AdsBanner {
-  .FirstBanner {
-    .banner {
-      .contant {
-        position: absolute;
-        top: 36%;
-        left: 9%;
-        h4 {
-          font-size: 30px;
-        }
-        h5 {
-          font-size: 25px;
-        }
-        * {
-          color: #736357;
+  .categories-grid .category-img {
+    position: absolute;
+    width: 100% !important;
+    object-fit: contain;
+  }
+
+  .categories-grid .sub-category-img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .categories-grid .category-desc {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: #86795a;
+    font-family: droid;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .desktop-only {
+      display: none !important;
+    }
+
+    .mobile-only {
+      display: block !important;
+    }
+
+    .categories-grid .row {
+      padding: 1rem;
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+
+    .categories-grid .col-6 {
+      height: 205px;
+    }
+
+    .categories-grid .Card {
+      .category-desc {
+        font-size: 1.2rem !important;
+        width: 80%;
+      }
+    }
+    .AdsBanner {
+      margin: 0 !important;
+    }
+  }
+
+  .AdsBanner {
+    .FirstBanner {
+      .banner {
+        .contant {
+          position: absolute;
+          top: 36%;
+          left: 9%;
+          h4 {
+            font-size: 30px;
+          }
+          h5 {
+            font-size: 25px;
+          }
+          * {
+            color: #736357;
+          }
         }
       }
     }
-  }
-  .secandBanner {
-    .content {
-      .FristRow {
-        height: 200px;
-        .bg {
-          background-image: url("../img/banner4.png");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 100%;
-          width: 100%;
+    .secandBanner {
+      .content {
+        .FristRow {
+          height: 200px;
+          .bg {
+            background-image: url("../img/banner4.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+          }
+          .text {
+            color: #fff;
+            position: absolute;
+            top: 45%;
+            right: 20%;
+          }
         }
-        .text {
+        .SeacandRow {
+          height: 200px;
+          .bg {
+            background-image: url("../img/banner2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100%;
+            width: 100%;
+          }
+          .text {
+            color: #28564d;
+            position: absolute;
+            top: 31%;
+            right: 20%;
+          }
+        }
+      }
+      .thridBanner {
+        .text_layer {
+          position: absolute;
+          top: 25%;
+          right: 50%;
+          transform: translate(50%, -50%);
           color: #fff;
-          position: absolute;
-          top: 45%;
-          right: 20%;
+          font-size: 20px;
         }
-      }
-      .SeacandRow {
-        height: 200px;
-        .bg {
-          background-image: url("../img/banner2.png");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
-          height: 100%;
-          width: 100%;
-        }
-        .text {
-          color: #28564d;
-          position: absolute;
-          top: 31%;
-          right: 20%;
-        }
-      }
-    }
-    .thridBanner {
-      .text_layer {
-        position: absolute;
-        top: 25%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        color: #fff;
-        font-size: 20px;
       }
     }
   }
-}
 }
 .RamdanProjects {
   h2 {
     color: #004656;
   }
-  
 
   .infoBox {
     .button-more {
-      background:transparent;
+      background: transparent;
       color: #666666;
-      border: 2px solid #666666 ;
+      border: 2px solid #666666;
       border-radius: 999px !important;
       padding: 0rem 2.5rem;
       font-size: 1.3rem;
@@ -763,13 +750,13 @@ main {
       outline: none;
       display: inline-block;
     }
-    
+
     .button-more:hover,
     .button-more:focus {
       background: #f5f5f5 !important;
       color: #333 !important;
       border-color: #666 !important;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
       text-decoration: none;
       transform: translateY(-2px);
     }
@@ -795,43 +782,41 @@ main {
     }
   }
 }
-.high-sales-projects{
-
+.high-sales-projects {
   position: relative;
-  .CardBox{
+  .CardBox {
     padding-bottom: 4rem;
-
   }
-  .title{
-    margin: 4rem 0 2rem 0 ;
+  .title {
+    margin: 4rem 0 2rem 0;
   }
-.view-details {
-  position: absolute;
-  height: 2rem;
-  bottom: 0;
-  right: 50%;
-  transform: translate(50%, -50%);
-  width: 200px;
-  margin: auto;
-  border-top: solid;
-  font-family: brando;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #28564D;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+  .view-details {
+    position: absolute;
+    height: 2rem;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 200px;
+    margin: auto;
+    border-top: solid;
+    font-family: brando;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #28564d;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
 
-.view-details:hover {
-  color: #28564D;
-  border-top-color:#28564D ;
-  transform: translate(50%, -55%);
-}
+  .view-details:hover {
+    color: #28564d;
+    border-top-color: #28564d;
+    transform: translate(50%, -55%);
+  }
 }
 
 footer {
-  font-family:almarai;
+  font-family: almarai;
   border-radius: 1rem 1rem 0 0;
   position: relative;
   z-index: 500;
@@ -849,7 +834,7 @@ footer {
     i {
       font-size: 1.3rem;
     }
-    background-color:#015263;
+    background-color: #015263;
     text-decoration: none;
     color: whitesmoke;
     border-radius: 50%;
@@ -865,13 +850,13 @@ footer {
   }
 
   .first {
-    background-color: #DFD3BB;
+    background-color: #dfd3bb;
     text-align: right;
     position: relative;
     z-index: 6;
     min-height: 300px;
     height: 100%;
-    
+
     .footer-text {
       color: #015263;
       z-index: 50; /* Higher than .headfooter */
@@ -880,11 +865,11 @@ footer {
       padding: 1rem;
 
       pointer-events: none; /* So clicks go through to image if needed */
-      .first-title{
+      .first-title {
         font-weight: 700;
         font-size: 29px;
       }
-      .first-text{
+      .first-text {
         font-size: 19px;
         color: #015263;
         font-weight: 700;
@@ -892,7 +877,7 @@ footer {
     }
   }
   .secand {
-    background: #E9E5DA;
+    background: #e9e5da;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -907,7 +892,7 @@ footer {
       font-size: 29px;
     }
     ul {
-      list-style:none;
+      list-style: none;
       list-style-position: outside;
       li {
         transform: translateX(-1.4rem);
@@ -919,12 +904,11 @@ footer {
         font-weight: bolder;
         position: relative;
         ::marker {
-          font-size: 3.5rem !important; 
+          font-size: 3.5rem !important;
+        }
       }
-     
     }
-    }
-    li::after{
+    li::after {
       content: "";
       position: absolute;
       top: 50%;
@@ -938,7 +922,7 @@ footer {
     }
   }
   .thrid {
-    background-color: #DFD3BB;
+    background-color: #dfd3bb;
 
     display: flex;
     flex-flow: column nowrap;
@@ -959,8 +943,9 @@ footer {
       }
     }
   }
+
   .fourth {
-    background: #E9E5DA;
+    background: #e9e5da;
     padding-bottom: 2rem;
 
     .fourth-title {
@@ -968,20 +953,20 @@ footer {
       font-weight: bolder;
       font-size: 29px;
       font-weight: 700;
-      padding:1rem 2rem;
+      padding: 1rem 2rem;
       margin: 1rem 0;
     }
-    .contact{
+    .contact {
       display: flex;
       flex-flow: row nowrap;
       justify-content: start;
       align-items: center;
     }
-    i{
+    i {
       color: #fff;
-      background: #C1AD7B;
+      background: #c1ad7b;
       border-radius: 50%;
-      width: 36px ;
+      width: 36px;
       height: 36px;
       padding: 1rem;
       cursor: pointer;
@@ -991,10 +976,13 @@ footer {
       justify-content: center;
       align-items: center;
     }
-    .fristrow,.Secandrow{
-      width: 300px;
+    .fristrow,
+    .Secandrow {
+      max-width: 300px;
+      width: 90%;
+      margin:0 auto;
     }
-  
+
     .fristrow {
       gap: 10px;
       a {
@@ -1003,47 +991,43 @@ footer {
         border-radius: 10px;
         padding: 4px 10px;
         color: #015263;
-        background-color: #D6D0C2;
+        background-color: #d6d0c2;
         font-size: 17px;
         text-decoration: none;
         display: flex;
         justify-content: end;
         align-items: center;
         padding: 4px 10px;
-
       }
     }
     .Secandrow {
-      width: 290px;
       text-align: left;
-
 
       a {
         width: 100%;
         text-align: left;
         border-radius: 10px;
         color: #015263;
-        background-color: #D6D0C2;
+        background-color: #d6d0c2;
         font-size: 17px;
-        text-decoration: none ;
+        text-decoration: none;
         display: flex;
         justify-content: end;
         align-items: center;
         padding: 4px 10px;
-        ;
-
       }
     }
     .ThridRow {
       gap: 10px;
       img {
-        width: 140px;
+        max-width: 140px;
+        width: 100%;
       }
     }
     p {
       color: #28564d;
     }
- 
+
     .Secandrow {
       a {
         width: 100%;
@@ -1051,6 +1035,19 @@ footer {
     }
   }
 }
+/* @media screen and (max-width: 1240px) {
+  footer .fourth {
+    .fristrow {
+      flex-flow: column;
+      a{
+        width: 190px;
+      }
+    }
+    .ThridRow{
+      flex-flow: column;
+    }
+  }
+} */
 
 @media screen and (min-width: 1024px) {
   main {
@@ -1109,11 +1106,11 @@ footer {
 }
 
 @media screen and (max-width: 991.9px) {
-  .whatsapp-icon{
+  .whatsapp-icon {
     bottom: 30px;
     left: 30px;
   }
-  .back{
+  .back {
     display: none;
   }
   main {
@@ -1139,7 +1136,7 @@ footer {
       }
     }
   }
-  
+
   .Ramdan {
     .swiper-button-prev::after,
     .swiper-button-next::after {
@@ -1148,42 +1145,37 @@ footer {
   }
 }
 
-
-
-
 @media screen and (max-width: 768px) {
-  .whatsapp-icon{
+  .whatsapp-icon {
     width: 30px;
     height: 30px;
     bottom: 20px;
     left: 20px;
   }
- .topBar .hamburger-bar{
+  .topBar .hamburger-bar {
     height: 4px !important;
-    padding: 0!important;
+    padding: 0 !important;
     margin: 3px;
   }
   .search-icon {
-    margin: 0 2px!important;
-   
-}
+    margin: 0 2px !important;
+  }
   .sections .category-container {
-    .Card{
+    .Card {
       width: 180px;
       height: 250px;
-      .sub-category-img{
+      .sub-category-img {
         width: 50px;
         height: 50px;
         top: 40px;
       }
-      .category-desc{
+      .category-desc {
         font-size: 1.5rem;
         bottom: 10px;
       }
-      
     }
   }
-  .title{
+  .title {
     font-size: 2rem;
   }
   .usertext {
@@ -1296,22 +1288,23 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .desktop-only {
     display: none !important;
   }
-  
+
   .mobile-only {
     display: block !important;
   }
-  .view-details{
+  .view-details {
     display: none;
   }
-  .swiper-button-next, .swiper-button-prev{
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none;
   }
 
-  .statistics{
+  .statistics {
     padding: 1rem 0 !important;
     min-height: 300px !important;
   }
-  
+
   /* Statistics Swiper Fixes */
   .statistics-swiper-container {
     position: absolute;
@@ -1321,51 +1314,51 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     margin: 0 auto 30px auto;
     overflow: hidden;
   }
-  
+
   .statisticsSwiper {
     height: auto;
     padding-bottom: 30px;
   }
-  
+
   .statisticsSwiper .swiper-slide {
     background-color: #f5e9d3;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    
+
     margin: 0 auto;
     height: auto;
   }
-  
+
   .statisticsSwiper .stat-item {
     padding: 0;
     text-align: center;
   }
-  
+
   .statisticsSwiper .stat-label {
     color: #666;
     font-size: 14px;
     margin-bottom: 5px;
   }
-  
+
   .statisticsSwiper .stat-value {
-    color: #22B573;
+    color: #22b573;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 5px;
   }
-  
+
   .statisticsSwiper .stat-unit {
     color: #999;
     font-size: 12px;
   }
-  
+
   .statisticsSwiper .swiper-pagination {
     position: relative;
     bottom: 0;
     margin-top: 15px;
   }
-  
+
   .statisticsSwiper .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
@@ -1373,17 +1366,17 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     opacity: 1;
     margin: 0 4px;
   }
-  
+
   .statisticsSwiper .swiper-pagination-bullet-active {
-    background: #22B573;
+    background: #22b573;
     width: 20px;
     border-radius: 4px;
   }
-  
+
   .ramadan-cards-mobile {
     padding: 0 15px;
   }
-  
+
   .ramadan-card {
     background-color: #f9f6f1;
     border-radius: 12px;
@@ -1391,14 +1384,14 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
   .ramadan-card-content {
     display: flex;
     flex-direction: row;
     padding: 0;
     position: relative;
   }
-  
+
   .ramadan-card-header {
     position: absolute;
     top: 10px;
@@ -1407,89 +1400,92 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     background-color: transparent;
     text-align: right;
   }
-  
+
   .ramadan-card-header h3 {
     margin: 0;
     font-size: 16px;
     color: #333;
     font-weight: 600;
   }
-  
+
   .ramadan-card-image {
     width: 40%;
     height: auto;
     overflow: hidden;
   }
-  
+
   .ramadan-card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0 12px 12px 0;
   }
-  
+
   .ramadan-card-details {
     width: 60%;
     padding: 15px 10px;
     display: flex;
     flex-direction: column;
   }
-  
+
   .ramadan-card-progress {
     margin-top: 25px;
     margin-bottom: 10px;
   }
-  
+
   .ramadan-card-progress .progress {
     height: 15px;
     background-color: #e0e0e0;
     border-radius: 10px;
     overflow: hidden;
   }
-  
+
   .ramadan-card-progress .progress-bar {
-    background-color: #22B573;
+    background-color: #22b573;
     color: white;
     text-align: center;
     line-height: 15px;
     font-size: 12px;
     font-weight: bold;
   }
-  
+
   .ramadan-card-amounts {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
     font-size: 12px;
   }
-  
-  .amount-collected, .amount-remaining {
+
+  .amount-collected,
+  .amount-remaining {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .amount-remaining {
     align-items: flex-end;
   }
-  
-  .amount-collected span, .amount-remaining span {
+
+  .amount-collected span,
+  .amount-remaining span {
     color: #666;
     margin-bottom: 3px;
   }
-  
-  .amount-collected strong, .amount-remaining strong {
+
+  .amount-collected strong,
+  .amount-remaining strong {
     color: #333;
     font-weight: 600;
     font-size: 14px;
   }
-  
+
   .ramadan-card-actions {
     display: flex;
     gap: 5px;
     margin-top: auto;
   }
-  
+
   .donation-amount-btn {
     flex: 1;
     background-color: #f0f0f0;
@@ -1501,10 +1497,10 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     font-size: 12px;
     white-space: nowrap;
   }
-  
+
   .donate-now-btn {
     flex: 1;
-    background-color: #22B573;
+    background-color: #22b573;
     border: none;
     border-radius: 25px;
     padding: 8px 5px;
@@ -1515,7 +1511,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     align-items: center;
     justify-content: center;
   }
-  
+
   .donate-now-btn i {
     margin-left: 5px;
   }
@@ -1535,25 +1531,26 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* Statistics Section Styles */
 .statistics {
-  background-color: #DDECE9;
+  background-color: #ddece9;
   min-height: 500px;
   padding: 100px 0;
   margin: 40px 0 0 0;
   position: relative;
   overflow: hidden;
-  .back1,.back2{
+  .back1,
+  .back2 {
     position: absolute;
-   
+
     width: 100%;
     height: 40%;
     z-index: -1;
-    opacity: .1;
+    opacity: 0.1;
   }
-  .back1{
+  .back1 {
     top: 0;
     left: 0;
   }
- .back2{
+  .back2 {
     bottom: 0;
     right: 0;
   }
@@ -1567,7 +1564,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   display: flex;
   align-items: center;
   z-index: 1;
-
 }
 
 .statistics-content {
@@ -1585,7 +1581,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   font-weight: bold;
   margin-bottom: 5px;
   font-family: brando;
-
 }
 
 .statistics-subtitle {
@@ -1593,7 +1588,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   font-size: 18px;
   margin-top: 0;
   font-family: brando;
-
 }
 
 .statistics-grid {
@@ -1610,7 +1604,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 .stat-item {
   text-align: center;
-  padding:5px 15px;
+  padding: 5px 15px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -1620,7 +1614,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 .stat-value {
-  color: #1B845A;
+  color: #1b845a;
   font-size: 4rem;
   font-weight: 700;
 }
@@ -1641,7 +1635,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 .stat-divider {
   width: 5px;
   height: 50px;
-  background-color: #1B845A;
+  background-color: #1b845a;
 }
 
 .statistics-image {
@@ -1657,46 +1651,43 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 @media screen and (max-width: 1200px) {
-  .stat-label{
+  .stat-label {
     font-size: 16px;
   }
-  .stat-value{
+  .stat-value {
     font-size: 3rem;
   }
- .stat-unit{
+  .stat-unit {
     font-size: 16px;
   }
-  
 }
 /* Responsive styles */
 @media (max-width: 992px) {
   .statistics .container {
     flex-direction: column;
   }
-  
+
   .statistics-image {
     display: none;
   }
-  
+
   .statistics-content {
     padding-right: 0;
   }
 
- .statistics-grid {
+  .statistics-grid {
     gap: 20px;
   }
 
-
-
-.stat-divider {
+  .stat-divider {
     display: none;
   }
-
 }
 
 /* STATS */
 @media (max-width: 868px) {
-  .back1,.back2{
+  .back1,
+  .back2 {
     display: none;
   }
   .statistics-row {
@@ -1704,11 +1695,11 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     gap: 20px;
     justify-content: center;
   }
-  
+
   .stat-item {
     flex: 0 0 calc(33.333% - 20px);
   }
-  
+
   .stat-divider {
     display: none;
   }
@@ -1718,13 +1709,13 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     max-width: 100%;
     overflow: hidden;
   }
-  
+
   .statisticsSwiper {
     width: 100%;
     height: auto;
     min-height: 200px;
   }
-  
+
   .statisticsSwiper .swiper-slide {
     width: 100%;
     text-align: center;
@@ -1734,7 +1725,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     padding: 20px;
     margin: 0 auto;
   }
-  
+
   .statisticsSwiper .stat-item {
     box-shadow: none;
     padding: 0;
@@ -1745,7 +1736,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     margin-top: 15px;
     width: 100%;
   }
-  
+
   .statisticsSwiper .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
@@ -1753,9 +1744,9 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     opacity: 1;
     margin: 0 4px;
   }
-  
+
   .statisticsSwiper .swiper-pagination-bullet-active {
-    background: #22B573;
+    background: #22b573;
   }
 }
 
@@ -1763,11 +1754,11 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .stat-item {
     flex: 0 0 calc(50% - 20px);
   }
-  
+
   .statistics-title {
     font-size: 24px;
   }
-  
+
   .statistics-subtitle {
     font-size: 16px;
   }
@@ -1777,10 +1768,10 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
 }
 .AdsBanner {
-  *{
+  * {
     border-radius: 1rem;
   }
-  
+
   .banner-container {
     display: flex;
     gap: 1rem;
@@ -1814,9 +1805,9 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
-  .kaba-banner{
+  .kaba-banner {
     width: 100%;
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
@@ -1850,7 +1841,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     color: white;
   }
 
-  .duaa-text{
+  .duaa-text {
     position: absolute;
     top: 0;
     right: 0;
@@ -1859,7 +1850,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     font-weight: 800;
     font-family: Almarai;
     color: #726355;
-    }
+  }
 
   .duaa-content .banner-cta {
     display: inline-flex;
@@ -1870,7 +1861,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 0.5rem;
-
   }
 
   .duaa-content .banner-cta:hover {
@@ -1886,7 +1876,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     flex: 2;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .salam-banner,
@@ -1914,26 +1904,25 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
 
   .salam-banner .banner-content {
-
     text-align: right;
-    color: #28564C;
+    color: #28564c;
     font-family: Almarai;
 
-    .banner-title{
+    .banner-title {
       font-weight: 700;
       font-size: 1.5rem;
     }
-    .banner-cta span{
+    .banner-cta span {
       font-weight: 600;
-      font-size: 1.2rem;    }
-  
+      font-size: 1.2rem;
+    }
   }
-  .water-banner{
+  .water-banner {
     font-family: Almarai;
-    img{
+    img {
       filter: brightness(0.6);
     }
-    .banner-title{
+    .banner-title {
       font-weight: 400;
     }
   }
@@ -1941,8 +1930,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .water-banner .banner-content {
     text-align: right;
     color: white;
-   
-  
   }
 
   .banner-title {
@@ -1961,41 +1948,38 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .banner-cta i {
     font-size: 0.8rem;
   }
-
 }
 @media (max-width: 768px) {
   .AdsBanner {
-    *{
+    * {
       border-radius: 0 !important;
     }
     .banner-container {
-    width: 100% !important ;
-    border-radius: 0;
-    margin: 0;
-    
-  }}
-  .kaba-banner img{
+      width: 100% !important ;
+      border-radius: 0;
+      margin: 0;
+    }
+  }
+  .kaba-banner img {
     border-radius: 0;
   }
   .banner-row {
     flex-direction: column !important;
     gap: 0 !important;
   }
-  .banner-wrapper{
+  .banner-wrapper {
     gap: 0 !important;
   }
-  .right-banners{
+  .right-banners {
     gap: 0 !important;
-    *{
+    * {
       border-radius: 0;
-
     }
   }
 
   .duaa-banner {
-    height: 400px ;
+    height: 400px;
     border-radius: 0;
-    
   }
 
   .salam-banner,
@@ -2008,9 +1992,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   h2 {
     color: #004656;
   }
- 
-
-  
 }
 .RamdanProject-button-next {
   position: absolute;
@@ -2032,8 +2013,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     }
   }
 }
-
-
 
 @media screen and (min-width: 1024px) {
   main {
@@ -2117,30 +2096,28 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   }
   .topBar {
     height: fit-content;
-    padding: 0.5rem 2rem;    
-    .useraction{
+    padding: 0.5rem 2rem;
+    .useraction {
       margin: 0;
     }
   }
-  .topBar .user{ 
+  .topBar .user {
     display: none !important;
   }
 
   .navbar {
     height: 0;
     padding: 0;
-    .blue-bar{
+    .blue-bar {
       display: none;
     }
-    
-    .nav-content{
+
+    .nav-content {
       position: relative;
       width: 90%;
       margin: auto;
       border-radius: 1rem;
     }
-    
-    
   }
   .Ramdan {
     .swiper-button-prev::after,
@@ -2152,10 +2129,8 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 .nav-icon {
   display: none;
-  color: #fff ;
-
+  color: #fff;
 }
-
 
 /* NAVBAR */
 
@@ -2163,30 +2138,30 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .nav-icon {
     display: block;
   }
-  
+
   .navbar-toggler {
     border: none;
     padding: 10px 6px;
     border-radius: 50%;
     transition: all 0.3s ease;
   }
-  
+
   .navbar-toggler:focus {
     box-shadow: 0 0 0 0.25rem rgba(40, 86, 77, 0.25);
     outline: none;
   }
-  
+
   .navbar-toggler i {
     color: #fff;
 
     font-size: 1.2rem;
     transition: transform 0.3s ease;
   }
-  
+
   .navbar-toggler[aria-expanded="true"] i {
     transform: rotate(90deg);
   }
-  
+
   /* Animation for the collapsing menu */
   .navbar-collapse {
     position: absolute;
@@ -2201,19 +2176,19 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     background: #d6c89f;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
   .navbar .navbar-nav {
     flex-direction: column;
     width: 100%;
     padding: 0;
     gap: 0;
   }
-  
+
   .nav-item {
-    margin:  0;
+    margin: 0;
     text-align: right;
   }
-  
+
   .nav-link {
     color: #333;
     font-weight: 500;
@@ -2221,16 +2196,16 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
     text-decoration: none;
     transition: color 0.3s;
   }
-  
+
   .nav-link:hover {
     color: #000;
   }
-  
+
   .navbar-collapse.show {
     height: fit-content;
     display: block;
   }
-  
+
   @keyframes slideDown {
     0% {
       opacity: 0;
@@ -2304,7 +2279,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
       padding-bottom: 2rem;
     }
 
-
     .socialBanner {
       background-image: none;
     }
@@ -2321,7 +2295,6 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
       font-size: 31px;
     }
   }
-
 }
 @media screen and (max-width: 576px) {
   .container h2 {
@@ -2418,4 +2391,3 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
-
