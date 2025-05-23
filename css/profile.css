@@ -66,6 +66,12 @@
   }
 }
 
+.statistics-header{
+  padding: 2rem 2rem 0 ;
+  font-weight: 700;
+  font-size: 30px;
+}
+
 
 .statistics-container {
   font-family: "Ibm Plex Sans Arabic", sans-serif;
@@ -74,7 +80,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* background: #f8f8f8; */
+  background: #f8f8f8;
   padding: 2rem;
   border-radius: 50px;
   width: 100%;
@@ -87,18 +93,31 @@
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
+  position: relative; /* Add this */
   flex: 1 1 220px;
   height: 100%;
   min-height: 180px;
   min-width: 250px;
-  background: #fff;
   border-radius: 24px;
   padding: 1.5rem 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.086);
   transition: box-shadow 0.2s;
 }
+
+.statistic::after { /* Use pseudo-element instead of border-left */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%; /* Start at 25% from top */
+  height: 50%; /* Only 50% of height */
+  width: 1px;
+  background-color: #CCCCCC;
+}
+
+.statistic:last-of-type::after {
+  display: none; /* Remove border for last item */
+}
 .statistic:hover {
-  box-shadow: 0 6px 24px rgba(57, 178, 155, 0.08);
+  box-shadow: 4px 6px 24px rgba(57, 178, 156, 0.579);
 }
 .statistic:last-of-type {
   border-left: none;
@@ -106,10 +125,8 @@
 .total-statistic {
   flex: 1.5 1 320px;
   gap: 2rem;
-  background: linear-gradient(135deg, #e0f7f4 0%, #f8f8f8 100%);
-  border-radius: 32px;
+  /* background: linear-gradient(135deg, #e0f7f4 0%, #f8f8f8 100%); */
   padding: 2rem 1.5rem;
-  box-shadow: 0 4px 24px rgba(57, 178, 155, 0.1);
   i {
     transform: rotate(45deg);
   }
@@ -184,7 +201,7 @@
     min-width: 280px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   .statistics-container {
     flex-direction: column;
     align-items: center;
@@ -193,7 +210,7 @@
   }
   .statistic,
   .total-statistic {
-    border-left: none;
+    border: solid 1px #CCCCCC;
     gap: 4px;
     border-radius: 24px;
     min-width: unset;
@@ -201,11 +218,12 @@
     margin-bottom: 0.5rem;
     padding: 1rem;
     min-height: 250px;
+    box-shadow: 0 2px 8px rgba(51, 103, 118, 0.2);
   }
   .total-statistic {
     justify-content: space-around;
   }
-}
+} 
 @media (max-width: 600px) {
   .statistics-container {
     padding: 1rem;

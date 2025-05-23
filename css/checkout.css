@@ -2,7 +2,7 @@
 .checkout-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding:  1rem 1rem 3rem 1rem;
   font-family: 'Almarai', sans-serif;
 }
 
@@ -17,10 +17,14 @@
   
   .checkout-content {
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
   }
   
   .cart-container {
+    min-height: 900px;
     flex: 1;
+  
   }
   
   .cart-form {

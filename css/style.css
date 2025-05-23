@@ -961,7 +961,7 @@ footer {
       list-style: none;
       list-style-position: outside;
       li {
-        transform: translateX(-1.4rem);
+        transform: translateX(-1.9rem);
         text-align: right;
         color: #015263;
         font-weight: 700 !important;
