@@ -14,9 +14,7 @@
 }
 
 @media (min-width: 992px) {
-  .breadcrumb-item {
-    font-size: 1rem;
-  }
+  
   .checkout-content {
     flex-direction: row;
   }
@@ -31,27 +29,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .breadcrumb-item{
-    font-size: .7rem;
-  }
+
   .total-label{
     font-size:1rem !important;
   }
 }
 
 /* Cart Title */
-.head {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #f0f0f0;
-  padding-bottom: 1rem;
-}
 
-.cart-title {
-  color: #015263;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0;
-}
 
 /* Donation Items */
 .donation-summary {
@@ -217,40 +202,5 @@
 
 /* Form Styles */
 
-/* Breadcrumb Navigation */
-.checkout-breadcrumb {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  direction: rtl;
-}
 
-.breadcrumb-item {
-  color: #888;
-  text-decoration: none;
-  transition: color 0.2s;
-}
 
-.breadcrumb-item:hover {
-  color: #015263;
-}
-
-.breadcrumb-item.active {
-  color: #015263;
-  font-weight: 600;
-}
-
-.breadcrumb-separator {
-  margin: 0 0.75rem;
-  color: #ccc;
-  transform: rotate(180deg);
-  display: inline-block;
-}
-
-/* Adjust existing head styles */
-.head {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #f0f0f0;
-  padding-bottom: 1rem;
-}

@@ -34,7 +34,7 @@ input{
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.head{
+.cart .head{
   margin: 5rem 3rem 1rem 0;
   width: 100%;
 }
@@ -673,7 +673,7 @@ label,.text{
 }
 
 @media (max-width: 480px) {
-  .head{
+  .cart .head{
     margin: 3rem 2rem;
   }
   .cart-title{

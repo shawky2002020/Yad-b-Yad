@@ -424,7 +424,7 @@
 }
 
 .fast-pay .amount-btn-4 {
-  background-color: var(--dark-color); /* Dark teal */
+  background-color: var(--green-color); /* Dark teal */
 }
 /* Hover effects */
 .fast-pay .amount-btn:hover {

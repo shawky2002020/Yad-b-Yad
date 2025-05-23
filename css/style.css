@@ -18,7 +18,7 @@
   }
   @font-face {
     font-family: "droid";
-    src: url("../fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf")
+    src: url("../fonts/Droid\ Sans\ Arabic.ttf")
       format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -139,6 +139,68 @@ button {
   font-size: 30px;
 }
 
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  direction: rtl;
+}
+
+.breadcrumb-item {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item:hover {
+  color: #015263;
+}
+
+.breadcrumb-item.active {
+  color: #015263;
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.75rem;
+  color: #ccc;
+  transform: rotate(180deg);
+  display: inline-block;
+}
+.head {
+  font-family: droid;
+  margin: 3rem 0 ;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0;
+}
+
+.sub-title {
+  color: #015263;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .breadcrumb-item {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumb-item{
+    font-size: .7rem;
+  }
+  
+}
+@media screen and (max-width: 576px)  {
+  .sub-title{
+    font-size: 1rem;
+  }
+}
+
+
 /* Slider Pagination Styles */
 .swiper-pagination {
   position: absolute;
@@ -165,6 +227,7 @@ button {
 /*/////////////////////////////////////////////////////////Index Page ////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .topBar {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
   background-color: #06373e;
   background-position: center;
   background-size: cover;
@@ -252,10 +315,9 @@ button {
   .Name {
     position: absolute;
     right: 40%;
-    top: 4.5rem;
-    font-family: brando;
+    top: 60px;
     white-space: nowrap;
-    font-size: 2rem;
+    font-size: 40px;
     color: #f7ece0;
     z-index: 1;
     text-align: left;
@@ -359,6 +421,7 @@ button {
   }
 }
 .navbar {
+  font-family: 'IBM Plex Sans Arabic';
   background-color: #cec19c;
   height: 150px;
 
@@ -391,7 +454,7 @@ button {
       border-radius: 20px;
       display: flex;
       align-items: end;
-
+      transform: translateX(10px);
       transition: all 0.3s ease;
       border: 1px solid rgba(255, 255, 255, 0.2);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -462,9 +525,10 @@ button {
       transform: translateY(-2px);
     }
     a {
+      font-family: 'IBM Plex Sans Arabic';
       color: #10353c;
-      font-size: 1.4rem;
-      font-weight: 600;
+      font-size: 25px;
+      font-weight: 700;
       transition: all 0.3s ease;
 
       &:hover {
@@ -2135,6 +2199,15 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 }
 
 /* NAVBAR */
+@media screen and (max-width: 1224px)  {
+  .nav-item a{
+    font-size: 18px !important;
+  }
+  .topBar .Name{
+    font-size: 24px;
+    top: 80px;
+  }
+}
 
 @media (max-width: 991.98px) {
   .nav-icon {
@@ -2189,6 +2262,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
   .nav-item {
     margin: 0;
     text-align: right;
+    
   }
 
   .nav-link {
