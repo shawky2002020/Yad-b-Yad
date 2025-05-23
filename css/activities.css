@@ -148,7 +148,6 @@ font-family: Almarai;
   height: 38px;
   max-width: 269px;
   width: 100%;
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +155,7 @@ font-family: Almarai;
   text-align: center;
   transition: all 0.3s ease;
   text-decoration: none;
-  flex: 1 1;
+  flex-shrink: 1;
 }
 
 .activity-btn:hover {
@@ -164,7 +163,7 @@ font-family: Almarai;
 }
 
 /* Responsive adjustments */
-@media (max-width: 992px) {
+@media (max-width: 1324px) {
     .activity-card::after{
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.845) 40%, rgba(0, 0, 0, 0.021) 80%);
     }
@@ -204,7 +203,7 @@ font-family: Almarai;
         font-size: 1.1rem;
       }
   }
-
+ 
 }
 
 @media (max-width: 576px) {
@@ -220,7 +219,7 @@ font-family: Almarai;
     font-size: 1.1rem;
   }
   .activity-btn{
-    min-width: auto;
     width: 100%;
+    
   }
 }
