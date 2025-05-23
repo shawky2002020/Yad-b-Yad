@@ -1172,6 +1172,10 @@ footer {
 }
 
 @media screen and (max-width: 991.9px) {
+  .search-form{
+    transform: translateX(0) !important;
+
+  }
   .whatsapp-icon {
     bottom: 30px;
     left: 30px;
