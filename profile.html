@@ -30,45 +30,37 @@
   <body>
     <header>
       <div class="topBar">
-        <div class="container">
-          <div class="UserBox d-flex justify-content-between">
-            <div
-              onclick="window.location.href='index.html'"
-              class="logoBox p-4 d-none d-lg-block"
-            >
-              <img src="img/logo.png" alt="" />
+          <img class="back" src="img/nav-banner.png" alt="">
+          <div class="UserBox ">
+            <div onclick="window.location.href='index.html'" class="logoBox p-4 d-none d-lg-block">
+              <img src="img/logo.png" class="img-fluid logo-img" alt="" />
             </div>
 
-            <div class="Name pt-4 d-none d-lg-block">
-              <img src="img/LogoName.png" class="img-fluid" alt="" />
+            <div class="Name d-none d-lg-block">
+              <!-- <img src="img/LogoName.png" class="img-fluid" alt="" /> -->
+              مرحبا بكم في جمعية يدا بيد
             </div>
+
 
             <div class="useraction mx-auto mx-lg-0">
-              <div
-                onclick="window.location.href='index.html'"
-                class="logoBoxModile mx-auto d-lg-none text-center"
-              >
-                <img src="img/logo.png" class="img-fluid" alt="" />
-                <img src="img/LogoName.png" class="img-fluid" alt="" />
+              <div onclick="window.location.href='index.html'" class="logoBoxModile  d-lg-none text-center">
+                <img src="img/logo-small.png" class="img-fluid" alt="" />
               </div>
 
-              <div class="loginbox mt-4">
-                <div class="user d-flex align-items-center">
+              <div class="loginbox ">
+                <div class="user ">
                   <div class="basket p-2 ms-3 position-relative">
-                    <a href="cart.html">
-                      <i class="fa-solid fa-cart-shopping fs-4"></i>
-                    </a>
 
+                      <i class="fa-solid fa-cart-shopping fs-4"></i>
+  
                     <span
                       class="Badge position-absolute top-0 start-100 translate-middle badge rounded-pill"
                     >
                       1
                     </span>
                   </div>
-                  <div
-                    onclick="window.location.href='login.html'  "
-                    class="user-items"
-                  >
+                  <div onclick="window.location.href='login.html'  " class="user-items">
+  
                     <div class="usericon p-2">
                       <i class="fa-solid fa-user fs-4"></i>
                     </div>
@@ -76,51 +68,58 @@
                       <a class="me-4">تسجيل دخول</a>
                     </div>
                   </div>
+  
                 </div>
                 <div class="DonateNow d-flex justify-content-end">
                   <!-- <div class="usertext DonateNowBox px-2 mt-3">
                     <a class="me-4"> تبرع الان </a>
                   </div> -->
                 </div>
+                <div class="nav-left">
+                  <div class="search-icon d-md-none">
+
+                    <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                  </div>
+
+                  <div class="nav-icon">
+                    <button class="navbar-toggler custom-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+  <span class="hamburger-bar"></span>
+</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <button
-            class="navbar-toggler me-auto"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse d-lg-flex justify-content-between align-items-center"
-            id="navbarSupportedContent"
-          >
+      <nav class="navbar ">
+        <div class="blue-bar"></div>
+        <div class="nav-content">
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
             <ul
               class="navbar-nav text-center align-content-between mb-2 mb-lg-0 pe-0"
             >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >عن سهل</a
-                >
+                <a class="nav-link active" href="index.html">الرئيسية</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> مشاريعنا </a>
+                <a class="nav-link" href="#">من نحن</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> تسجيل مستفيد </a>
+                <a class="nav-link" href="#">الحوكمة</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> التواصل </a>
+                <a class="nav-link" href="#">الفعاليات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الفرص التطوعية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تسجيل عضوية</a>
               </li>
               <li class="nav-item dropdown">
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -170,35 +169,6 @@
                     </ul>
                   </li>
 
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      الباقات الخيرية( مجموعة برامج متنوعة )
-                    </a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      الباقات الخيرية( مجموعة برامج متنوعة )
-                    </a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      مشاريع الأجهزة الكهربائية
-                    </a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      مشاريع الأجهزة الكهربائية
-                    </a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      مشاريع الأجهزة الكهربائية
-                    </a>
-                  </li>
 
                   <li>
                     <a class="dropdown-item" href="#">
@@ -258,544 +228,252 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="search-form position-relative" role="search">
               <input
-                class="form-control me-2"
                 type="search"
                 placeholder="البحث"
                 aria-label="Search"
               />
+              <i class="fa-solid fa-magnifying-glass position-absolute"></i>
             </form>
           </div>
         </div>
       </nav>
     </header>
-
     <main>
+      <!-- User Profile Section -->
       <div class="profile-container">
-        <div class="container py-5 mt-3">
-          <div class="row">
-            <!-- Sidebar Navigation -->
-            <div class="col-md-4 mb-4">
-              <div class="profile-sidebar">
-                <div class="sidebar-menu">
-                  <a
-                    href="#"
-                    class="sidebar-item active"
-                    id="personal-info-tab"
-                  >
-                    <i class="fas fa-user-circle"></i>
-                    <span>حسابك الشخصي</span>
-                  </a>
-                  <a href="#" class="sidebar-item" id="statistics-tab">
-                    <i class="fas fa-chart-pie"></i>
-                    <span>إحصائيات</span>
-                  </a>
-                  <a href="#" class="sidebar-item" id="orders-tab">
-                    <i class="fas fa-clipboard-list"></i>
-                    <span>سجل الطلبات</span>
-                  </a>
-                  <a href="#" class="sidebar-item" id="gifts-tab">
-                    <i class="fas fa-gift"></i>
-                    <span>الإهداء الخيري</span>
-                  </a>
-                  <a href="#" class="sidebar-item" id="payment-cards-tab">
-                    <i class="fas fa-credit-card"></i>
-                    <span>بطاقات الدفع</span>
-                  </a>
-                  <a href="#" class="sidebar-item" id="delete-account-tab">
-                    <i class="fas fa-trash-alt"></i>
-                    <span>حذف الحساب</span>
-                  </a>
-
-                  <!-- Exit Button -->
-                  <div class="text-center my-4">
-                    <a href="#" class="btn exit-btn">
-                      <i class="fas fa-sign-out-alt ml-2"></i>
-                      تسجيل الخروج
-                    </a>
-                  </div>
+        <div class="container">
+          <!-- User Info Section -->
+          <div class="user-info-section">
+            <div class="row">
+              <div class="col-12">
+                <div class="welcome-header">
+                  <h2>مرحبا، منير فرج الله</h2>
+                  <h3>تعديل بيانات الحساب</h3>
                 </div>
               </div>
             </div>
 
-            <!-- Main Content -->
-            <div class="col-md-8">
-              <!-- Personal Info Section (Hidden) -->
-              <div class="profile-content" id="personal-info-content">
-                <!-- Profile Header -->
-                <div class="profile-header mb-4">
-                  <h2 class="section-title">معلومات حسابك الشخصي</h2>
-                </div>
-
-                <div class="profile-info-card">
-                  <div class="profile-info-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-4 profile-info-label">الاسم</div>
-                      <div class="col-md-8 profile-info-value">M Tamer</div>
-                    </div>
-                  </div>
-
-                  <div class="profile-info-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-4 profile-info-label">رقم الجوال</div>
-                      <div class="col-md-8 profile-info-value">597767751</div>
-                    </div>
-                  </div>
-
-                  <div class="profile-info-item">
-                    <div class="row align-items-center">
-                      <div class="col-md-4 profile-info-label">
-                        البريد الإلكتروني
-                      </div>
-                      <div class="col-md-8 profile-info-value">
-                        admin@admin.com
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="profile-actions mt-4 text-center">
-                    <button class="btn edit-profile-btn">تعديل</button>
+            <div class="user-data-section">
+              <h4>بيانات المتبرع</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="float-label">الاسم الأول</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="منير"
+                      readonly
+                    />
                   </div>
                 </div>
-
-                <div class="profile-header mb-4 mt-2">
-                  <h2 class="section-title">إحصائيات</h2>
-                </div>
-
-                <div class="statistics-cards">
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="stat-card">
-                        <div class="stat-value">6658</div>
-                        <div class="stat-label">إجمالي المبالغ</div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 mb-4">
-                      <div class="stat-card">
-                        <div class="stat-value">18</div>
-                        <div class="stat-label">عدد مرات التبرع</div>
-                      </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="float-label">الاسم الأخير</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="فرج الله"
+                      readonly
+                    />
                   </div>
                 </div>
-              </div>
-
-              <div class="profile-content" id="statistics-content">
-                <div class="profile-header mb-4">
-                  <h2 class="section-title">إحصائيات</h2>
+               
+              
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="float-label">رقم الجوال</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="+966 56 919 2308"
+                      readonly
+                    />
+                  </div>
                 </div>
-
-                <div class="statistics-cards">
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="stat-card">
-                        <div class="stat-value">6658</div>
-                        <div class="stat-label">إجمالي المبالغ</div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 mb-4">
-                      <div class="stat-card">
-                        <div class="stat-value">18</div>
-                        <div class="stat-label">عدد مرات التبرع</div>
-                      </div>
-                    </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="float-label">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      value="munerfarajalla@gmail.com"
+                      readonly
+                    />
+                  </div>
+                </div>
+               
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="float-label">كلمة المرور</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      value="********************"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="float-label">إعادة كلمة المرور</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      value="********************"
+                      readonly
+                    />
                   </div>
                 </div>
               </div>
-
-              <div class="profile-content" id="orders-content">
-                <div class="profile-header mb-4">
-                  <h2 class="section-title">سجل الطلبات</h2>
-                </div>
-
-                <!-- Statistics Summary -->
-                <div class="statistics-cards mb-4">
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="stat-card">
-                        <div class="stat-value">6658</div>
-                        <div class="stat-label">إجمالي المبالغ</div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 mb-4">
-                      <div class="stat-card">
-                        <div class="stat-value">18</div>
-                        <div class="stat-label">عدد مرات التبرع</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Filter Options -->
-                <div class="orders-filter mb-4">
-                  <div class="filter-buttons">
-                    <button class="filter-btn active">الكل</button>
-                    <button class="filter-btn">قيد التنفيذ</button>
-                    <button class="filter-btn">مكتمل</button>
-                    <button class="filter-btn">ملغي</button>
-                  </div>
-                </div>
-
-                <!-- Orders Table -->
-                <div class="orders-table-container">
-                  <div class="table-responsive">
-                    <table class="table orders-table">
-                      <thead>
-                        <tr>
-                          <th>معرف التبرع</th>
-                          <th>العدد</th>
-                          <th>إجمالي</th>
-                          <th>وسيلة الدفع</th>
-                          <th>تاريخ التبرع</th>
-                          <th>حالة الطلب</th>
-                          <th>عرض</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>14221312</td>
-                          <td>4</td>
-                          <td>2350</td>
-                          <td>تحويل بنكي</td>
-                          <td>13-01-2025 09:21:04</td>
-                          <td>
-                            <span class="status-badge canceled"
-                              >ملغى</span
-                            >
-                          </td>
-                          <td><button class="view-btn">عرض</button></td>
-                        </tr>
-                        <tr>
-                          <td>13893632</td>
-                          <td>2</td>
-                          <td>615</td>
-                          <td>تحويل بنكي</td>
-                          <td>24-12-2024 10:46:16</td>
-                          <td>
-                            <span class="status-badge pending"
-                              >قيد التنفيذ</span
-                            >
-                          </td>
-                          <td><button class="view-btn">عرض</button></td>
-                        </tr>
-                        <tr>
-                          <td>13828096</td>
-                          <td>2</td>
-                          <td>615</td>
-                          <td>تحويل بنكي</td>
-                          <td>24-12-2024 10:28:07</td>
-                          <td>
-                            <span class="status-badge canceled"
-                              >ملغى</span
-                            >
-                          </td>
-                          <td><button class="view-btn">عرض</button></td>
-                        </tr>
-                        <tr>
-                          <td>5505024</td>
-                          <td>1</td>
-                          <td>250</td>
-                          <td>تحويل بنكي</td>
-                          <td>19-11-2024 11:03:21</td>
-                          <td>
-                            <span class="status-badge pending"
-                              >قيد التنفيذ</span
-                            >
-                          </td>
-                          <td><button class="view-btn">عرض</button></td>
-                        </tr>
-                        <tr>
-                          <td>5242880</td>
-                          <td>1</td>
-                          <td>300</td>
-                          <td>تحويل بنكي</td>
-                          <td>30-09-2024 12:47:42</td>
-                          <td>
-                            <span class="status-badge completed">مكتمل</span>
-                          </td>
-                          <td><button class="view-btn">عرض</button></td>
-                        </tr>
-                        <tr>
-                          <td>4325376</td>
-                          <td>2</td>
-                          <td>2</td>
-                          <td>ابل باي</td>
-                          <td>03-09-2024 11:58:24</td>
-                          <td>
-                            <span class="status-badge pending"
-                              >قيد التنفيذ</span
-                            >
-                          </td>
-                          <td><button class="view-btn">عرض</button></td>
-                        </tr>
-                        <tr>
-                          <td>4194304</td>
-                          <td>1</td>
-                          <td>1</td>
-                          <td>ابل باي</td>
-                          <td>03-09-2024 10:00:47</td>
-                          <td>
-                            <span class="status-badge pending"
-                              >قيد التنفيذ</span
-                            >
-                          </td>
-                          <td><button class="view-btn">عرض</button></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-                <!-- Pagination -->
-                <div class="pagination-container mt-4">
-                  <nav aria-label="Page navigation">
-                    <ul class="pagination justify-content-center">
-                      <li class="page-item disabled">
-                        <a
-                          class="page-link"
-                          href="#"
-                          tabindex="-1"
-                          aria-disabled="true"
-                          >السابق</a
-                        >
-                      </li>
-                      <li class="page-item active">
-                        <a class="page-link" href="#">1</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">التالي</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="profile-content" id="payment-cards-content">
-                <div class="profile-header mb-4">
-                  <h2 class="section-title">بطاقات الدفع</h2>
-                  <p class="section-description">
-                    يمكنك إدارة بطاقات الدفع الخاصة بك هنا
-                  </p>
-                </div>
-
-                <!-- No Cards Found State -->
-                <div class="no-cards-container text-center py-5 mb-4">
-                  <div class="no-cards-icon mb-3">
-                    <i class="fas fa-credit-card fa-4x text-muted"></i>
-                  </div>
-                  <h3 class="no-cards-title mb-2">لا توجد بطاقات محفوظة</h3>
-                  <p class="no-cards-description mb-4">
-                    لم تقم بإضافة أي بطاقات دفع حتى الآن. أضف بطاقتك الأولى للتبرع بشكل أسرع في المستقبل.
-                  </p>
-                  <button class="btn add-card-btn" id="show-add-card-form-empty">
-                    <i class="fas fa-plus-circle me-2"></i>
-                    إضافة بطاقة جديدة
-                  </button>
-                </div>
-
-                <!-- Saved Cards -->
-                <div class="saved-cards-container mb-4">
-                  <div class="row">
-                    <!-- Card 1 -->
-                    <div class="col-md-6 mb-3">
-                      <div class="payment-card visa">
-                        <div class="card-header">
-                          <div class="card-type">
-                            <img
-                              src="img/visa.png"
-                              alt="Visa"
-                              class="card-logo"
-                            />
-                          </div>
-                          <div class="card-actions">
-                            <button
-                              class="card-action-btn edit-card"
-                              title="تعديل"
-                            >
-                              <i class="fas fa-pencil-alt"></i>
-                            </button>
-                            <button
-                              class="card-action-btn delete-card"
-                              title="حذف"
-                            >
-                              <i class="fas fa-trash-alt"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <div class="card-number">**** **** **** 4582</div>
-                          <div class="card-info">
-                            <div class="card-holder">محمد تامر</div>
-                            <div class="card-expiry">12/25</div>
-                          </div>
-                          <div class="default-badge">البطاقة الافتراضية</div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="col-md-6 mb-3">
-                      <div class="payment-card mastercard">
-                        <div class="card-header">
-                          <div class="card-type">
-                            <img
-                              src="img/mastercard.png"
-                              alt="Mastercard"
-                              class="card-logo"
-                            />
-                          </div>
-                          <div class="card-actions">
-                            <button
-                              class="card-action-btn edit-card"
-                              title="تعديل"
-                            >
-                              <i class="fas fa-pencil-alt"></i>
-                            </button>
-                            <button
-                              class="card-action-btn delete-card"
-                              title="حذف"
-                            >
-                              <i class="fas fa-trash-alt"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <div class="card-number">**** **** **** 7891</div>
-                          <div class="card-info">
-                            <div class="card-holder">محمد تامر</div>
-                            <div class="card-expiry">09/26</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Add New Card Button -->
-                <div class="text-center mb-4">
-                  <button class="btn add-card-btn" id="show-add-card-form">
-                    <i class="fas fa-plus-circle me-2"></i>
-                    إضافة بطاقة جديدة
-                  </button>
-                </div>
-
-                <!-- Add New Card Form (Hidden by default) -->
-                <div class="add-card-form-container" id="add-card-form">
-                  <div class="form-header">
-                    <h3>إضافة بطاقة جديدة</h3>
-                    <button class="close-form-btn" id="close-add-card-form">
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>
-
-                  <form class="add-card-form">
-                    <div class="form-group mb-3">
-                      <label for="card-number" class="form-label"
-                        >رقم البطاقة</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="card-number"
-                        placeholder="0000 0000 0000 0000"
-                        maxlength="19"
-                      />
-                    </div>
-
-                    <div class="row mb-3">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="card-expiry" class="form-label"
-                            >تاريخ الانتهاء</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="card-expiry"
-                            placeholder="MM/YY"
-                            maxlength="5"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="card-cvv" class="form-label"
-                            >رمز الأمان (CVV)</label
-                          >
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="card-cvv"
-                            placeholder="***"
-                            maxlength="3"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="form-group mb-3">
-                      <label for="card-holder" class="form-label"
-                        >اسم حامل البطاقة</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="card-holder"
-                        placeholder="الاسم كما يظهر على البطاقة"
-                      />
-                    </div>
-
-                    <div class="form-check mb-4">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="set-default-card"
-                      />
-                      <label class="form-check-label" for="set-default-card">
-                        تعيين كبطاقة افتراضية
-                      </label>
-                    </div>
-
-                    <div class="form-actions">
-                      <button
-                        type="button"
-                        class="btn cancel-btn"
-                        id="cancel-add-card"
-                      >
-                        إلغاء
-                      </button>
-                      <button type="submit" class="btn save-card-btn">
-                        حفظ
-                      </button>
-                    </div>
-                  </form>
-                </div>
-
-                <!-- Security Notice -->
-                <div class="security-notice">
-                  <div class="notice-icon">
-                    <i class="fas fa-shield-alt"></i>
-                  </div>
-                  <div class="notice-text">
-                    <h4>معلوماتك آمنة معنا</h4>
-                    <p>
-                      نستخدم تقنيات تشفير متقدمة لحماية بيانات بطاقتك. لن نشارك
-                      معلوماتك مع أي طرف ثالث.
-                    </p>
-                  </div>
-                </div>
+              <div class="text-center mt-4">
+                <button class="save-changes-btn">حفظ التعديلات</button>
               </div>
             </div>
           </div>
+
+          <!-- Donation Statistics Section -->
+        </div>
+      </div>
+
+      <!-- STATISTICS -->
+      <div class="statistics-container">
+        <div class="statistic total-statistic">
+          <div class="statistic-title">اجمالي تبرعاتي</div>
+          <div class="statistic-value">
+            21900.95
+            <span>25% <i class="fas fa-arrow-up"></i></span>
+          </div>
+          <div class="statistic-currency">ر.س- العام 2025</div>
+        </div>
+        <div class="statistic">
+          <div class="statistic-title">الزكوات</div>
+          <div class="progress-container">
+            <span class="progress-value">25%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="statistic-value">9500.05</div>
+          <div class="statistic-currency">ر.س</div>
+        </div>
+
+        <div class="statistic">
+          <div class="statistic-title">سقيا الماء</div>
+          <div class="progress-container">
+            <div class="progress-value">25%</div>
+            <div class="bar"></div>
+          </div>
+          <div class="statistic-value">500.00</div>
+          <div class="statistic-currency">ر.س</div>
+        </div>
+
+        <div class="statistic">
+          <div class="statistic-title">صدقات</div>
+          <div class="progress-container">
+            <span class="progress-value">25%</span>
+            <div class="bar"></div>
+          </div>
+          <div class="statistic-value">12500.00</div>
+          <div class="statistic-currency">ر.س</div>
+        </div>
+      </div>
+
+      <!-- Orders Table -->
+      <div class="orders-table-container">
+        <div class="table-responsive">
+          <table class="table orders-table">
+            <thead>
+              <tr>
+                <th>معرف التبرع</th>
+                <th>العدد</th>
+                <th>إجمالي</th>
+                <th>وسيلة الدفع</th>
+                <th>تاريخ التبرع</th>
+                <th>حالة الطلب</th>
+                <th>عرض</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>14221312</td>
+                <td>4</td>
+                <td>2350</td>
+                <td>تحويل بنكي</td>
+                <td>13-01-2025 09:21:04</td>
+                <td>
+                  <span class="status-badge canceled">ملغى</span>
+                </td>
+                <td><button class="view-btn">عرض</button></td>
+              </tr>
+              <tr>
+                <td>13893632</td>
+                <td>2</td>
+                <td>615</td>
+                <td>تحويل بنكي</td>
+                <td>24-12-2024 10:46:16</td>
+                <td>
+                  <span class="status-badge pending">قيد التنفيذ</span>
+                </td>
+                <td><button class="view-btn">عرض</button></td>
+              </tr>
+              <tr>
+                <td>13828096</td>
+                <td>2</td>
+                <td>615</td>
+                <td>تحويل بنكي</td>
+                <td>24-12-2024 10:28:07</td>
+                <td>
+                  <span class="status-badge canceled">ملغى</span>
+                </td>
+                <td><button class="view-btn">عرض</button></td>
+              </tr>
+              <tr>
+                <td>5505024</td>
+                <td>1</td>
+                <td>250</td>
+                <td>تحويل بنكي</td>
+                <td>19-11-2024 11:03:21</td>
+                <td>
+                  <span class="status-badge pending">قيد التنفيذ</span>
+                </td>
+                <td><button class="view-btn">عرض</button></td>
+              </tr>
+              <tr>
+                <td>5242880</td>
+                <td>1</td>
+                <td>300</td>
+                <td>تحويل بنكي</td>
+                <td>30-09-2024 12:47:42</td>
+                <td>
+                  <span class="status-badge completed">مكتمل</span>
+                </td>
+                <td><button class="view-btn">عرض</button></td>
+              </tr>
+              <tr>
+                <td>4325376</td>
+                <td>2</td>
+                <td>2</td>
+                <td>ابل باي</td>
+                <td>03-09-2024 11:58:24</td>
+                <td>
+                  <span class="status-badge pending">قيد التنفيذ</span>
+                </td>
+                <td><button class="view-btn">عرض</button></td>
+              </tr>
+              <tr>
+                <td>4194304</td>
+                <td>1</td>
+                <td>1</td>
+                <td>ابل باي</td>
+                <td>03-09-2024 10:00:47</td>
+                <td>
+                  <span class="status-badge pending">قيد التنفيذ</span>
+                </td>
+                <td><button class="view-btn">عرض</button></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </main>
@@ -804,18 +482,13 @@
       <div class="row">
         <div class="col-12 col-lg-3 p-0">
           <div class="first p-3">
-            <img src="img/headfooter.png" class="headfooter" alt="" />
             <div class="footer-text">
-              <h5>عن مراكز الاحياء</h5>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-                iure facilis corporis tempore incidunt fugit explicabo maiores
-                molestias error cumque obcaecati, nostrum totam, sint sapiente
-                reprehenderit officia repellendus alias rem.
-              </p>
+
+              <h2 class="first-title">عــن الجمعية</h2>
+              <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
             </div>
             <div
-              class="socialIncons d-flex justify-content-center align-items-center"
+              class="socialIncons d-flex justify-content-center align-items-center mt-4"
             >
               <a class="icon">
                 <i class="fa-brands fa-instagram"></i>
@@ -841,16 +514,17 @@
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
             </div>
-            <p class="mt-3 text-center d-none d-md-block">
+            <p class="mt-1 text-center d-none d-md-block">
               جميع الحقوق محفوظة 2025 &#169;
+              
             </p>
           </div>
         </div>
-        <div class="col-12 col-lg-2 p-0">
+        <div class="col-12 col-lg-3 p-0">
           <div class="secand p-3 h-100">
+            <h5 >أهم الروابط :</h5>
             <ul class="text-center">
-              <h5>أهم الروابط :</h5>
-              <li>الباقات الخيرية</li>
+              <li>البرامج الخيرية</li>
               <li>أهم المشارريع</li>
               <li>الحالات الطارئة</li>
               <li>الحسابات البنكية</li>
@@ -878,26 +552,29 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-3 p-0">
+        <div class="col-12 col-lg-3  p-0 four">
           <div
-            class="fourth d-flex flex-column justify-content-center align-items-center h-100"
+            class="fourth d-flex flex-column justify-content-start align-items-center h-100"
           >
-            <h5>معلومات الاتصال</h5>
+            <h2 class="fourth-title">معلومات الاتصال</h2>
             <div
-              class="fristrow d-flex justify-content-center align-items-center"
+              class="fristrow  d-flex justify-content-center align-items-center "
             >
-              <a>
+              <a class="contact">
                 <span>0500000</span>
                 <i class="fa-solid fa-phone"></i>
               </a>
-              <a>
+              <a class="contact">
                 <span>0120555</span>
                 <i class="fa-solid fa-blender-phone"></i>
               </a>
             </div>
-            <div class="Secandrow my-3">
-              <a class="d-inline-block">
-                email@gmail.com <i class="fa-solid fa-envelope"></i>
+            <div class="Secandrow  my-3">
+              <a class="contact">
+                <span>
+                  email@gmail.com
+                </span> 
+                <i id="email-icon" class="fa-solid fa-envelope"></i>
               </a>
             </div>
             <div
