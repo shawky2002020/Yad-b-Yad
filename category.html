@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sahl</title>
+    <title>الاقسام</title>
 
     <!--Bootstrap cdn -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -25,34 +25,38 @@
     <!-- Custom Stylsheet-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/category.css" />
-    <link rel="stylesheet" href="css/custom-card.css">
+    <link rel="stylesheet" href="css/custom-card.css" />
   </head>
-<body>
-  <header>
-    <div class="topBar">
-      <div class="container">
-        <div class="UserBox d-flex justify-content-between">
-          <div onclick="window.location.href='index.html'" class="logoBox p-4 d-none d-lg-block">
-            <img src="img/logo.png" alt="" />
+
+  <body>
+    <header>
+      <div class="topBar">
+        <img class="back" src="img/nav-banner.png" alt="" />
+        <div class="UserBox">
+          <div
+            onclick="window.location.href='index.html'"
+            class="logoBox p-4 d-none d-lg-block"
+          >
+            <img src="img/logo.png" class="img-fluid logo-img" alt="" />
           </div>
 
-          <div class="Name pt-4 d-none d-lg-block">
-            <img src="img/LogoName.png" class="img-fluid" alt="" />
+          <div class="Name d-none d-lg-block">
+            <!-- <img src="img/LogoName.png" class="img-fluid" alt="" /> -->
+            مرحبا بكم في جمعية يدا بيد
           </div>
 
           <div class="useraction mx-auto mx-lg-0">
-            <div class="logoBoxModile mx-auto d-lg-none text-center">
-              <img src="img/logo.png" class="img-fluid" alt="" />
-              <img src="img/LogoName.png" class="img-fluid" alt="" />
+            <div
+              onclick="window.location.href='index.html'"
+              class="logoBoxModile d-lg-none text-center"
+            >
+              <img src="img/logo-small.png" class="img-fluid" alt="" />
             </div>
 
-            <div class="loginbox mt-4">
-              <div class="user d-flex align-items-center">
+            <div class="loginbox">
+              <div class="user">
                 <div class="basket p-2 ms-3 position-relative">
-                  <a href="cart.html">
-
-                    <i class="fa-solid fa-cart-shopping fs-4"></i>
-                  </a>
+                  <i class="fa-solid fa-cart-shopping fs-4"></i>
 
                   <span
                     class="Badge position-absolute top-0 start-100 translate-middle badge rounded-pill"
@@ -60,8 +64,10 @@
                     1
                   </span>
                 </div>
-                <div class="user-items">
-
+                <div
+                  onclick="window.location.href='login.html'  "
+                  class="user-items"
+                >
                   <div class="usericon p-2">
                     <i class="fa-solid fa-user fs-4"></i>
                   </div>
@@ -69,351 +75,218 @@
                     <a class="me-4">تسجيل دخول</a>
                   </div>
                 </div>
-
               </div>
               <div class="DonateNow d-flex justify-content-end">
                 <!-- <div class="usertext DonateNowBox px-2 mt-3">
-                  <a class="me-4"> تبرع الان </a>
-                </div> -->
+                      <a class="me-4"> تبرع الان </a>
+                    </div> -->
+              </div>
+              <div class="nav-left">
+                <div class="search-icon d-md-none">
+                  <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+                </div>
+
+                <div class="nav-icon">
+                  <button
+                    class="navbar-toggler custom-hamburger"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <button
-          class="navbar-toggler me-auto"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse d-lg-flex justify-content-between align-items-center"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav text-center align-content-between mb-2 mb-lg-0 pe-0"
-          >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >عن سهل</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> مشاريعنا </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> تسجيل مستفيد </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> التواصل </a>
-            </li>
-            <li class="nav-item dropdown">
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Link
-                  </a>
+      <nav class="navbar">
+        <div class="blue-bar"></div>
+        <div class="nav-content">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav text-center align-content-between mb-2 mb-lg-0 pe-0"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">من نحن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الحوكمة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="activities.html">الفعاليات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الفرص التطوعية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تسجيل عضوية</a>
+              </li>
+              <li class="nav-item dropdown">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Link
+                    </a>
 
-                  <ul class="dropdown-menu submenu">
-                    <li>
-                      <a class="dropdown-item" href="#">Action</a>
-                    </li>
+                    <ul class="dropdown-menu submenu">
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
 
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
 
-                    <li><hr class="dropdown-divider" /></li>
+                      <li><hr class="dropdown-divider" /></li>
 
-                    <li class="nav-item dropdown">
-                      <a
-                        class="dropdown-item dropdown-toggle"
-                        href="#"
-                        role="button"
-                      >
-                        Link 2
-                      </a>
-                      <ul class="dropdown-menu submenu">
-                        <li>
-                          <a class="dropdown-item" href="#">1</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">2</a>
-                        </li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                          <a class="dropdown-item" href="#">3</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          role="button"
+                        >
+                          Link 2
+                        </a>
+                        <ul class="dropdown-menu submenu">
+                          <li>
+                            <a class="dropdown-item" href="#">1</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">2</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
 
-                <li>
-                  <a class="dropdown-item" href="#">
-                    الباقات الخيرية( مجموعة برامج متنوعة )
-                  </a>
-                </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      مشارية الأجهزة الكهربائية
+                    </a>
+                  </li>
 
-                <li>
-                  <a class="dropdown-item" href="#">
-                    الباقات الخيرية( مجموعة برامج متنوعة )
-                  </a>
-                </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
 
-                <li>
-                  <a class="dropdown-item" href="#">
-                    مشاريع الأجهزة الكهربائية
-                  </a>
-                </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Link
+                    </a>
 
-                <li>
-                  <a class="dropdown-item" href="#">
-                    مشاريع الأجهزة الكهربائية
-                  </a>
-                </li>
+                    <ul class="dropdown-menu submenu">
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
 
-                <li>
-                  <a class="dropdown-item" href="#">
-                    مشاريع الأجهزة الكهربائية
-                  </a>
-                </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
 
-                <li>
-                  <a class="dropdown-item" href="#">
-                    مشاريع الأجهزة الكهربائية
-                  </a>
-                </li>
+                      <li><hr class="dropdown-divider" /></li>
 
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Link
-                  </a>
-
-                  <ul class="dropdown-menu submenu">
-                    <li>
-                      <a class="dropdown-item" href="#">Action</a>
-                    </li>
-
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-
-                    <li><hr class="dropdown-divider" /></li>
-
-                    <li>
-                      <a
-                        class="dropdown-item dropdown-toggle"
-                        href="#"
-                        role="button"
-                      >
-                        Link 2
-                      </a>
-                      <ul class="dropdown-menu submenu">
-                        <li>
-                          <a class="dropdown-item" href="#">1</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">2</a>
-                        </li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                          <a class="dropdown-item" href="#">3</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="البحث"
-              aria-label="Search"
-            />
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
->
-  
-  <main>
-  
-    <div class="title">
-      <svg xmlns="http://www.w3.org/2000/svg" width="208.064" height="58.206" viewBox="0 0 208.064 58.206">
-        <path id="Path_26618" data-name="Path 26618" d="M481.482,389.9c6.044-1.173,7.922-7.687,7.922-13.612v-4.693a9.465,9.465,0,0,1,9.506-9.506,9.74,9.74,0,1,1,.059,19.479h-3.461c-.939,4.519-3.58,8.743-11.852,8.743A9.147,9.147,0,0,1,481.482,389.9Zm17.779-15.02a3.171,3.171,0,0,0,3.051-3.168,3.2,3.2,0,0,0-6.395,0v3.168Zm17.452-27.87,6.1-3.287.763,30.1c.117,1.056.645,1.056.821,1.056h.821v6.688h-1.232c-3.52,0-6.571-2.992-6.571-7.333v.059Zm7.684,34.558h7.863v-6.688H524.4Zm6.923,0h7.863v-6.688H531.32Zm6.923,0H546.1v-6.688h-7.861Zm6.923,0h7.861v-6.688h-7.861Zm6.923,0h7.861v-6.688h-7.861Zm6.921,0h7.863v-6.688h-7.863Zm6.923,0h7.863v-6.688h-7.863Zm36.261-6.688c-.059-2.816-.3-9.388-.764-13.612l6.1-3.227c.235,1.936.939,11.381,1.056,16.839h.469v6.688H572.8v-6.688H584.12v-1.7c0-1.173-.176-3.346-.528-6.69l6.1-3.227c.176,2.112.645,7.042.763,11.618h2.581c0-2.288-.235-7.159-.7-11.09l6.1-3.227c.235,2.053.88,9.5,1,14.316Zm5.979,6.688h7.863v-6.688h-7.863Zm30.98,0s.528-3.872.528-5.749c0-3.872-.939-17.191-6.747-17.191-3.17,0-9.741,4.635-9.741,12.027a5.837,5.837,0,0,0,1.819,4.226h-9.975v6.688ZM625.245,354.34a3.232,3.232,0,0,1-3.168-3.168A3.192,3.192,0,0,1,625.245,348a3.155,3.155,0,0,1,3.168,3.168A3.192,3.192,0,0,1,625.245,354.34Zm6.1,10.151c1.234,0,2.466,6.336,2.466,10.444v.176c-2.231-1.291-4.46-3.989-4.46-5.458C629.352,366.955,630.819,364.491,631.347,364.491Zm1.644-10.151a3.193,3.193,0,0,1-3.17-3.168,3.155,3.155,0,0,1,3.17-3.168,3.193,3.193,0,0,1,3.168,3.168A3.232,3.232,0,0,1,632.991,354.34Zm12.464-12.732h9.975l-.235-3.579h-1.877c-1.173,0-2.7-.176-2.7-1.349,0-1.584,2.171-1.643,3.4-1.643a8.759,8.759,0,0,1,1.232.117l-2.171-2.935a3.249,3.249,0,0,0-1.056-.117c-2.642,0-4.754,1.7-4.754,3.463,0,.939.587,1.7,1.995,2.464h-2.347Zm5.692,39.957h21.063a89.206,89.206,0,0,0-5.867-13.378c5.163-9.269,7.1-20.594,7.627-25.054l-7.333,2.935a63.568,63.568,0,0,1-3.931,15.607c-5.282-9.154-11.031-18.014-11.031-18.014l-5.223,3.932c1.525,1.819,7.863,11.618,13.319,20.124a20.038,20.038,0,0,1-8.624,7.687Zm7.568-6.688c1.291-1.291,2.7-2.523,3.7-3.755a22.105,22.105,0,0,1,2,3.461l.235.293Zm22.5-27.812,6.16-3.346c.7,33.68.7,34.795,2.172,36.5a14.919,14.919,0,0,1-4.7,1.584c-2.405,0-2.992-1.819-2.992-6.219Z" transform="translate(-481.482 -332.102)" fill="#004656"/>
-      </svg>
+                      <li>
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          role="button"
+                        >
+                          Link 2
+                        </a>
+                        <ul class="dropdown-menu submenu">
+                          <li>
+                            <a class="dropdown-item" href="#">1</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">2</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">3</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="search-form position-relative" role="search">
+              <input type="search" placeholder="البحث" aria-label="Search" />
+              <i class="fa-solid fa-magnifying-glass position-absolute"></i>
+            </form>
           </div>
-          <section class="sections mt-5 category">
-            <div class="container  text-center">
-              <div class="SectionSwiper mt-5">
-                <div class="swiper ProjectSections">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-1 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-2 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-    
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-1 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-    
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-2 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-    
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-1 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-    
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-2 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-    
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-1 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-    
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-2 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-    
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-1 p-4"
-                      >
-                        <img src="img/moon.png" class="img-fluid" alt="" />
-                        <div class="section-desc">سقى الماء</div>
-    
-                      </div>
-                    </div>
-    
-                    <div class="swiper-slide">
-                      <div
-                        class="Card d-flex align-items-center justify-content-center Card-2 p-4"
-                      >
-                      <img src="img/moon.png" class="img-fluid" alt="" />
-                      <div class="section-desc">سقى الماء</div>
-    
-                    </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sections home">
+        <div class="category-container">
+          <p class="title text-center">الأقســـــــام</p>
+          <div class="SectionSwiper mt-5">
+            <div class="swiper ProjectSections">
+              <div class="wrapper">
+                <div class="slide ">
+                  <div class="category-content Card">
+                    <img class="category-img" src="img/category-1.png" alt="" />
+                    <img
+                      class="sub-category-img"
+                      src="img/sub-category1.png"
+                      alt=""
+                    />
+                    <div class="category-desc">
+                      مشاريـــــــــع رمضـــــــــــان
                     </div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <!-- <div class="swiper-button-prev ProjectSection-button-prev"></div>
-                <div class="swiper-button-next ProjectSection-button-next"></div> -->
               </div>
             </div>
-          </section>
-    
-      <section class="RamdanProjects mt-2">
+          </div>
+        </div>
+      </section>
+      <section class="RamdanProjects mb-3 category ">
         <div class="container pb-2 text-center">
           <h2>برامج متنوعة تستحق عطائكم و دعمكم</h2>
-          <div
-            class="Projects d-flex justify-content-center align-items-center my-4"
-          >
-            <div class="project active px-3 py-1">
-              <h4>إفطار صائم</h4>
-            </div>
-            <div class="project mx-3 px-3 py-1">
-              <h4>سقيا الماء</h4>
-            </div>
-            <div class="project px-3 py-1">
-              <h4>الاضاحي</h4>
-            </div>
-          </div>
           <div class="Ramdan position-relative">
-            <div class="swiper RamdanProjectSwiper">
+            <div class=" projects">
               <!-- Additional required wrapper -->
-               <div class="swiper-wrapper">
+               <div class="row">
 
-                <div class="swiper-slide">
+                <div class="slide my-4 col-lg-4 col-md-6 col-sm-12">
                   <!-- Card with input for amount only -->
-                  <div onclick="window.location.href='project.html'" class="CardBox custom-card">
-                    <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                  <div  class="CardBox custom-card">
+                    <div class="custom-card-header custom-card-header-bg">
                       <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
-                      <i class="fa-solid fa-share-nodes custom-card-icon"></i>
                     </div>
-                    <div class="custom-card-img custom-card-img-bg">
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
                       <img src="img/project3.png" alt="project" class="custom-card-img-el">
                     </div>
                     <div class="custom-card-body custom-card-body-bg">
@@ -444,18 +317,22 @@
                           <i class="fa-solid fa-cart-plus"></i>
                         </button>
                       </div>
+
                     </div>
+                  </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
                   </div>
                 </div>
 
-                <div class="swiper-slide">
+
+                <div class="slide my-4 col-lg-4 col-md-6 col-sm-12">
                   <!-- Card with input and fixed amounts -->
-                  <div onclick="window.location.href='project.html'" class="CardBox custom-card">
-                    <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                  <div class="CardBox custom-card">
+                    <div class="custom-card-header custom-card-header-bg">
                       <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
-                      <i class="fa-solid fa-share-nodes custom-card-icon"></i>
                     </div>
-                    <div class="custom-card-img custom-card-img-bg">
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
                       <img src="img/project3.png" alt="project" class="custom-card-img-el">
                     </div>
                     <div class="custom-card-body custom-card-body-bg">
@@ -487,18 +364,114 @@
                           <i class="fa-solid fa-cart-plus"></i>
                         </button>
                       </div>
+                     
+
                     </div>
+                  </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
+                  </div>
+                </div>
+                <div class="slide my-4 col-lg-4 col-md-6 col-sm-12">
+                  <!-- Card with input and fixed amounts -->
+                  <div class="CardBox custom-card">
+                    <div class="custom-card-header custom-card-header-bg">
+                      <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                    </div>
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="money-collected">
+
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span>تم جمع: <br>500,000 ر.س</br></span>
+                          <span>المبلغ المتبقي: <br>500,000 ر.س</br></span>
+                        </div>
+                        <div class="progress mb-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
+                        <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
+                        <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
+                        <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
+                        <input class="form-control custom-card-input" type="text" placeholder="مبلغ ">
+
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-3 custom-card-action-row">
+                        <input disabled class="form-control custom-card-input" type="text" placeholder=":مبلغ التبرع">
+                        <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                          تبرع الآن
+                        </button>
+                        <button class="btn btn-outline-secondary custom-card-cart-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                      </div>
+                     
+
+                    </div>
+                  </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
+                  </div>
+                </div>
+                <div class="slide my-4 col-lg-4 col-md-6 col-sm-12">
+                  <!-- Card with input and fixed amounts -->
+                  <div class="CardBox custom-card">
+                    <div class="custom-card-header custom-card-header-bg">
+                      <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
+                    </div>
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
+                      <img src="img/project3.png" alt="project" class="custom-card-img-el">
+                    </div>
+                    <div class="custom-card-body custom-card-body-bg">
+                      <div class="money-collected">
+
+                        <div class="d-flex justify-content-between mb-2 custom-card-amount-row">
+                          <span>تم جمع: <br>500,000 ر.س</br></span>
+                          <span>المبلغ المتبقي: <br>500,000 ر.س</br></span>
+                        </div>
+                        <div class="progress mb-2 custom-card-progress">
+                          <div class="progress-bar custom-card-progress-bar">
+                            %50
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
+                        <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
+                        <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
+                        <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
+                        <input class="form-control custom-card-input" type="text" placeholder="مبلغ ">
+
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between mb-3 custom-card-action-row">
+                        <input disabled class="form-control custom-card-input" type="text" placeholder=":مبلغ التبرع">
+                        <button class="btn btn-success flex-grow-1 custom-card-donate-btn">
+                          تبرع الآن
+                        </button>
+                        <button class="btn btn-outline-secondary custom-card-cart-btn">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                      </div>
+                     
+
+                    </div>
+                  </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
                   </div>
                 </div>
 
-                <div class="swiper-slide">
+                <div class="slide my-4 col-lg-4 col-md-6 col-sm-12">
                   <!-- Card with multiple fixed amounts only -->
-                  <div onclick="window.location.href='project.html'" class="CardBox custom-card">
-                    <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                  <div  class="CardBox custom-card">
+                    <div class="custom-card-header custom-card-header-bg">
                       <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
-                      <i class="fa-solid fa-share-nodes custom-card-icon"></i>
                     </div>
-                    <div class="custom-card-img custom-card-img-bg">
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
                       <img src="img/project3.png" alt="project" class="custom-card-img-el">
                     </div>
                     <div class="custom-card-body custom-card-body-bg">
@@ -513,7 +486,8 @@
                             %50
                           </div>
                         </div>
-                      </div>                  <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
+                      </div>  
+                                      <div class="d-flex align-items-center justify-content-between mb-3 custom-card-btn-row">
                         <button class="amount-btn amount-btn-500">500 <span>ر.س</span> </button>
                         <button class="amount-btn amount-btn-100">100 <span>ر.س</span> </button>
                         <button class="amount-btn amount-btn-50">50 <span>ر.س</span> </button>
@@ -531,16 +505,18 @@
                       </div>
                     </div>
                   </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
+                  </div>
                 </div>
 
-                <div  class="swiper-slide">
+                <div  class="slide my-4 col-lg-4 col-md-6 col-sm-12">
                   <!-- Card with one fixed amount only -->
-                  <div onclick="window.location.href='project.html'" class="CardBox custom-card">
-                    <div class="custom-card-header d-flex align-items-center justify-content-between custom-card-header-bg">
+                  <div  class="CardBox custom-card">
+                    <div class="custom-card-header custom-card-header-bg">
                       <span class="custom-card-title">إفطار صائم بصحن الحرم</span>
-                      <i class="fa-solid fa-share-nodes custom-card-icon"></i>
                     </div>
-                    <div class="custom-card-img custom-card-img-bg">
+                    <div onclick="window.location.href='project.html'" class="custom-card-img custom-card-img-bg">
                       <img src="img/project3.png" alt="project" class="custom-card-img-el">
                     </div>
                     <div class="custom-card-body custom-card-body-bg">
@@ -572,164 +548,138 @@
                       </div>
                     </div>
                   </div>
+                  <div class="infoBox text-center mt-1">
+                    <button class="button-more d-inline-block"> المزيـــــــــد </button>
+                  </div>
                 </div>
 
                </div>
             </div>
-            <div class="swiper-button-next RamdanProject-button-next"></div>
-            <div class="swiper-button-prev RamdanProject-button-prev"></div>
           </div>
-          <div class="infoBox text-center mt-3">
-            <a class="button-more d-inline-block"> المزيـــــــــد </a>
-          </div>
+         
         </div>
       </section>
-
-      <footer>
-        <div class="row">
-          <div class="col-12 col-lg-3 p-0">
-            <div class="first p-3">
-              <div class="footer-text">
-  
-                <h2 class="first-title">عــن الجمعية</h2>
-                <p class="first-text">هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و تلبي الاحتياجات الاساسية.</p>
-              </div>
-              <div
-                class="socialIncons d-flex justify-content-center align-items-center mt-4"
-              >
-                <a class="icon">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-  
-                <a class="icon">
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-  
-                <a class="icon">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-  
-                <a class="icon">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </a>
-  
-                <a class="icon">
-                  <i class="fa-brands fa-snapchat"></i>
-                </a>
-  
-                <a class="icon">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </a>
-              </div>
-              <p class="mt-1 text-center d-none d-md-block">
-                جميع الحقوق محفوظة 2025 &#169;
-                
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3 p-0">
-            <div class="secand p-3 h-100">
-              <h5 >أهم الروابط :</h5>
-              <ul class="text-center">
-                <li>البرامج الخيرية</li>
-                <li>أهم المشارريع</li>
-                <li>الحالات الطارئة</li>
-                <li>الحسابات البنكية</li>
-                <li>المستفيدين</li>
-                <li>التبرع السريع</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3 p-0">
-            <div
-              class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0"
-            >
-              <div
-                class="ImgContainer d-flex justify-content-between align-items-center"
-              >
-                <img src="img/Logo 1.png" class="img-fluid" alt="" />
-                <img src="img/Logo 1.png" class="img-fluid" alt="" />
-              </div>
-              <div
-                class="ImgContainer2 d-flex justify-content-center align-items-center mt-2"
-              >
-                <img src="img/pay-1.png" class="img-fluid" alt="" />
-                <img src="img/pay-2.png" class="img-fluid" alt="" />
-                <img src="img/pay-4.png" class="img-fluid" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-3  p-0">
-            <div
-              class="fourth d-flex flex-column justify-content-start align-items-center h-100"
-            >
-              <h2 class="fourth-title">معلومات الاتصال</h2>
-              <div
-                class="fristrow  d-flex justify-content-center align-items-center "
-              >
-                <a class="contact">
-                  <span>0500000</span>
-                  <i class="fa-solid fa-phone"></i>
-                </a>
-                <a class="contact">
-                  <span>0120555</span>
-                  <i class="fa-solid fa-blender-phone"></i>
-                </a>
-              </div>
-              <div class="Secandrow  my-3">
-                <a class="contact">
-                  <span>
-                    email@gmail.com
-                  </span> 
-                  <i id="email-icon" class="fa-solid fa-envelope"></i>
-                </a>
-              </div>
-              <div
-                class="ThridRow d-flex justify-content-between align-items-center"
-              >
-                <img src="img/pay-6.png" class="img-fluid" alt="" />
-                <img src="img/pay-7.png" class="img-fluid" alt="" />
-              </div>
-              <p class="mt-3 text-center d-md-none">
-                جميع الحقوق محفوظة 2025 &#169;
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-      
     </main>
-    <div id="cartSuccessModal" class="cart-modal" style="display:none;">
-      <div class="cart-modal-content">
-        <button class="cart-modal-close" onclick="document.getElementById('cartSuccessModal').style.display='none'">&times;</button>
-        <div class="cart-modal-header d-flex align-items-center gap-2">
-          <img src="img/logo.png" alt="Vision IT Solutions" style="width:32px;height:32px;">
-          <!-- <span style="font-weight:bold;">Vision It Solutions Vision It Solutions</span> -->
+
+    <footer>
+      <div class="row">
+        <div class="col-12 col-lg-3 p-0">
+          <div class="first p-3">
+            <div class="footer-text">
+              <h2 class="first-title">عــن الجمعية</h2>
+              <p class="first-text">
+                هي منظمة خيرية غير ربحية تهدف الي دعم و مساعدة اهالي الاحياء
+                الاكثر احتياجا. من خلال تقديم حلول مستدامه تعزز جودة الحياة و
+                تلبي الاحتياجات الاساسية.
+              </p>
+            </div>
+            <div
+              class="socialIncons d-flex justify-content-center align-items-center mt-4"
+            >
+              <a class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+
+              <a class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <p class="mt-1 text-center d-none d-md-block">
+              جميع الحقوق محفوظة 2025 &#169;
+            </p>
+          </div>
         </div>
-        <hr>
-        <div class="cart-modal-body text-center my-3" style="font-size:1.2rem;">
-          تم اضافة المشروع الي سلة التبرع بنجاح
+        <div class="col-12 col-lg-3 p-0">
+          <div class="secand p-3 h-100">
+            <h5>أهم الروابط :</h5>
+            <ul class="text-center">
+              <li>البرامج الخيرية</li>
+              <li>أهم المشارريع</li>
+              <li>الحالات الطارئة</li>
+              <li>الحسابات البنكية</li>
+              <li>المستفيدين</li>
+              <li>التبرع السريع</li>
+            </ul>
+          </div>
         </div>
-        <hr>
-        <div class="cart-modal-footer d-flex justify-content-center gap-2">
-          <button class="btn btn-secondary" onclick="document.getElementById('cartSuccessModal').style.display='none'">إغلاق</button>
-          <button class="btn btn-success" style="background:#39646c;border:none;">عرض السلة</button>
+        <div class="col-12 col-lg-3 p-0">
+          <div
+            class="thrid h-100 d-flex flex-column justify-content-center align-items-center p-3 p-lg-0"
+          >
+            <div
+              class="ImgContainer d-flex justify-content-between align-items-center"
+            >
+              <img src="img/Logo 1.png" class="img-fluid" alt="" />
+              <img src="img/Logo 1.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="ImgContainer2 d-flex justify-content-center align-items-center mt-2"
+            >
+              <img src="img/pay-1.png" class="img-fluid" alt="" />
+              <img src="img/pay-2.png" class="img-fluid" alt="" />
+              <img src="img/pay-4.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 p-0">
+          <div
+            class="fourth d-flex flex-column justify-content-start align-items-center h-100"
+          >
+            <h2 class="fourth-title">معلومات الاتصال</h2>
+            <div
+              class="fristrow d-flex justify-content-center align-items-center"
+            >
+              <a class="contact">
+                <span>0500000</span>
+                <i class="fa-solid fa-phone"></i>
+              </a>
+              <a class="contact">
+                <span>0120555</span>
+                <i class="fa-solid fa-blender-phone"></i>
+              </a>
+            </div>
+            <div class="Secandrow my-3">
+              <a class="contact">
+                <span> email@gmail.com </span>
+                <i id="email-icon" class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            <div
+              class="ThridRow d-flex justify-content-between align-items-center"
+            >
+              <img src="img/pay-6.png" class="img-fluid" alt="" />
+              <img src="img/pay-7.png" class="img-fluid" alt="" />
+            </div>
+            <p class="mt-3 text-center d-md-none">
+              جميع الحقوق محفوظة 2025 &#169;
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-        <!--Bootstrap cdn -->
-        <script src="js/bootstrap.bundle.min.js"></script>
-
-        <!--Swiper-->
-        <script src="js/swiper-bundle.js"></script>
-    
-        <!--Animation-->
-        <script src="js/wow.min.js"></script>
-    
-        <!--Custom Script-->
-        <script src="js/main.js"></script>
-        <script src="js/category.js"></script>
-    
-<!-- Add to Cart Popup Modal -->
-</body>
+    </footer>
+    <!--Bootstrap cdn -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <!--Animation-->
+    <script src="js/wow.min.js"></script>
+    <!--Custom Script-->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
 </html>

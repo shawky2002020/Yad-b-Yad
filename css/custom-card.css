@@ -15,6 +15,13 @@
   .value{
     font-family:droid ;
   }
+  .form-control{
+    padding: 1px 3px;
+
+  }
+  .form-control::placeholder{
+    font-size: 16px;
+  }
 }
 .custom-card-header-bg {
   width: 100%;
@@ -29,6 +36,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.category .custom-card-header{
+  justify-content: center;
+  text-align: center;
 }
 .custom-card i{
   font-size: 1rem;
@@ -197,6 +208,11 @@
 
 .custom-card-action-row{
   gap: 10px;
+  .form-control{
+    padding:  5px;
+
+  }
+  
 }
 
 /* Mobile Ramadan Project Cards */
@@ -394,4 +410,36 @@
   }
   
 }
+}
+
+@media screen and (max-width: 1450px) {
+  .custom-card-action-row .form-control{
+   padding: 3px;
+  }
+  .category{
+   
+  
+  .custom-card{
+  width: 290px;
+ }
+ .custom-card-input{
+  flex: 1;
+ }
+ .amount-btn{
+  font-size: 14px !important;
+  span{
+   font-size: 9px ;
+  }
+ }
+ .custom-card-progress-bar{
+  font-size: 10px;
+ }
+ button{
+  font-size: 14px !important;
+ }
+ i{
+  font-size: 10px;
+ }
+}
+
 }
