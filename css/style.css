@@ -451,7 +451,7 @@ button {
     bottom: 0;
   }
   .nav-content {
-    width: 90%;
+    width: 95%;
     display: flex;
   }
   .navbar-toggler {
@@ -470,7 +470,7 @@ button {
       border-radius: 20px;
       display: flex;
       align-items: end;
-      transform: translateX(10px);
+      transform: translateX(40px);
       transition: all 0.3s ease;
       border: 1px solid rgba(255, 255, 255, 0.2);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -532,10 +532,12 @@ button {
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 1.2rem;
+    justify-content: end;
+    width: 100%;
+    gap: 43px;
   }
   .nav-item {
+
     .active {
       color: #ffffff;
       transform: translateY(-2px);
@@ -543,7 +545,7 @@ button {
     a {
       font-family: 'IBM Plex Sans Arabic';
       color: #10353c;
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 700;
       transition: all 0.3s ease;
 
@@ -2220,6 +2222,9 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 
 /* NAVBAR */
 @media screen and (max-width: 1224px)  {
+  .navbar-nav{
+    gap: 20px !important;
+  }
   .nav-item a{
     font-size: 18px !important;
   }
