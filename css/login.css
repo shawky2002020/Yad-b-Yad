@@ -42,7 +42,7 @@ main input::placeholder{
 }
 
 .auth-title i {
-  color: #f7a41c;
+  color: var(--secondary-color);
 }
 
 .auth-description {

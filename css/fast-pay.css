@@ -55,6 +55,13 @@
     color: #10353C;
     transition: transform 1s ease;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease;
+  }
+  .plus-btn:hover {
+    transform: scale(1.4);
   }
 
   .white-layer {

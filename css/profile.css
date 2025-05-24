@@ -1,3 +1,7 @@
+.profile-page{
+  padding: 2rem 4rem;
+}
+
 .welcome-header {
   padding: 5rem 0 0.5rem 0;
   font-family: droid;
@@ -12,13 +16,13 @@
     font-weight: 700;
   }
 }
-
 .profile-container {
   .form-group{
     font-family: cairo;
     position: relative;
     margin: 12px 0;
   }
+
   .form-control {
     background: transparent;
     border-radius: 80px;
@@ -67,7 +71,7 @@
 }
 
 .statistics-header{
-  padding: 2rem 2rem 0 ;
+  padding: 2rem  0 0 0 ;
   font-weight: 700;
   font-size: 30px;
 }
@@ -225,6 +229,12 @@
   }
 } 
 @media (max-width: 600px) {
+  .profile-page {
+    padding: 1rem;
+  }
+  .welcome-header{
+    padding: 1rem;
+  }
   .statistics-container {
     padding: 1rem;
     border-radius: 18px;
@@ -306,6 +316,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  margin: 2rem 0;
 }
 
 .orders-table {

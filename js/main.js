@@ -305,4 +305,38 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
  
- 
+document.addEventListener("DOMContentLoaded", function() {
+  // ... existing code ...
+  
+  // Make navigation links active based on current page
+  function setActiveNavLink() {
+    // Get current page URL
+    const currentPage = window.location.pathname.split('/').pop();
+    
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    
+    // Remove active class from all links
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+    
+    // Add active class to current page link
+    navLinks.forEach(link => {
+      console.log('currentPage',currentPage);
+      console.log('////////');
+      const linkHref = link.getAttribute('href');
+      console.log('link',link);
+      
+      if (linkHref === currentPage || 
+          (currentPage === '' && linkHref === 'index.html') || 
+          (currentPage === '/' && linkHref === 'index.html')) {
+        link.classList.add('active');
+      }
+    });
+  }
+  
+  // Call the function when page loads
+  setActiveNavLink();
+});
