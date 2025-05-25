@@ -256,7 +256,7 @@ button {
     transition: 0.3s;
     height: 4px;
     background-color: #fff;
-    margin: 4px 1rem;
+    margin: 0 1rem;
   }
 
   .hamburger-bar:nth-child(1) {
@@ -283,10 +283,50 @@ button {
     width: 32px;
   }
   .nav-left {
-    display: flex;
+    display: none;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
+    .user-mobile{
+      margin-left: 4px;
+      display: flex;
+      
+      .basket-mobile,.user-items-mobile{
+        transform: scale(.9);
+        margin: 0 !important;
+        background: #0000003a;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        i{
+          font-size: 1.2rem !important;
+      
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .Badge{
+          background-color: var(--secondary-color);
+          color: #fff;
+          font-size: 12px;
+          font-weight: 700;
+          padding: 0 5px;
+          border-radius: 50%;
+          position: absolute;
+          top: -2px;
+          right: -10px;
+          z-index: 1;
+
+        }
+      }
+    }
     .search-icon {
       width: 50px;
       height: 50px;
@@ -301,6 +341,11 @@ button {
       i {
         font-size: 1.2rem;
       }
+    }
+  }
+  @media screen and (max-width: 990px)  {
+    .nav-left{
+      display: flex;
     }
   }
   .back {
@@ -355,7 +400,7 @@ button {
       margin-left: 2rem;
     }
     .logoBoxModile {
-      width: 215px;
+      width: 145px;
       cursor: pointer;
       img {
         width: 100%;
@@ -1371,6 +1416,7 @@ html[dir="rtl"] .RamdanProjects .swiper-button-prev {
 .mobile-only {
   display: none;
 }
+
 
 @media screen and (max-width: 768px) {
   .desktop-only {
