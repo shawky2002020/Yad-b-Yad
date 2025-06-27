@@ -37,25 +37,34 @@
 ### Homepage & Core Pages
 | Homepage | About Us | Governance |
 |----------|----------|------------|
-| ![Homepage](https://via.placeholder.com/300x200/667eea/ffffff?text=Homepage) | ![About Us](https://via.placeholder.com/300x200/764ba2/ffffff?text=About+Us) | ![Governance](https://via.placeholder.com/300x200/667eea/ffffff?text=Governance) |
+| ![Homepage](![home](https://github.com/user-attachments/assets/faf27218-64e2-4d12-9f5c-100b82c5948d)
+) | ![About Us](![about](https://github.com/user-attachments/assets/1dcd061c-d843-4462-8773-9c490691d574)
+) | ![Governance](![license](https://github.com/user-attachments/assets/f35cc239-7cb2-4354-a0d5-62d567aa4f45)
+) |
 | Interactive landing with sliders | Mission and vision showcase | Organizational transparency |
 
 ### User Management & Activities
 | Activities | Volunteer Registration | User Profile |
 |------------|----------------------|---------------|
-| ![Activities](https://via.placeholder.com/300x200/764ba2/ffffff?text=Activities) | ![Volunteer](https://via.placeholder.com/300x200/667eea/ffffff?text=Volunteer) | ![Profile](https://via.placeholder.com/300x200/764ba2/ffffff?text=Profile) |
+| ![Activities](![activities](https://github.com/user-attachments/assets/20ed7e7a-0303-43c3-af78-5473c436b4b1)
+) | ![Volunteer](![register](https://github.com/user-attachments/assets/9f617def-7046-4f10-ac7d-dfefb559d136)
+) | ![Profile](![dashboard](https://github.com/user-attachments/assets/52b98ef3-8f20-4d3b-8d29-1b40f456b854)
+) |
 | Events and initiatives | Volunteer signup system | User account management |
 
 ### Donation System
 | Donation Categories | Shopping Cart | Checkout |
 |--------------------|---------------|----------|
-| ![Categories](https://via.placeholder.com/300x200/667eea/ffffff?text=Categories) | ![Cart](https://via.placeholder.com/300x200/764ba2/ffffff?text=Cart) | ![Checkout](https://via.placeholder.com/300x200/667eea/ffffff?text=Checkout) |
+| ![Categories]() | ![Cart](![pay](https://github.com/user-attachments/assets/ad7d4c79-d6df-4165-8535-22b5361d13f7)
+) | ![Checkout](![checkout](https://github.com/user-attachments/assets/b0b5464a-053f-4e47-a22f-a724e6565b89)
+) |
 | Browse project types | Manage donations | Secure payment process |
 
 ### Additional Pages
 | Beneficiary Registration |
 |-------------------------|
-| ![Beneficiary](https://via.placeholder.com/300x200/764ba2/ffffff?text=Beneficiary) |
+| ![Beneficiary](![register](https://github.com/user-attachments/assets/915cc384-caa3-45a4-8c48-68c7878bccf8)
+) |
 | Registration for aid recipients |
 
 > **📸 Want to add your actual screenshots?** Replace the placeholder URLs above with your actual website screenshots!
