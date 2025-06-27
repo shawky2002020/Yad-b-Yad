@@ -2,14 +2,9 @@
 
 <div align="center">
   
-![GitHub stars](https://img.shields.io/github/stars/yourusername/yad-b-yad?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/yad-b-yad?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/yad-b-yad?style=for-the-badge)
-![GitHub license](https://img.shields.io/github/license/yourusername/yad-b-yad?style=for-the-badge)
 
 **A comprehensive charity website platform with RTL support for seamless donation management, volunteer coordination, and beneficiary registration.**
 
-[🌐 Live Demo](https://your-demo-link.com) | [📖 Documentation](#documentation) | [🐛 Report Bug](https://github.com/yourusername/yad-b-yad/issues) | [✨ Request Feature](https://github.com/yourusername/yad-b-yad/issues)
 
 </div>
 
