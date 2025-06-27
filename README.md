@@ -37,37 +37,26 @@
 ### Homepage & Core Pages
 | Homepage | About Us | Governance |
 |----------|----------|------------|
-| (![home](https://github.com/user-attachments/assets/faf27218-64e2-4d12-9f5c-100b82c5948d)
-) | (![about](https://github.com/user-attachments/assets/1dcd061c-d843-4462-8773-9c490691d574)
-) |(![license](https://github.com/user-attachments/assets/f35cc239-7cb2-4354-a0d5-62d567aa4f45)
-) |
+| ![Homepage](https://github.com/user-attachments/assets/faf27218-64e2-4d12-9f5c-100b82c5948d) | ![About Us](https://github.com/user-attachments/assets/1dcd061c-d843-4462-8773-9c490691d574) | ![Governance](https://github.com/user-attachments/assets/f35cc239-7cb2-4354-a0d5-62d567aa4f45) |
 | Interactive landing with sliders | Mission and vision showcase | Organizational transparency |
 
 ### User Management & Activities
 | Activities | Volunteer Registration | User Profile |
 |------------|----------------------|---------------|
-| (![activities](https://github.com/user-attachments/assets/20ed7e7a-0303-43c3-af78-5473c436b4b1)
-) | (![register](https://github.com/user-attachments/assets/9f617def-7046-4f10-ac7d-dfefb559d136)
-) | (![dashboard](https://github.com/user-attachments/assets/52b98ef3-8f20-4d3b-8d29-1b40f456b854)
-) |
+| ![Activities](https://github.com/user-attachments/assets/20ed7e7a-0303-43c3-af78-5473c436b4b1) | ![Volunteer Registration](https://github.com/user-attachments/assets/9f617def-7046-4f10-ac7d-dfefb559d136) | ![User Dashboard](https://github.com/user-attachments/assets/52b98ef3-8f20-4d3b-8d29-1b40f456b854) |
 | Events and initiatives | Volunteer signup system | User account management |
 
 ### Donation System
-|Shopping Cart | Checkout |
-|--------------------|---------------|
-| (![pay](https://github.com/user-attachments/assets/ad7d4c79-d6df-4165-8535-22b5361d13f7)
-) |(![checkout](https://github.com/user-attachments/assets/b0b5464a-053f-4e47-a22f-a724e6565b89)
-) |
-| Browse project types | Manage donations | Secure payment process |
+| Shopping Cart | Checkout |
+|---------------|----------|
+| ![Shopping Cart](https://github.com/user-attachments/assets/ad7d4c79-d6df-4165-8535-22b5361d13f7) | ![Checkout](https://github.com/user-attachments/assets/b0b5464a-053f-4e47-a22f-a724e6565b89) |
+| Manage donations | Secure payment process |
 
 ### Additional Pages
 | Beneficiary Registration |
 |-------------------------|
-| (![register](https://github.com/user-attachments/assets/915cc384-caa3-45a4-8c48-68c7878bccf8)
-) |
+| ![Beneficiary Registration](https://github.com/user-attachments/assets/915cc384-caa3-45a4-8c48-68c7878bccf8) |
 | Registration for aid recipients |
-
-> **📸 Want to add your actual screenshots?** Replace the placeholder URLs above with your actual website screenshots!
 
 </div>
 
@@ -293,7 +282,7 @@ We welcome contributions from the community! Here's how you can help:
 
 ---
 
-## 📋 Versions
+## 📋 Roadmap
 
 ### 🔄 Current Version (v1.0)
 - [x] Basic website structure
@@ -302,6 +291,20 @@ We welcome contributions from the community! Here's how you can help:
 - [x] Form validation
 - [x] Interactive components
 
+### 🚀 Upcoming Features (v2.0)
+- [ ] Payment gateway integration
+- [ ] User dashboard enhancements
+- [ ] Email notification system
+- [ ] Advanced reporting
+- [ ] Multi-language support
+- [ ] API development
+
+### 🌟 Future Vision (v3.0)
+- [ ] Mobile app companion
+- [ ] AI-powered matching
+- [ ] Blockchain transparency
+- [ ] Social media integration
+- [ ] Advanced analytics
 
 ---
 
@@ -352,7 +355,24 @@ copies or substantial portions of the Software.
 
 </div>
 
+### 📧 Contact Information
 
+- **Email**: contact@yadbyadcharity.org
+- **Website**: https://yadbyadcharity.org
+- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Issues**: [GitHub Issues](https://github.com/yourusername/yad-b-yad/issues)
+
+---
+
+## 🙏 Acknowledgments
+
+- **Bootstrap Team** - For the amazing CSS framework
+- **Swiper.js** - For smooth slider components
+- **Font Awesome** - For beautiful icons
+- **Community Contributors** - For their valuable input and support
+- **Open Source Community** - For inspiration and best practices
+
+---
 
 ## ⭐ Show Your Support
 
