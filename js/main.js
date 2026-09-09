@@ -18,6 +18,34 @@
     link.dataset.figmaFidelity = 'true';
     document.head.appendChild(link);
   }
+
+  // Legacy pages contain a few Swiper containers without the required
+  // .swiper-wrapper child. Swiper throws while measuring those containers,
+  // which previously surfaced as a page-level getComputedStyle exception.
+  // Keep valid carousels untouched and gracefully skip only malformed ones.
+  if (typeof window.Swiper === 'function' && !window.Swiper.__yadByYadGuarded) {
+    const NativeSwiper = window.Swiper;
+    function SafeSwiper(target, options) {
+      const element = typeof target === 'string' ? document.querySelector(target) : target;
+      const hasWrapper = element && typeof element.querySelector === 'function' && element.querySelector('.swiper-wrapper');
+
+      if (!element || !hasWrapper) {
+        return {
+          el: element || null,
+          destroyed: false,
+          update: function () {},
+          destroy: function () { this.destroyed = true; }
+        };
+      }
+
+      return new NativeSwiper(target, options);
+    }
+
+    Object.setPrototypeOf(SafeSwiper, NativeSwiper);
+    SafeSwiper.prototype = NativeSwiper.prototype;
+    SafeSwiper.__yadByYadGuarded = true;
+    window.Swiper = SafeSwiper;
+  }
 })();
 
 document.write('<script src="js/figma-runtime.js"></' + 'script>');
