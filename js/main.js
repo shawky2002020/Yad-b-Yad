@@ -20,4 +20,5 @@
   }
 })();
 
+document.write('<script src="js/figma-runtime.js"></' + 'script>');
 document.write('<script src="js/main-legacy.js"></' + 'script>');
