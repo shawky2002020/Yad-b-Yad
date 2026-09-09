@@ -19,9 +19,9 @@
     document.head.appendChild(link);
   }
 
-  // A few legacy carousel definitions reference optional wrappers/controls that
-  // are not present on every page. Prevent those missing elements from causing
-  // page-level Swiper measurement exceptions while preserving valid carousels.
+  // Legacy carousel markup is not consistent across every page. Keep valid
+  // Swipers working, sanitize missing controls, and isolate any malformed
+  // instance so one optional carousel cannot break the rest of the document.
   if (typeof window.Swiper === 'function' && !window.Swiper.__yadByYadGuarded) {
     const NativeSwiper = window.Swiper;
 
@@ -31,18 +31,20 @@
       return Boolean(document.querySelector(value));
     }
 
+    function noOpSwiper(element) {
+      return {
+        el: element || null,
+        destroyed: false,
+        update: function () {},
+        destroy: function () { this.destroyed = true; }
+      };
+    }
+
     function SafeSwiper(target, options) {
       const element = typeof target === 'string' ? document.querySelector(target) : target;
       const hasWrapper = element && typeof element.querySelector === 'function' && element.querySelector('.swiper-wrapper');
 
-      if (!element || !hasWrapper) {
-        return {
-          el: element || null,
-          destroyed: false,
-          update: function () {},
-          destroy: function () { this.destroyed = true; }
-        };
-      }
+      if (!element || !hasWrapper) return noOpSwiper(element);
 
       const safeOptions = options ? { ...options } : {};
 
@@ -56,7 +58,12 @@
         delete safeOptions.pagination;
       }
 
-      return new NativeSwiper(target, safeOptions);
+      try {
+        return new NativeSwiper(target, safeOptions);
+      } catch (error) {
+        console.warn('Skipped malformed legacy carousel:', target, error && error.message ? error.message : error);
+        return noOpSwiper(element);
+      }
     }
 
     Object.setPrototypeOf(SafeSwiper, NativeSwiper);
