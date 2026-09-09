@@ -39,7 +39,7 @@ jobs:
 
       - name: Capture and audit pages
         run: |
-          cat > /tmp/visual-check.mjs <<'EOF'
+          cat > visual-check.mjs <<'EOF'
           import { chromium } from 'playwright';
           import fs from 'node:fs';
           import path from 'node:path';
@@ -142,7 +142,7 @@ jobs:
 
           if (hasFailure) process.exitCode = 1;
           EOF
-          node /tmp/visual-check.mjs
+          node visual-check.mjs
 
       - name: Upload visual artifacts
         if: always()
