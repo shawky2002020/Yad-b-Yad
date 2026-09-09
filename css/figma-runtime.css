@@ -1,0 +1,237 @@
+.figma-quick-donation {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  direction: rtl;
+  color: #000;
+  font-family: Cairo, "IBM Plex Sans Arabic", sans-serif;
+}
+
+.figma-quick-title {
+  width: 100%;
+  min-height: 86px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Almarai, sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 700;
+  color: #000;
+  text-align: right;
+}
+
+.figma-quick-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.figma-pill-field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #4d4d4d;
+  border-radius: 50px;
+  background: #fff;
+  overflow: hidden;
+  font-family: Cairo, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.figma-pill-field .figma-field-label {
+  flex: 0 0 auto;
+  color: rgba(77, 77, 77, .3);
+  font-size: 16px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.figma-pill-field input,
+.figma-pill-field select {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #000;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+  box-shadow: none;
+}
+
+.figma-pill-field input::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.figma-pill-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+.figma-pill-field > i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.figma-field-suffix {
+  color: rgba(77, 77, 77, .3);
+  font-weight: 700;
+}
+
+.figma-country-field {
+  width: 100%;
+}
+
+.figma-payment-heading {
+  width: 100%;
+  margin: -1px 0 0;
+  font-family: Almarai, sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000;
+  text-align: right;
+}
+
+.figma-payment-grid {
+  width: 100%;
+  height: 169px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 50px);
+  gap: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.figma-pay-method {
+  height: 50px;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 80px;
+  color: #fff;
+  font-family: "Droid Sans", "Droid Sans Arabic", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.figma-pay-method:hover {
+  transform: translateY(-1px);
+}
+
+.figma-pay-method.apple {
+  background: #000;
+}
+
+.figma-pay-method.apple.selected {
+  box-shadow: inset 0 0 0 3px #f00;
+}
+
+.figma-pay-method.google {
+  background: #4285f4;
+}
+
+.figma-pay-method.visa {
+  background: #1a1f71;
+}
+
+.figma-pay-method.visa strong {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 19px;
+}
+
+.figma-pay-method.mastercard {
+  background: #f79e1b;
+}
+
+.figma-pay-method i {
+  font-size: 22px;
+}
+
+.figma-quick-submit {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 50px;
+  background: #10353c;
+  color: #fff;
+  font-family: Cairo, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  body[data-figma-page="index"] .fast-pay.expanded .donation-form {
+    padding: 50px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .figma-quick-donation {
+    gap: 16px;
+  }
+
+  .figma-quick-title {
+    min-height: auto;
+    font-size: 34px;
+    line-height: 1.3;
+  }
+
+  .figma-quick-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .figma-payment-heading {
+    font-size: 24px;
+  }
+
+  .figma-payment-grid {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    padding: 16px;
+  }
+
+  .figma-pay-method {
+    width: 100%;
+  }
+}

@@ -1,0 +1,345 @@
+/* Fine-grained geometry pass for the Figma reference screens. */
+
+/* Home hero */
+body[data-figma-page="index"] .banner,
+body[data-figma-page="index"] .bannerSwiper,
+body[data-figma-page="index"] .bannerSwiper .swiper-wrapper,
+body[data-figma-page="index"] .bannerSwiper .swiper-slide,
+body[data-figma-page="index"] .bannerSwiper .img_Layer,
+body[data-figma-page="index"] .bannerSwiper .img_Layer img {
+  width: 100% !important;
+}
+
+body[data-figma-page="index"] .banner {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+body[data-figma-page="index"] .bannerSwiper,
+body[data-figma-page="index"] .bannerSwiper .swiper-wrapper,
+body[data-figma-page="index"] .bannerSwiper .swiper-slide,
+body[data-figma-page="index"] .bannerSwiper .img_Layer,
+body[data-figma-page="index"] .bannerSwiper .img_Layer img {
+  height: 100% !important;
+}
+
+body[data-figma-page="index"] .bannerSwiper .swiper-slide {
+  position: relative !important;
+}
+
+body[data-figma-page="index"] .bannerSwiper .img_Layer {
+  position: absolute !important;
+  inset: 0 !important;
+}
+
+body[data-figma-page="index"] .bannerSwiper .img_Layer img {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+body[data-figma-page="index"] .bannerSwiper .text_Layer {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  pointer-events: none !important;
+}
+
+body[data-figma-page="index"] .bannerSwiper .text_Layer .container {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+body[data-figma-page="index"] .bannerSwiper .text_Layer h1 {
+  margin: 0 !important;
+  color: #8a7a59 !important;
+  font-family: "IBM Plex Sans Arabic", Almarai, sans-serif !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+
+body[data-figma-page="index"] .whatsapp-icon {
+  position: absolute !important;
+  z-index: 10 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: #25d366 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+body[data-figma-page="index"] .whatsapp-icon i {
+  color: #fff !important;
+}
+
+@media (min-width: 992px) {
+  body[data-figma-page="index"] .banner {
+    height: 979px !important;
+    min-height: 979px !important;
+  }
+
+  body[data-figma-page="index"] .bannerSwiper .text_Layer h1 {
+    width: 520px !important;
+    font-size: 60px !important;
+    line-height: 1.4 !important;
+  }
+
+  body[data-figma-page="index"] .whatsapp-icon {
+    left: 126px !important;
+    bottom: 125px !important;
+    width: 78px !important;
+    height: 78px !important;
+    font-size: 47px !important;
+  }
+
+  body[data-figma-page="index"] .bannerSwiper .swiper-pagination {
+    bottom: 42px !important;
+  }
+
+  body[data-figma-page="index"] .bannerSwiper .swiper-pagination-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 9px !important;
+    background: #fff !important;
+    opacity: 1 !important;
+  }
+
+  /* The desktop category carousel in Figma uses five cards across the 1480px content area. */
+  body[data-figma-page="index"] .SectionSwiper,
+  body[data-figma-page="index"] .ProjectSections {
+    width: 100% !important;
+    max-width: 1480px !important;
+  }
+
+  body[data-figma-page="index"] .ProjectSections .swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  body[data-figma-page="index"] .category-content {
+    width: 263px !important;
+    height: 330px !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  body[data-figma-page="index"] .category-content .category-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  body[data-figma-page="index"] .category-content .sub-category-img {
+    position: absolute !important;
+    top: 80px !important;
+    left: 50% !important;
+    width: 74px !important;
+    height: 74px !important;
+    transform: translateX(-50%) !important;
+    object-fit: contain !important;
+  }
+
+  body[data-figma-page="index"] .category-content .category-desc {
+    position: absolute !important;
+    right: 20px !important;
+    bottom: 52px !important;
+    left: 20px !important;
+    color: #86795a !important;
+    font-family: "Droid Sans", "Droid Sans Arabic", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 30px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body[data-figma-page="index"] main {
+    position: relative !important;
+  }
+
+  body[data-figma-page="index"] .banner {
+    height: 228px !important;
+    min-height: 228px !important;
+  }
+
+  body[data-figma-page="index"] .bannerSwiper .text_Layer h1 {
+    width: 180px !important;
+    color: #8a7a59 !important;
+    font-size: 30px !important;
+    line-height: 1.45 !important;
+  }
+
+  body[data-figma-page="index"] .whatsapp-icon {
+    left: 34px !important;
+    bottom: 13px !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 25px !important;
+  }
+
+  body[data-figma-page="index"] .bannerSwiper .swiper-pagination {
+    bottom: 13px !important;
+  }
+
+  body[data-figma-page="index"] .bannerSwiper .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 7px !important;
+    background: #fff !important;
+    opacity: 1 !important;
+  }
+
+  /* 402px Figma: hero ends at 308, quick donation ends at 353, title begins at 380. */
+  body[data-figma-page="index"] .sections.home {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body[data-figma-page="index"] .category-container {
+    padding: 72px 25px 0 !important;
+  }
+
+  body[data-figma-page="index"] .category-container > .title {
+    margin: 0 0 21px !important;
+    height: 39px !important;
+    line-height: 39px !important;
+  }
+
+  body[data-figma-page="index"] .categories-grid {
+    width: 352px !important;
+    max-width: calc(100vw - 50px) !important;
+    margin: 0 auto !important;
+  }
+
+  body[data-figma-page="index"] .categories-grid > .row {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    margin: 0 !important;
+  }
+
+  body[data-figma-page="index"] .categories-grid > .row > [class*="col-"] {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  body[data-figma-page="index"] .categories-grid .category-content {
+    width: 100% !important;
+    height: 214px !important;
+    min-height: 214px !important;
+    margin: 0 !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  body[data-figma-page="index"] .categories-grid .category-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  body[data-figma-page="index"] .categories-grid .sub-category-img {
+    position: absolute !important;
+    z-index: 2 !important;
+    top: 39px !important;
+    left: 50% !important;
+    width: 45px !important;
+    height: 45px !important;
+    transform: translateX(-50%) !important;
+    object-fit: contain !important;
+  }
+
+  body[data-figma-page="index"] .categories-grid .category-desc {
+    position: absolute !important;
+    right: 10px !important;
+    bottom: 35px !important;
+    left: 10px !important;
+    color: #86795a !important;
+    font-family: "Droid Sans", "Droid Sans Arabic", sans-serif !important;
+    font-size: 13px !important;
+    line-height: 25px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+  }
+
+  /* Keep the fifth card on the left, as in the Figma mobile frame. */
+  body[data-figma-page="index"] .categories-grid > .row > [class*="col-"]:nth-child(5) {
+    grid-column: 1 !important;
+  }
+
+  /* Mobile project cards in the Figma are 352px wide with no page-edge overflow. */
+  body[data-figma-page="index"] .RamdanProjects.mobile-only,
+  body[data-figma-page="index"] .high-sales-projects.mobile-only,
+  body[data-figma-page="index"] section.mobile-only {
+    width: 100% !important;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+
+  body[data-figma-page="index"] .mobile-only .custom-card {
+    width: 352px !important;
+    max-width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  /* Expanded quick donation becomes a full mobile sheet instead of a tiny side drawer. */
+  body[data-figma-page="index"] .fast-pay.expanded {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100dvh !important;
+    transform: none !important;
+    background: #fff !important;
+    z-index: 3000 !important;
+  }
+
+  body[data-figma-page="index"] .fast-pay.expanded .container {
+    position: fixed !important;
+    top: 18px !important;
+    left: 18px !important;
+    width: 42px !important;
+    height: 42px !important;
+    transform: none !important;
+    border-radius: 50% !important;
+    z-index: 4 !important;
+  }
+
+  body[data-figma-page="index"] .fast-pay.expanded .donation-form {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    padding: 78px 25px 35px !important;
+    overflow: auto !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+  }
+}
+
+/* Keep Figma's softly rounded form/card language on compact screens. */
+@media (max-width: 767.98px) {
+  body[data-figma-page="login"] .auth-card,
+  body[data-figma-page="beneficiary-registration"] .registration-content,
+  body[data-figma-page="volunteer-registration"] .registration-content,
+  body[data-figma-page="hawkama"] .governance-sections,
+  body[data-figma-page="project"] .donation-card,
+  body[data-figma-page="project"] .project-card,
+  body[data-figma-page="cart"] .cart-item,
+  body[data-figma-page="cart"] .cart-summary {
+    border-radius: 20px !important;
+    box-shadow: none !important;
+  }
+}
