@@ -19,12 +19,18 @@
     document.head.appendChild(link);
   }
 
-  // Legacy pages contain a few Swiper containers without the required
-  // .swiper-wrapper child. Swiper throws while measuring those containers,
-  // which previously surfaced as a page-level getComputedStyle exception.
-  // Keep valid carousels untouched and gracefully skip only malformed ones.
+  // A few legacy carousel definitions reference optional wrappers/controls that
+  // are not present on every page. Prevent those missing elements from causing
+  // page-level Swiper measurement exceptions while preserving valid carousels.
   if (typeof window.Swiper === 'function' && !window.Swiper.__yadByYadGuarded) {
     const NativeSwiper = window.Swiper;
+
+    function selectorExists(value) {
+      if (!value) return false;
+      if (typeof value !== 'string') return true;
+      return Boolean(document.querySelector(value));
+    }
+
     function SafeSwiper(target, options) {
       const element = typeof target === 'string' ? document.querySelector(target) : target;
       const hasWrapper = element && typeof element.querySelector === 'function' && element.querySelector('.swiper-wrapper');
@@ -38,7 +44,19 @@
         };
       }
 
-      return new NativeSwiper(target, options);
+      const safeOptions = options ? { ...options } : {};
+
+      if (safeOptions.navigation) {
+        const nextExists = selectorExists(safeOptions.navigation.nextEl);
+        const prevExists = selectorExists(safeOptions.navigation.prevEl);
+        if (!nextExists || !prevExists) delete safeOptions.navigation;
+      }
+
+      if (safeOptions.pagination && !selectorExists(safeOptions.pagination.el)) {
+        delete safeOptions.pagination;
+      }
+
+      return new NativeSwiper(target, safeOptions);
     }
 
     Object.setPrototypeOf(SafeSwiper, NativeSwiper);
